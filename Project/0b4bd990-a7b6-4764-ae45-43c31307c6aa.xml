@@ -1,0 +1,50 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DINT	N=Wrk_State	G=VAR
+++D=TIME	N=Wrk_TimeInState	G=VAR
+++D=TIME	N=Wrk_TaskIntervalTime	G=VAR
+++D=SktTCPConnect	N=Wrk_SktTCPConnect	G=VAR
+++D=SktTLSConnect	N=Wrk_SktTLSConnect	G=VAR
+++D=SktTLSClearBuf	N=Wrk_SktTLSClearBuf	G=VAR
+++D=SktTLSWrite	N=Wrk_SktTLSWrite	G=VAR
+++D=SktTLSRead	N=Wrk_SktTLSRead	G=VAR
+++D=SktTLSDisconnect	N=Wrk_SktTLSDisconnect	G=VAR
+++D=SktClose	N=Wrk_SktClose	G=VAR
+++D=ARRAY[0..1024] OF BYTE	N=Wrk_SendData	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Wrk_RecvData	G=VAR
+++D=STRING[1986]	N=Wrk_RecvString	G=VAR
+++D=STRING[1024]	N=Wrk_SendString	G=VAR
+++D=_sSOCKET	N=Wrk_Socket	G=VAR
+++D=DWORD	N=Wrk_SessionHandle	G=VAR
+++D=UINT	N=TLS_TIMEOUT	IV=UINT#100	Const=1	G=VAR	Com=0.1s
+++D=BOOL	N=Wrk_TCP_Connect	G=VAR
+++D=BOOL	N=Wrk_CloseSocket	G=VAR
+++D=DWORD	N=Wrk_ErrorCode	G=VAR
+++D=BOOL	N=Wrk_ConnectionError	G=VAR
+++D=BOOL	N=Wrk_EstTLSSession	G=VAR
+++D=BOOL	N=Wrk_SktClearBuffer	G=VAR
+++D=BOOL	N=Wrk_TLSSend	G=VAR
+++D=BOOL	N=Wrk_TLSRecv	G=VAR
+++D=BOOL	N=Wrk_EndTLSSession	G=VAR
+++D=UINT	N=Wrk_RecvSize	G=VAR
+++D=UINT	N=Wrk_SendSize	G=VAR
+++D=STRING[256]	N=Wrk_LinkState	G=VAR
+++D=STRING[256]	N=Wrk_WirelessGen	G=VAR
+++D=STRING[256]	N=Wrk_Operator	G=VAR
+++D=DINT	N=Wrk_Signal	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=STRING[15]	N=Cfg_IP_Adresse	Ord=2	G=VAR_INPUT
+++D=UINT	N=Cfg_Port	IV=UINT#443	Ord=3	G=VAR_INPUT
+++D=STRING[17]	N=Cfg_TLSSession	Ord=4	G=VAR_INPUT	Com=TLSSession[#]
+++D=TIME	N=Cfg_CheckInterval	IV=T#10s	Ord=5	G=VAR_INPUT
+++D=STRING[256]	N=Cfg_Auth	Ord=6	G=VAR_INPUT	Com=Base64: [Username]:[Password]
+++D=TIME	N=Cfg_Timeout	IV=T#10s	Ord=7	G=VAR_INPUT
+++D=STRING[256]	N=Out_LinkState	Ord=8	G=VAR_OUTPUT
+++D=STRING[256]	N=Out_WirelessGen	Ord=9	G=VAR_OUTPUT
+++D=STRING[256]	N=Out_Operator	Ord=10	G=VAR_OUTPUT
+++D=DINT	N=Out_Signal	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=Sts_ConnectionError	Ord=12	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

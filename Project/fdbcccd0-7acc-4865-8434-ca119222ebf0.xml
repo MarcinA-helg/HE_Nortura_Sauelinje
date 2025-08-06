@@ -1,0 +1,23 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			Erstatt                                                                                                                                                                                                                                                                            &#xD;
+//	CREATOR:		Helgevold - Daniel Årvik                                                                                                                                                                                                                                                              &#xD;
+//                                                                                                                                                                                                                                                                                                                            &#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION		DATE				SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0.0				2023-08-16		Daniel Årvik 			Initial release                                                                                                                                                                                                                                                                                                                                                                                                                              &#xD;
+//===============================================================================================================================&#xD;
+&#xD;
+TempResultat := Inn1;&#xD;
+&#xD;
+REPEAT &#xD;
+	Posisjon := FIND(TempResultat,Inn2);&#xD;
+	Lengde := LEN(Inn2);&#xD;
+	IF Posisjon &lt;&gt; 0 THEN&#xD;
+		TempResultat := REPLACE(Inn1, Inn3, Lengde, Posisjon);&#xD;
+	END_IF;&#xD;
+	Failsafe := Failsafe + 1;&#xD;
+UNTIL Posisjon = 0 OR Failsafe = 50&#xD;
+END_REPEAT;&#xD;
+&#xD;
+HE_StrReplace := TempResultat;</Text></StructuredTextModel>

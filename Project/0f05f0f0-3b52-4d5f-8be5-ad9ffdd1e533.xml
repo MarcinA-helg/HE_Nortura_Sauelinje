@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\uWORD	N=GetmyuWORD	Ord=5	G=VAR
+++D=OEN\uBYTE	N=GetmyuBYTE	G=VAR
+++D=OEN\uDWORD	N=GetmyuDWORD	G=VAR
+++D=OEN\uLWORD	N=GetmyuLWORD	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=OEN\nGeneral\sReset	N=GetmyReset	Ord=1	G=VAR_INPUT
+++D=OEN\nGeneral\sPIDAT	N=GetmyPIDAT	Ord=2	G=VAR_INPUT
+++D=OEN\nGeneral\sIAG_PIDAT	N=GetmyIAG_PIDAT	Ord=3	G=VAR_INPUT
+++D=OEN\nEIP\sNX_EICStatus	N=GetmyNX_EICStatus	Ord=4	G=VAR_INPUT
+++D=OEN\nEIP\sNX_DA2x0x	N=GetmyNX_DA2x0x	Ord=5	G=VAR_INPUT
+++D=OEN\nEIP\sNX_AD260x	N=GetmyNX_AD260x	Ord=6	G=VAR_INPUT
+++D=OEN\nEIP\sNX_TS2xxx	N=GetmyNX_TS2xxx	Ord=7	G=VAR_INPUT
+++D=OEN\nEIP\sNX_TS3xxx	N=GetmyNX_TS3xxx	Ord=8	G=VAR_INPUT
+++D=OEN\nEIP\sNX_EC01xxStatus	N=GetmyNX_EC01xxStatus	Ord=9	G=VAR_INPUT
+++D=OEN\nEIP\sNX_EC01xx	N=GetmyNX_EC01xx	Ord=10	G=VAR_INPUT
+++D=OEN\nEIP\sNX_EC01xxCommand	N=GetmyNX_EC01xxCommand	Ord=11	G=VAR_INPUT
+++D=OEN\nGeneral\sDByte	N=GetmyDByte	Ord=12	G=VAR_INPUT
+++D=OEN\nGeneral\sFBOutputs	N=GetmyFBOutputs	Ord=13	G=VAR_INPUT
+++D=OEN\sFBSignals	N=GetmyFBSignals	Ord=14	G=VAR_INPUT
+++D=OEN\nGeneral\sError	N=GetmyError	Ord=15	G=VAR_INPUT
+++D=OEN\nUnit\nPRM\sSlvSta	N=GetmysSlvSta	Ord=16	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=DummyDataTypes	G=RETURN

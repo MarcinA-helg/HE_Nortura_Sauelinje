@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DATE_AND_TIME	N=CurrentDateAndTime	G=VAR
+++D=TIME	N=TaskExecutionTime	G=VAR
+++D=DINT	N=AlarmNo	G=VAR
+++D=DINT	N=ArrayInitVal	G=VAR
+++D=DINT	N=ArrayEndVal	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF OEN\nGeneral\sAlarms	N=Alarm	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF OEN\nGeneral\sAlarmWorkData	N=WorkData	Ord=3	G=VAR_IN_OUT	Com=Array Size of WorkData must be same as Alarms
+++D=BOOL	N=ACK_All	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Reset_All_Counters	Ord=5	G=VAR_INPUT
+++D=STRING[16]	N=Username	Ord=6	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

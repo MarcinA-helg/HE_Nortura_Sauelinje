@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Resolution_In	G=VAR
+++D=REAL	N=Resolution_Out	G=VAR
+++D=DINT	N=Analog_Type	G=VAR
+++D=REAL	N=scantime	G=VAR
+++D=REAL	N=LastAnalogData	G=VAR
+++D=REAL	N=FilterFactor	Ord=5	G=VAR	Com=IIR_LPFilter (ms) 0=Disable, Use 500 as a start 
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=OEN\nGeneral\sAnalog	N=AnalogData	Ord=1	G=VAR_IN_OUT	Com=Datastructure for Analog signal
+++D=OEN\eNX_Atype	N=AnalogType	Ord=2	G=VAR_INPUT	Com=Set In_Min and In_Max (AD) or Out_Min and Out_Max (DA) if Omitted
+++D=INT	N=In_INT	IV=-32768	Ord=3	G=VAR_INPUT	Com=Input as INT - selectable
+++D=REAL	N=In_REAL	IV=-32768	Ord=4	G=VAR_INPUT	Com=Input as REAL -selectable
+++D=INT	N=Out_INT	Ord=5	G=VAR_OUTPUT	Com=Output as INT
+++D=REAL	N=Out_percent1	Ord=6	G=VAR_OUTPUT	Com=Output as 0-100%
+++D=REAL	N=Out_REAL	Ord=7	G=VAR_OUTPUT	Com=Output as REAL
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=AnaScaling	G=RETURN

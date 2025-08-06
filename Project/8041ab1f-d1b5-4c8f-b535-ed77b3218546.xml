@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>HE_Library_DataStruct</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>cc5278a7-6c2f-4962-aae4-1ef69c5bbee5</LibraryId>
+      <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+      <Company>HELGEVOLD ELEKTRO</Company>
+      <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+      <DateModified>2025-07-16T13:33:04.42395+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>HE_AInModule</PublicName>
+        <PublicName>HE_AOutModule</PublicName>
+        <PublicName>Control_ST\ST_Interlock</PublicName>
+        <PublicName>Control_ST\ST_VFDControl</PublicName>
+        <PublicName>Control_ST\WORD2BYTE2BIT</PublicName>
+        <PublicName>Control_ST\BYTE2BIT</PublicName>
+        <PublicName>Control_ST\DWORD2WORD2BYTE2BIT</PublicName>
+        <PublicName>Control_ST\ST_OxygenControl</PublicName>
+        <PublicName>Control_ST\ST_LightControl</PublicName>
+        <PublicName>Control_ST\ST_MultiControl</PublicName>
+        <PublicName>Control_ST\ST_DigitalControl</PublicName>
+        <PublicName>Control_ST\ST_AnalogControl</PublicName>
+        <PublicName>Control_ST\ST_AnalogValue</PublicName>
+        <PublicName>Control_ST\ST_DigitalValue</PublicName>
+        <PublicName>Control_ST\ST_FeedControl</PublicName>
+        <PublicName>Control_ST\ST_FeedControl_Common</PublicName>
+        <PublicName>Control_ST\ST_SMS_ShiftTeam</PublicName>
+        <PublicName>Control_ST\ST_SMS_Contacts</PublicName>
+        <PublicName>Control_ST\ST_SMS_Settings</PublicName>
+        <PublicName>Control_ST\ST_AccumulatedData</PublicName>
+        <PublicName>Control_ST\ENUM_LightControl</PublicName>
+        <PublicName>Control_ST\ENUM_Mode</PublicName>
+        <PublicName>Control_ST\ST_ControllerStat</PublicName>
+        <PublicName>Control_ST\LWORD2DWORD2WORD2BIT</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_VFDControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_DigitalValue</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_AnalogValue</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_OxygenControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_LightControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_AlarmGeneral</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_AlarmAnalog</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_MultiControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_DigitalControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_AnalogControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_Interlock</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedControl_Common</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedControl</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution_Common</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution_Container</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_Settings</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_ShiftTeam</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_Contacts</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_VFDControl</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_LightControl</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_AnalogControl</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_DigitalControl</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_MultiControl</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_SNMP_GetTelegram</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_Interlock_Triggers</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_SMS_Settings</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_SMS_IncommingBuffer</PublicName>
+        <PublicName>Control_ST\INT_ST\ENUM_SNMP_Get_States</PublicName>
+        <PublicName>Control_ST\INT_ST\ENUM_SNMP_GetAcyclic_States</PublicName>
+        <PublicName>Control_ST\INT_ST\INT_Alarm</PublicName>
+        <PublicName>IO_ST\WORD2BYTE2BIT</PublicName>
+        <PublicName>IO_ST\BYTE2BIT</PublicName>
+        <PublicName>IO_ST\DWORD2WORD2BYTE2BIT</PublicName>
+        <PublicName>IO_ST\IO_ExplicitMessageTelegram</PublicName>
+        <PublicName>IO_ST\IO_VFD_Vacon100x_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_Vacon100x_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_FC202_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_FC202_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_ATV6xx_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_ATV6xx_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_ATV320_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_ATV320_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_CIM500_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_CIM500_Out</PublicName>
+        <PublicName>IO_ST\IO_Dali_HD67840_In</PublicName>
+        <PublicName>IO_ST\IO_Dali_HD67840_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_WEG_CFW900_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_WEG_CFW900_Out</PublicName>
+        <PublicName>IO_ST\IO_VFD_WEG_CFW500_In</PublicName>
+        <PublicName>IO_ST\IO_VFD_WEG_CFW500_Out</PublicName>
+        <PublicName>IO_ST\IO_EH_Liquiline</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_OxygenControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_LightControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_MultiControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_VFDControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_AnalogControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_DigialControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_DigitalValue</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_AnalogValue</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_ControllerStat</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_AlarmGeneral</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_FeedControl</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_AlarmAnalog</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_Interlock</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_AccumulatedData</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EXT_SMS_Settings</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_VFDControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_OxygenControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_DigitalControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_FeedControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_AnalogControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_AnalogValue</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_DigitalValue</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_AccumulatedData</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_MultiControl</PublicName>
+        <PublicName>Control_ST\EXT_STATS\EXT_SMS</PublicName>
+        <PublicName>Control_ST\EXT_ALARM\EXT_AlarmGeneral</PublicName>
+        <PublicName>Control_ST\EXT_ALARM\EXT_AlarmAnalog</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_MultiControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_VFDControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_OxygenControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_LightControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_FeedControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_AnalogControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_DigitalControl</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_DigitalValue</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_AnalogValue</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_AlarmGeneral</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_SMS_Settings</PublicName>
+        <PublicName>Control_ST\EXT_GENERAL\EXT_ControllerStat</PublicName>
+        <PublicName>IO_ST\EMBEDDED\IO_EH_Liquiline_AnCh</PublicName>
+        <PublicName>IO_ST\EMBEDDED\IO_EH_Liquiline_DiCh</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EMBEDDED\Interlock</PublicName>
+        <PublicName>Control_ST\EXT_ENGINEERING\EMBEDDED\StateMode</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\SP_Change</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\Interlock</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified</PublicName>
+        <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\DigitalValue_Simplified</PublicName>
+        <PublicName>Control_ST\INT_ST\EMBEDDED\SMS_IncommingBuffer</PublicName>
+        <PublicName>Control_ST\INT_ST\EMBEDDED\Interlock_Triggers</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX502-1300</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>66</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.66</DisplayVersion>
+        <Packages>
+          <Package Name="DBCon" Version="2.4" />
+          <Package Name="Motion" Version="1.66" />
+          <Package Name="OPCUA" Version="1.66" />
+          <Package Name="SecureSocket" Version="1.66" />
+          <Package Name="jre8" Version="8.3" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+      <ApplicationProductVersion>1.63.0.64007</ApplicationProductVersion>
+    </LibraryModel>
+  </data>
+</data>

@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=_sDT	N=UTCTimeStruct	G=VAR
+++D=TIME	N=TimeShift	G=VAR
+++D=_sDT	N=stDateMarch	G=VAR
+++D=_sDT	N=stDateOctober	G=VAR
+++D=DATE_AND_TIME	N=DateMarch	G=VAR
+++D=DATE_AND_TIME	N=DateOctober	G=VAR
+++D=TIME_OF_DAY	N=UTCTimeOfDay	G=VAR
+++D=INT	N=aa	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=DATE_AND_TIME	N=UTCDateAndTime	Ord=1	G=VAR_INPUT
+++D=TIME	N=UTCZoneShift	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=DST_state	Ord=4	G=VAR_OUTPUT
+++D=DATE_AND_TIME	N=LocalDateAndTime	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

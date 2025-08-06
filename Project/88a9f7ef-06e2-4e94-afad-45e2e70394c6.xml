@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=OEN\nUnit\sPRM21	N=PRM21	Ord=2	G=VAR_IN_OUT	Com=PRM21 Data Structure variable
+++D=BOOL	N=Operate	Ord=3	G=VAR_INPUT	Com=Use PRM21 Structure variable here
+++D=BOOL	N=Stop	Ord=4	G=VAR_INPUT	Com=Use PRM21 Structure variable here
+++D=BOOL	N=ClearMode	Ord=5	G=VAR_INPUT	Com=Use PRM21 Structure variable here
+++D=BOOL	N=Offline	Ord=6	G=VAR_INPUT	Com=Use PRM21 Structure variable here
+++D=WORD	N=SwCmd	Ord=7	G=VAR_IN_OUT	Com=Use IOMap variable here
+++D=WORD	N=GlobCtlCmd	Ord=8	G=VAR_IN_OUT	Com=Use IOMap variable here
+++D=WORD	N=ActCycleTm	Ord=9	G=VAR_INPUT	Com=Use IOMap variable here
+++D=WORD	N=UnitSta	Ord=10	G=VAR_INPUT	Com=Use IOMap variable here
+++D=WORD	N=MstrSta	Ord=11	G=VAR_INPUT	Com=Use IOMap variable here
+++D=WORD	N=MstrErrSta	Ord=12	G=VAR_INPUT	Com=Use IOMap variable here
+++D=WORD	N=SlvSta	Ord=13	G=VAR_INPUT	Com=Use IOMap variable here
+++D=ARRAY[0..125] OF BOOL	N=SlvDatXchg	Ord=14	G=VAR_INPUT	Com=Use IOMap variable here
+++D=ARRAY[0..125] OF BOOL	N=SlvNewDiag	Ord=15	G=VAR_INPUT	Com=Use IOMap variable here
+++D=BOOL	N=InOPERATE	Ord=16	G=VAR_OUTPUT	Com=Normal Data Exchange
+++D=BOOL	N=InSTOP	Ord=17	G=VAR_OUTPUT	Com=No Data Exchange
+++D=BOOL	N=InCLEAR	Ord=18	G=VAR_OUTPUT	Com=Set slaves in FailSafe
+++D=BOOL	N=InOFFLINE	Ord=19	G=VAR_OUTPUT	Com=Configuration possible
+++D=REAL	N=BusCycleTime	Ord=20	G=VAR_OUTPUT	Com=Profibus Cycle Time
+++D=BOOL	N=AllInDataExchange	Ord=21	G=VAR_OUTPUT	Com=All Slaves in Data Exchange
+++D=BOOL	N=UnitError	Ord=22	G=VAR_OUTPUT	Com=Common Unit Error
+++D=BOOL	N=MasterError	Ord=23	G=VAR_OUTPUT	Com=Common Master Error
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

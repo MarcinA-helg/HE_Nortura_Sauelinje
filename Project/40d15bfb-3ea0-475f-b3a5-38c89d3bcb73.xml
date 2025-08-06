@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types8" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sGGA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="100" OffsetType="NJ">
+      <DataType Name="Header" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="UTCTime" BaseType="STRING[10]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="1" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Latitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NorS" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="3" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Longitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="4" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EorW" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="5" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="GPS_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="6" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NumOfSatellites" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="7" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="HorizDillution" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="8" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AntennaAltitude" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="9" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AAunit" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="10" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="GeoidalSeparation" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="11" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="GSunit" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="12" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Age" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="13" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="StationID" BaseType="STRING[7]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="14" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sGLL" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="99" OffsetType="NJ">
+      <DataType Name="Header" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Latitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="1" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NorS" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Longitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="3" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EorW" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="4" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="UTCTime" BaseType="STRING[10]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="5" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Status" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="6" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Mode" BaseType="STRING[4]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="7" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sWPL" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="98" OffsetType="NJ">
+      <DataType Name="Header" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPLatitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="1" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPNorS" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPLongitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="3" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPEorW" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="4" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPID" BaseType="STRING[7]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="5" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sRMC" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="97" OffsetType="NJ">
+      <DataType Name="Header" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="UTCTime" BaseType="STRING[10]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="1" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Status" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Latitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="3" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NorS" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="4" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Longitude" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="5" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EorW" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="6" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Speed" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="7" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Course" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="8" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Date_ddmmyy" BaseType="STRING[8]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="9" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MagnVariation" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="10" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VariationEorW" BaseType="STRING[1]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="11" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNMEA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="175" OffsetType="NJ">
+      <DataType Name="GGA" BaseType="OEN\nSerial\nNMEA\sGGA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="GLL" BaseType="OEN\nSerial\nNMEA\sGLL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WPL" BaseType="OEN\nSerial\nNMEA\sWPL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RMC" BaseType="OEN\nSerial\nNMEA\sRMC" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

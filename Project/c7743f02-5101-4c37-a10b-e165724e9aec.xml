@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=StackPos	G=VAR
+++D=UINT	N=DeletePos	G=VAR
+++D=UINT	N=Found	G=VAR
+++D=INT	N=i	G=VAR
+++D=REAL	N=Aux	G=VAR
+++D=BOOL	N=SortDone	Ord=14	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=ARRAY[*] OF REAL	N=Stack	Ord=1	G=VAR_IN_OUT	Com=Table of Data
+++D=UINT	N=Size	Ord=2	G=VAR_INPUT	Com=Stack Size
+++D=BOOL	N=Enable	Ord=3	G=VAR_INPUT	Com=Enable
+++D=BOOL	N=LIFO_FIFO	Ord=4	G=VAR_INPUT	Com=ON=LIFO, OFF=FIFO
+++D=REAL	N=Value	Ord=5	G=VAR_INPUT	Com=Value to Store or Remove
+++D=BOOL	N=PutValue	Ord=6	G=VAR_INPUT	Com=Put value into Stack
+++D=BOOL	N=GetValue	Ord=7	G=VAR_INPUT	Com=Get value from Stack
+++D=BOOL	N=RemoveValue	Ord=8	G=VAR_INPUT	Com=Remove a value from Stack
+++D=BOOL	N=SortLowToHigh	Ord=9	G=VAR_INPUT	Com=Sort from Low to High
+++D=BOOL	N=SortHighToLow	Ord=10	G=VAR_INPUT	Com=Sort from High to Low
+++D=BOOL	N=EmptyStack	Ord=11	G=VAR_INPUT	Com=Remove all
+++D=REAL	N=Value_Out	Ord=12	G=VAR_OUTPUT	Com=Result from Get
+++D=UINT	N=ValuesInStack	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

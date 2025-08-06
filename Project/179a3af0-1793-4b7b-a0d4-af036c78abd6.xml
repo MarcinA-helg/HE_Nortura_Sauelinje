@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[1986]	N=Wrk_Request	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[1986]	N=Inp_Command	Ord=1	G=VAR_INPUT
+++D=STRING[15]	N=Cfg_RT100_IPaddress	Ord=2	G=VAR_INPUT	Com=Ex. 192.168.250.10
+++D=UINT	N=Cfg_Port	IV=26864	Ord=3	G=VAR_INPUT	Com=Ex: 26864
+++D=STRING[256]	N=Cfg_Auth	IV=''	Ord=4	G=VAR_INPUT	Com=Base64: [Username]:[Password]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[1986]	N=HE_RT100BuildRequest	G=RETURN

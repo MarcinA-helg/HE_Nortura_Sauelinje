@@ -1,0 +1,13 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:			HE_Hypotenuse&#xD;
+//	CREATOR:		Helgevold - Jan Magne Dybvik&#xD;
+// &#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	 VERSION			DATE					SIGN							DESCRIPTION&#xD;
+//	 1.0					2025-03-11			Jan Magne Dybvik		Initial release&#xD;
+//&#xD;
+//	Descriptrion: Calculates the hypotenuse of a right angle triangle given the length of the sides&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+HE_Hypotenuse :=LREAL_TO_REAL(SQRT(Inp_A**2 + Inp_B**2));</Text></StructuredTextModel>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>OEN_DataTypes</Name>
+      <NameSpace></NameSpace>
+      <Version>5.02.09</Version>
+      <Revision>1</Revision>
+      <LibraryId>7eb50ee7-c097-4978-8573-9a5673f7b63d</LibraryId>
+      <Author>Kjell Baardsgaard</Author>
+      <Company>Omron Electronics Norway AS</Company>
+      <DateCreated>2018-08-17T15:29:14.2858973+02:00</DateCreated>
+      <DateModified>2025-04-02T13:26:16.6354607+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>DummyDataTypes</PublicName>
+        <PublicName>OEN\uWORD</PublicName>
+        <PublicName>OEN\uBYTE</PublicName>
+        <PublicName>OEN\uDWORD</PublicName>
+        <PublicName>OEN\uLWORD</PublicName>
+        <PublicName>OEN\eNX_Atype</PublicName>
+        <PublicName>OEN\eSwap</PublicName>
+        <PublicName>OEN\eTank</PublicName>
+        <PublicName>OEN\sFBSignals</PublicName>
+        <PublicName>OEN\nEIP\sNX_EICStatus</PublicName>
+        <PublicName>OEN\nEIP\sNX_DA2x0x</PublicName>
+        <PublicName>OEN\nEIP\sNX_AD260x</PublicName>
+        <PublicName>OEN\nEIP\sNX_TS2xxx</PublicName>
+        <PublicName>OEN\nEIP\sNX_TS3xxx</PublicName>
+        <PublicName>OEN\nEIP\sNX_EC01xxStatus</PublicName>
+        <PublicName>OEN\nEIP\sNX_EC01xx</PublicName>
+        <PublicName>OEN\nEIP\sNX_EC01xxCommand</PublicName>
+        <PublicName>OEN\nGeneral\sReset</PublicName>
+        <PublicName>OEN\nGeneral\sAnalog</PublicName>
+        <PublicName>OEN\nGeneral\sDByte</PublicName>
+        <PublicName>OEN\nGeneral\sPulseMeter</PublicName>
+        <PublicName>OEN\nGeneral\sJoystick</PublicName>
+        <PublicName>OEN\nGeneral\sAlarms</PublicName>
+        <PublicName>OEN\nGeneral\sAlarmWorkData</PublicName>
+        <PublicName>OEN\nGeneral\sAlarmLimits</PublicName>
+        <PublicName>OEN\nGeneral\sPIDAT</PublicName>
+        <PublicName>OEN\nGeneral\sIAG_PIDAT</PublicName>
+        <PublicName>OEN\nGeneral\sScaling_IAG_PIDAT</PublicName>
+        <PublicName>OEN\nGeneral\sFBOutputs</PublicName>
+        <PublicName>OEN\nGeneral\sNX_Status</PublicName>
+        <PublicName>OEN\nGeneral\sError</PublicName>
+        <PublicName>OEN\nGeneral\sCPUSystem</PublicName>
+        <PublicName>OEN\nGeneral\sSDCard</PublicName>
+        <PublicName>OEN\nGeneral\eCPUModelName</PublicName>
+        <PublicName>OEN\nGeneral\sTimeDateSwitch</PublicName>
+        <PublicName>OEN\nGeneral\sTimeDateChannel</PublicName>
+        <PublicName>OEN\nGeneral\sMovingHolidaysDT</PublicName>
+        <PublicName>OEN\nUnit\sRS1201</PublicName>
+        <PublicName>OEN\nUnit\sPRM21</PublicName>
+        <PublicName>OEN\nUnit\sDetectionStatus</PublicName>
+        <PublicName>OEN\nUnit\sExecutingStatus</PublicName>
+        <PublicName>OEN\nUnit\sOperationCommand</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sSwCmd</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sMstrSta</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sUnitError</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sUnitSta</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sMstrErrSta</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sGlobCtlCmd</PublicName>
+        <PublicName>OEN\nUnit\nPRM\sSlvSta</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX1P2-9024DT1</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>18</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.18</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.18" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>c6a0c087-ec14-4f73-98ce-d156e65e963c</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibraryFilePath>
+      <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+      <ApplicationProductVersion>1.62.0.64009</ApplicationProductVersion>
+    </LibraryModel>
+  </data>
+</data>

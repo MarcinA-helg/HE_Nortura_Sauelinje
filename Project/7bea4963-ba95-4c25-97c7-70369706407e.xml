@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=Store 9 values in selected Row
+++D=ARRAY[0..9] OF STRING[20]	N=Column0	Ord=2	G=VAR_IN_OUT	Com=Array for Today as a String
+++D=_sDT	N=TimeStamp	Ord=3	G=VAR_INPUT	Com=Date and Time for Column0
+++D=INT	N=RowNumber	Ord=4	G=VAR_INPUT	Com=Table row number to write to
+++D=ARRAY[1..9,0..9] OF INT	N=DataArray	Ord=5	G=VAR_IN_OUT	Com=Array to store variables
+++D=INT	N=Data1	Ord=6	G=VAR_INPUT
+++D=INT	N=Data2	Ord=7	G=VAR_INPUT
+++D=INT	N=Data3	Ord=8	G=VAR_INPUT
+++D=INT	N=Data4	Ord=9	G=VAR_INPUT
+++D=INT	N=Data5	Ord=10	G=VAR_INPUT
+++D=INT	N=Data6	Ord=11	G=VAR_INPUT
+++D=INT	N=Data7	Ord=12	G=VAR_INPUT
+++D=INT	N=Data8	Ord=13	G=VAR_INPUT
+++D=INT	N=Data9	Ord=14	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=Table_Logging10Col	G=RETURN

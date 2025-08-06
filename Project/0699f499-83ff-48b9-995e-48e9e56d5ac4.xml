@@ -1,0 +1,15 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:			HE_AnaExdToAnaSimp&#xD;
+//	CREATOR:		Helgevold - William Veim&#xD;
+// &#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	VERSION			DATE					SIGN							DESCRIPTION&#xD;
+//	1.0					2025-03-14			William Veim				Initial release&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+AnalogValueSimplified.Active:=AnalogValue.EXT_Engineering.Active;&#xD;
+AnalogValueSimplified.Process_Desc:=AnalogValue.EXT_General.Process_Desc;&#xD;
+AnalogValueSimplified.Process_TAG:=AnalogValue.EXT_General.Process_TAG;&#xD;
+AnalogValueSimplified.Process_Unit:=AnalogValue.EXT_General.Process_Unit;&#xD;
+AnalogValueSimplified.ProcessValue:=AnalogValue.EXT_Operator.ProcessValue;</Text></StructuredTextModel>

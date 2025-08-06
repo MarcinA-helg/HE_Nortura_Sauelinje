@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[256]	N=Wrk_Result	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[256]	N=InOut	Ord=1	G=VAR_IN_OUT
+++D=STRING[256]	N=In_Static	Ord=2	G=VAR_INPUT
+++D=STRING[256]	N=In_Variable	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Cfg_Order	Ord=4	G=VAR_INPUT	Com=FALSE=Static+variable, TRUE=Variable+static
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_StrConcatAdv	G=RETURN

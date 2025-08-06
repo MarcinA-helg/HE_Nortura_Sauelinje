@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=Control_ST\EXT_ENGINEERING\EMBEDDED\StateMode	N=Inp_StateData	Ord=1	G=VAR_IN_OUT	Com=State value (TRUE=triggerd)
+++D=UINT	N=Sts_Quality	Ord=2	G=VAR_IN_OUT	Com=Actual quality (0=good, 1=uncertian, 2=bad)
+++D=UINT	N=Sts_ValueState	Ord=3	G=VAR_IN_OUT	Com=Actual value state (0=use value, 1=Hold value, 2=Pre defined value)
+++D=STRING[30]	N=Sts_AlarmSuffix	Ord=4	G=VAR_IN_OUT
+++D=BOOL	N=Sts_AlarmState	Ord=5	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_StateControl	G=RETURN

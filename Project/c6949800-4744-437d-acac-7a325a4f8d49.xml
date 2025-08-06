@@ -1,0 +1,84 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Control_ST\INT_ST\ENUM_SNMP_Get_States	N=Wrk_State	G=VAR
+++D=TIME	N=Wrk_TimeInState	G=VAR
+++D=TIME	N=Wrk_TaskIntervalTime	G=VAR
+++D=SktUDPCreate	N=Wrk_CreateUDP_Socket	G=VAR
+++D=SktUDPSend	N=Wrk_SendUDP_Socket	G=VAR
+++D=SktUDPRcv	N=Wrk_RecvUDP_Socket	G=VAR
+++D=SktClose	N=Wrk_CloseSocket	G=VAR
+++D=_sSOCKET	N=Wrk_Socket	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Wrk_SendBuffer	G=VAR
+++D=UINT	N=Wrk_SendBufferOffset	G=VAR
+++D=DINT	N=Wrk_RequestID	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Wrk_RcvBuffer	G=VAR
+++D=UINT	N=Wrk_SendSize	G=VAR
+++D=UINT	N=Wrk_Len	G=VAR
+++D=_sSOCKET_ADDRESS	N=Wrk_RemoteAddress	G=VAR
+++D=UINT	N=Wrk_ByteOffset	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=Wrk_RequestbytArr	G=VAR
+++D=BOOL	N=Wrk_Create	G=VAR
+++D=BOOL	N=Wrk_Send	G=VAR
+++D=BOOL	N=Wrk_Recv	G=VAR
+++D=BOOL	N=Wrk_Close	G=VAR
+++D=BOOL	N=Wrk_RcvCorrectIP	G=VAR
+++D=BOOL	N=Wrk_RcvCorrectPort	G=VAR
+++D=ARRAY[0..1] OF Byte	N=Wrk_OID_Value_Buff	G=VAR
+++D=UINT	N=Wrk_OID_Value_Len	G=VAR
+++D=ARRAY[0..5] OF Byte	N=Wrk_RequestID_Buff	G=VAR
+++D=UINT	N=Wrk_RequestID_Len	G=VAR
+++D=ARRAY[0..33] OF Byte	N=Wrk_Community_Buff	G=VAR
+++D=UINT	N=Wrk_Community_Len	G=VAR
+++D=ARRAY[0..5] OF Byte	N=Wrk_SNMP_Version_Buff	G=VAR
+++D=UINT	N=Wrk_SNMP_Version_Len	G=VAR
+++D=ARRAY[0..5] OF Byte	N=Wrk_ErrorStatus_Buff	G=VAR
+++D=UINT	N=Wrk_ErrorStatus_Len	G=VAR
+++D=ARRAY[0..5] OF Byte	N=Wrk_ErrorIndex_Buff	G=VAR
+++D=UINT	N=Wrk_ErrorIndex_Len	G=VAR
+++D=ARRAY[0..23] OF Byte	N=Wrk_OID_Buff	G=VAR
+++D=UINT	N=Wrk_OID_Len	G=VAR
+++D=UINT	N=Wrk_VarList_Len	G=VAR
+++D=UINT	N=Wrk_VarBind_Len	G=VAR
+++D=UINT	N=Wrk_PDU_Length	G=VAR
+++D=UINT	N=Wrk_SNMP_GET_Length	G=VAR
+++D=BOOL	N=Wrk_Valid	G=VAR
+++D=UINT	N=Wrk_SNMP_Sequence_Len	G=VAR
+++D=UINT	N=Wrk_RecvBufferOffset	G=VAR
+++D=UDINT	N=Wrk_RecvSNMP_Version	G=VAR
+++D=STRING[32]	N=Wrk_RecvSNMP_Community	G=VAR
+++D=UINT	N=Wrk_RecvPDU_Len	G=VAR
+++D=DINT	N=Wrk_RecvRequestID	G=VAR
+++D=UDINT	N=Wrk_RecvErrorStatus	G=VAR
+++D=UDINT	N=Wrk_RecvErrorIndex	G=VAR
+++D=UINT	N=Wrk_RecvVarList_Len	G=VAR
+++D=UINT	N=Wrk_RecvVarBind_Len	G=VAR
+++D=STRING[48]	N=Wrk_SendOID	G=VAR
+++D=STRING[48]	N=Wrk_RecvOID	G=VAR
+++D=UDINT	N=Wrk_Successes	G=VAR
+++D=UDINT	N=Wrk_Errors	G=VAR
+++D=STRING[32]	N=Wrk_String	G=VAR
+++D=BOOL	N=Wrk_Done	G=VAR
+++D=BOOL	N=Wrk_Error	G=VAR
+++D=BOOL	N=Wrk_Busy	G=VAR
+++D=UDINT	N=Wrk_RespValue	G=VAR
+++D=STRING[256]	N=Wrk_RespString	G=VAR
+++D=DWORD	N=Wrk_ErrorCode	G=VAR
+++D=BOOL	N=Wrk_ErrorResponse	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Dbg_SendBuffer	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Dbg_RcvBuffer	G=VAR
+++D=WORD	N=Wrk_ValidData	G=VAR
+++D=SktClearBuf	N=Wrk_ClearBuffer	G=VAR
+++D=BOOL	N=Wrk_Flush	G=VAR	Com=Clear Socket Buffer
+++D=WORD	N=Wrk_ErrorBreadCrumb	G=VAR
+++D=STRING[32]	N=Wrk_Err_ExpectedIP	G=VAR
+++D=STRING[256]	N=Wrk_Err_RecievedIP	G=VAR
+++D=UINT	N=Wrk_Err_ExpectedPort	G=VAR
+++D=UINT	N=Wrk_Err_RecievedPort	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=Control_ST\INT_ST\INT_SNMP_GetTelegram	N=Ext_Telegram	Ord=2	G=VAR_IN_OUT	Com=Trigger Get request on rising edge
+++D=UINT	N=Cfg_LocalPort	IV=60161	Ord=3	G=VAR_INPUT
+++D=TIME	N=Cfg_Timeout	IV=T#10s	Ord=4	G=VAR_INPUT	Com=Send and Recieve Timeout
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

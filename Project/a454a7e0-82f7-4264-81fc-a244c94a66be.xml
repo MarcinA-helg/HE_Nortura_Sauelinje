@@ -1,0 +1,29 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=AlarmToken	R=1	IV=-1	G=VAR	Com=Alarm index found
+++D=UDINT	N=a	G=VAR
+++D=TON	N=TON_AlarmTrig	G=VAR
+++D=TON	N=TON_AlarmReturn	G=VAR
+++D=BOOL	N=Wrk_Alarm	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmSendt	R=1	G=VAR
+++D=BOOL	N=Wrk_AnalogAlarm	G=VAR
+++D=BOOL	N=Wrk_Supress	G=VAR
+++D=TON	N=TON_SupressReturn	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\EXT_ALARM\EXT_AlarmGeneral	N=Ext_Alarm	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT
+++D=BOOL	N=Inp_Trigger	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Inp_AlarmSupress	Ord=5	G=VAR_INPUT
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=6	G=VAR_INPUT	Com=Alarm suppressed description
+++D=STRING[20]	N=Inp_Connected_Cabinet	Ord=7	G=VAR_INPUT
+++D=STRING[20]	N=Inp_Connected_Controller	Ord=8	G=VAR_INPUT
+++D=STRING[25]	N=Inp_Process_Value	Ord=9	G=VAR_INPUT
+++D=STRING[20]	N=Inp_Process_TAG	Ord=10	G=VAR_INPUT
+++D=STRING[50]	N=Inp_Process_Suffix	Ord=11	G=VAR_INPUT
+++D=STRING[50]	N=Inp_Process_Desc	Ord=12	G=VAR_INPUT
+++D=UINT	N=Out_AlarmToken	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=Out_AlarmTriggered	Ord=14	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

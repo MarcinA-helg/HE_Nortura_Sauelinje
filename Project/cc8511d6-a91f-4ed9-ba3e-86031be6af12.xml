@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=Desimalcount	G=VAR
+++D=DINT	N=Temp_Desimalcount	G=VAR
+++D=REAL	N=Absolute	G=VAR
+++D=DINT	N=Units	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=REAL	N=In_Real	Ord=1	G=VAR_INPUT
+++D=STRING[256]	N=Out_String	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_String_TO_Real	G=RETURN

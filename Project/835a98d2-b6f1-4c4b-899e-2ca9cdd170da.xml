@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DINT	N=Wrk_BufferUB	G=VAR
+++D=DINT	N=Wrk_BufferLB	G=VAR
+++D=USINT	N=Wrk_DataType	G=VAR
+++D=USINT	N=Wrk_ValueLen	G=VAR
+++D=USINT	N=Wrk_i	G=VAR
+++D=DWORD	N=Wrk_Val	G=VAR
+++D=DINT	N=Wrk_ReamainingBuffer	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=ARRAY[*] OF BYTE	N=Ext_Buffer	Ord=2	G=VAR_IN_OUT
+++D=UINT	N=Ext_BufferOffset	Ord=3	G=VAR_IN_OUT
+++D=STRING[256]	N=Out_String	Ord=4	G=VAR_OUTPUT
+++D=UDINT	N=Out_Integer	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_SNMP_Decode	G=RETURN	Com=Valid

@@ -1,0 +1,47 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\Eth\Read_IPAddress	N=ReadIPAddress	G=VAR
+++D=_sDT	N=CurrentTime	G=VAR
+++D=OEN\General\Sequencer	N=FB_REad_SystemData	G=VAR
+++D=_sREQUEST_PATH	N=RqPath_MAC	G=VAR
+++D=_sREQUEST_PATH	N=RqPath_SN	G=VAR
+++D=CIPUCMMSend	N=Read_SerialNbr	G=VAR
+++D=ARRAY[0..9] OF BYTE	N=ServiceDat_2	G=VAR
+++D=ARRAY[0..9] OF BYTE	N=ServiceDat_1	G=VAR
+++D=CIPUCMMSend	N=Read_MACaddress	G=VAR
+++D=CIPUCMMSend	N=Read_SerialNumber	G=VAR
+++D=ARRAY[0..9] OF BYTE	N=RespServiceDat	G=VAR
+++D=_sREQUEST_PATH	N=RqPath_Model	G=VAR
+++D=CIPUCMMSend	N=Read_ProductCode	G=VAR
+++D=DINT	N=ProductCode_DINT	G=VAR
+++D=WORD	N=ProductCode	G=VAR
+++D=STRING[15]	N=MACID_EIP1	Ord=12	G=VAR
+++D=ARRAY[0..2] OF WORD	N=BYTETOWORD	G=VAR
+++D=STRING[15]	N=MACID_EIP2	G=VAR
+++D=STRING[15]	N=MACID_ECAT	G=VAR
+++D=STRING[9]	N=SerialNumber	Ord=12	G=VAR
+++D=STRING[20]	N=RoutePath	G=VAR
+++D=BOOL	N=SequenceEnd	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=OEN\nGeneral\sCPUSystem	N=CPUSystem	Ord=0	G=VAR_IN_OUT	Com=Structure containing all variables
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_OUTPUT
+++D=STRING[30]	N=CPU_Clock	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=LowBattery	Ord=4	G=VAR_OUTPUT
+++D=UDINT	N=PowerOnHours	Ord=5	G=VAR_OUTPUT
+++D=STRING[2]	N=HardwareRevision	Ord=6	G=VAR_OUTPUT
+++D=STRING[7]	N=UnitVersion	Ord=7	G=VAR_OUTPUT
+++D=UDINT	N=PowerOnCounter	Ord=8	G=VAR_OUTPUT
+++D=STRING[10]	N=SystemSWVersion	Ord=9	G=VAR_OUTPUT
+++D=STRING[16]	N=IPAddress1	Ord=10	G=VAR_OUTPUT
+++D=STRING[16]	N=IPAddress2	Ord=11	G=VAR_OUTPUT
+++D=TIME	N=TaskExecutionTime	Ord=12	G=VAR_OUTPUT	Com=ms
+++D=OEN\nGeneral\eCPUModelName	N=ModelName	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=STRING[2]	N=_HardwareRevision	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF USINT	N=_Unitversion	Const=1	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnCount	G=VAR_EXTERNAL
+++D=ARRAY[0..2] OF USINT	N=_SystemSWVersion	Const=1	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnHour	G=VAR_EXTERNAL
+++D=BOOL	N=_SelfTest_LowBattery	Const=1	G=VAR_EXTERNAL

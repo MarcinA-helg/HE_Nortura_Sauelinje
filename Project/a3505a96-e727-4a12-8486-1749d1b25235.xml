@@ -1,0 +1,27 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:					HE_RT100BuildRequest&#xD;
+//	CREATOR:				Helgevold - Jan Magne Dybvik&#xD;
+// REQUIREMENTS: NX CPU&#xD;
+//&#xD;
+// DESCRTIPTION: 	Build HTTP Get Request&#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	 VERSION			DATE				SIGN						DESCRIPTION&#xD;
+//	 1.0					2025-04-01		Jan Magne Dybvik	Initial release&#xD;
+//	 1.1					2025-06-24		Jan Magne Dybvik	Increased string lengths from 256 to 1986&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+Wrk_Request :='GET ';&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=Inp_Command);&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=' HTTP/1.1$R$LHost: ');&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=Cfg_RT100_IPaddress);&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=':');&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=UINT_TO_STRING(Cfg_Port));&#xD;
+IF LEN(Cfg_Auth) &gt; 0 THEN&#xD;
+	Wrk_Request := CONCAT(In1:=Wrk_Request, In2:='$R$L');	&#xD;
+	Wrk_Request := CONCAT(In1:=Wrk_Request, In2:='Authorization: Basic ');&#xD;
+	Wrk_Request := CONCAT(In1:=Wrk_Request, In2:=Cfg_Auth);&#xD;
+END_IF;&#xD;
+Wrk_Request := CONCAT(In1:=Wrk_Request, In2:='$R$L$R$L');	&#xD;
+HE_RT100BuildRequest := Wrk_Request;</Text></StructuredTextModel>

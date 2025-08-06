@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types0" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="uWORD" BaseType="UNION" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Wrd" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Bit" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="uBYTE" BaseType="UNION" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Byt" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Bit" BaseType="ARRAY[0..7] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="uDWORD" BaseType="UNION" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="DWrd" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Wrd" BaseType="ARRAY[0..1] OF WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Byt" BaseType="ARRAY[0..3] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Bit" BaseType="ARRAY[0..31] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="uLWORD" BaseType="UNION" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="LWrd" BaseType="LWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Wrd" BaseType="ARRAY[0..3] OF WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Byt" BaseType="ARRAY[0..7] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Bit" BaseType="ARRAY[0..63] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eNX_Atype" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="SelfDefined" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="Self defined Scaling" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA2203" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02203" Comment="2 Outputs, 4-20mA, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA2205" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02205" Comment="2 Outputs, 4-20mA, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA2603" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02603" Comment="2 Outputs, -10V/+10V, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA2605" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02605" Comment="2 Outputs, -10V/+10V, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA3203" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="03203" Comment="4 Outputs, 4-20mA, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA3205" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="03205" Comment="4 Outputs, 4-20mA, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA3603" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="03603" Comment="4 Outputs, -10V/+10V, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_DA3605" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="03605" Comment="4 Outputs, -10V/+10V, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2203" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12203" Comment="2 Inputs, 4-20mA, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2204" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12204" Comment="2 Inputs, 4-20mA, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2208" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12208" Comment="2 Inputs, 4-20mA, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2603" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12603" Comment="2 Inputs, -10V/+10V, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2604" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12604" Comment="2 Inputs, -10V/+10V, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD2608" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12608" Comment="2 Inputs, -10V/+10V, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3203" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13203" Comment="4 Inputs, 4-20mA, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3204" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13204" Comment="4 Inputs, 4-20mA, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3208" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13208" Comment="4 Inputs, 4-20mA, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3603" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13603" Comment="4 Inputs, -10V/+10V, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3604" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13604" Comment="4 Inputs, -10V/+10V, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD3608" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13608" Comment="4 Inputs, -10V/+10V, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4203" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14203" Comment="8 Inputs, 4-20mA, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4204" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14204" Comment="8 Inputs, 4-20mA, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4208" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14208" Comment="8 Inputs, 4-20mA, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4603" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14603" Comment="8 Inputs, -10V/+10V, 8000 points, Single-Ended, 250µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4604" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14604" Comment="8 Inputs, -10V/+10V, 8000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX_AD4608" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14608" Comment="8 Inputs, -10V/+10V, 30000 points, Differential, 10µs/pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_ADB21_mA" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12220" Comment="2 Inputs, 0-20mA, 2000 points, 4ms/2pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_ADB21_V" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12621" Comment="2 Inputs, 0-10V, 4000 points, 4ms/2pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_DAB21V" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02621" Comment="2 Outputs, 0-10V, 4000 points, 4ms/2pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_MAB221_IV" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12622" Comment="2 Inputs, 0-10V, 4000 points, 6ms/4pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_MAB221_OV" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="02221" Comment="2 Outputs, 0-10V, 4000 points, 6ms/4pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NX1W_MAB221_ImA" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12222" Comment="2 Inputs, 0-20mA, 2000 points, 6ms/4pt" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eSwap" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Nothing" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TheBytes" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TheWords" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BytesAndWords" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eTank" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Horizontal_FlatEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Horizontal_EllipsoidalEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Horizontal_SphericalEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vertical_FlatEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vertical_EllipsoidalEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vertical_SphericalEnds" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sFBSignals" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Standard FunctionBlock signals for general use" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="173" OffsetType="NJ">
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ok" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Execute" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CommandAborted" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorIDEx" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

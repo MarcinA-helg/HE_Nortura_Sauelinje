@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_Average	N=Average	G=VAR
+++D=TIME	N=Wrk_TaskPeriod	G=VAR
+++D=TIME	N=Wrk_LastExecTime	G=VAR	Com=Last task execution time
+++D=TIME	N=Wrk_MaxExecTime	G=VAR	Com=Maximum task execution time
+++D=TIME	N=Wrk_MinExecTime	G=VAR	Com=MinExecTime
+++D=UDINT	N=Wrk_ExecCount	G=VAR	Com=ExecCount
+++D=BOOL	N=Wrk_Exceeded	G=VAR	Com=Exceeded
+++D=UDINT	N=Wrk_ExceedCount	G=VAR	Com=ExceedCount
+++D=REAL	N=Wrk_TaskPeriod_REAL	G=VAR
+++D=REAL	N=Wrk_AvgTaskTime	G=VAR
+++D=REAL	N=Wrk_LastExecTime_REAL	G=VAR
+++D=REAL	N=Wrk_MaxExecTime_REAL	G=VAR
+++D=REAL	N=Wrk_LastExecPercent	G=VAR
+++D=REAL	N=Wrk_MaxExecPercent	G=VAR
+++D=BOOL	N=Wrk_MaxExec_LimitExceeded	G=VAR
+++D=UINT	N=Wrk_NumberOfValues	IV=100	G=VAR
+++D=UINT	N=Wrk_SamplingInterval	IV=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=REAL	N=Cfg_MaxExecPercent_Limit	IV=70.0	Ord=2	G=VAR_INPUT	Com=Alarm Limit for highest execution time of task
+++D=REAL	N=Avg_TaskTime	Ord=3	G=VAR_OUTPUT	Com=Average task time (ms)
+++D=REAL	N=Max_TaskTime	Ord=4	G=VAR_OUTPUT	Com=Max task time (ms)
+++D=BOOL	N=Sts_Alarm	Ord=5	G=VAR_OUTPUT	Com=Alarm state (Max execution time > limit)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

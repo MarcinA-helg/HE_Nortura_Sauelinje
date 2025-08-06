@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=Wrk_extStatus	G=VAR	Com=Gives the status of the EtherNet/IP Coupler Unit
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=WORD	N=Inp_Status	Ord=2	G=VAR_INPUT	Com=Status ord fra NX-EIC202 modul
+++D=BOOL	N=Sts_Owned	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=Sts_Configured	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Sts_MinorRecoverableFault	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Sts_MinorUnrecoverableFault	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=Sts_MajorRecoverableFault	Ord=7	G=VAR_OUTPUT
+++D=BOOL	N=Sts_MajorUnrecoverableFault	Ord=8	G=VAR_OUTPUT
+++D=WORD	N=Val_ExtendedDeviceStatus	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

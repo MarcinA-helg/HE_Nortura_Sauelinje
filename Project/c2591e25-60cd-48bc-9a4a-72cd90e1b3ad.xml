@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types3" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="INT_VFDControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="74" OffsetType="NJ">
+      <DataType Name="AutoAvailable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Frequency converter online, ready, no interlock conflict or fault, and in auto mode" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Warning" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Warning state (from VFD)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Fault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Fault state (start blocked, communication fault, emergency stop, VFD fault)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Running" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="VFD operating status" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Emergency_Stop" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Emergency stop status (FALSE = OK, TRUE = Shutdown/Fault)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CommunicationFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Communication state (FALSE = OK, TRUE = fault)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_LightControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="66" OffsetType="NJ">
+      <DataType Name="DimUp_Started" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Brightness increase started (auto mode)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DimDown_Started" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Brightness decrease started (auto mode)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LightMax" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Light reached full output" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_AnalogControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="51" OffsetType="NJ">
+      <DataType Name="AutoAvailable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="In auto mode" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_DigitalControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="56" OffsetType="NJ">
+      <DataType Name="AutoAvailable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="In auto mode" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_MultiControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="61" OffsetType="NJ">
+      <DataType Name="NumberAvailable" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of actuators available" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NumberRunning" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of actuators running" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_SNMP_GetTelegram" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="132" OffsetType="NJ">
+      <DataType Name="Ready" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Socket Opened" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Execute" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Execute Get reqest" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SNMP_Ver" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0 = Ver 1, 1 = Ver 2" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OID" BaseType="STRING[48]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Object Identifier" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RemotePort" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RemoteIP" BaseType="STRING[32]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Community" BaseType="STRING[32]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Community string" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResponseValue" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResponseString" BaseType="STRING[256]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Token" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Timeout" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorCode" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_Interlock_Triggers" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="131" OffsetType="NJ">
+      <DataType Name="Interlock_Triggers" BaseType="ARRAY[0..7] OF Control_ST\INT_ST\EMBEDDED\Interlock_Triggers" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delay applies in all cases)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_SMS_Settings" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="40" OffsetType="NJ">
+      <DataType Name="Light" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="One or more active alarms" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Siren_Priority1" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activated on new alarm (duration set in SMS settings)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Siren_Priority2" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activated on new alarm (duration set in SMS settings)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Siren_Priority3" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activated on new alarm (duration set in SMS settings)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Siren_Priority4" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activated on new alarm (duration set in SMS settings)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Siren_Priority5" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activated on new alarm (duration set in SMS settings)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IncommingMessage_Buffer" BaseType="ARRAY[0..19] OF Control_ST\INT_ST\EMBEDDED\SMS_IncommingBuffer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_SMS_IncommingBuffer" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="130" OffsetType="NJ">
+      <DataType Name="BufferData" BaseType="ARRAY[0..10] OF Control_ST\INT_ST\EMBEDDED\SMS_IncommingBuffer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ENUM_SNMP_Get_States" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Disabled" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="16#00" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CloseSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="16" Comment="16#10" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CloseSocketError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="17" Comment="16#11" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CreateSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="32" Comment="16#20" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CreateSocketError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="33" Comment="16#21" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IdleState" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="48" Comment="16#30" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BuildSNMPMessage" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="49" Comment="16#31" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendUDP" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="64" Comment="16#40" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendUDPError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="65" Comment="16#41" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RecieveUDP" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="80" Comment="16#50" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RecieveUDPError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="81" Comment="16#51" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RecieveSNMPErrorResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="82" Comment="16#52" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VerifyRecieveSource" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="96" Comment="16#60" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VerifyRecieveSourceError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="97" Comment="16#61" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ParseRecievedData" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="112" Comment="16#70" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ParsedDataInvalid" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="113" Comment="16#71" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ParsedDataValid" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="114" Comment="16#72" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ClearBuffer" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="128" Comment="16#80" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ClearBuffeError" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="129" Comment="16#81" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ENUM_SNMP_GetAcyclic_States" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Waiting" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ConfigureRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="16" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WaitForResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="32" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="INT_Alarm" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="129" OffsetType="NJ">
+      <DataType Name="Cfg_InUse" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Status if alarm in use" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_TimeToNextPri" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Time unitl send to next priority" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_State" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0=Idle, 1=active not sendt, 2=sendt to pri 1, 3=sendt to pri 2, 4=sendt to pri 3, 5=sendt to pri 4, 10=ack" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_SMS_Technical" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Send to technical shift team" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_SMS_Guard" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Send to guard shift team " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_SMS_OnlyDayTime" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="SMS only send at day shift team" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Alarm_Priority" BaseType="STRING[2]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm priority" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Connected_Cabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of connected control cabinet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Connected_Controller" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name/TAG for control CPU/PLC" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Process_Value" BaseType="STRING[256]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Actual value (analog value)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Process TAG" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Process_Suffix" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm suffix" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

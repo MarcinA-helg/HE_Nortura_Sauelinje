@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types9" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="EXT_MultiControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="65" OffsetType="NJ">
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process function (e.g Main ciculation pumps control)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_VFDControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="78" OffsetType="NJ">
+      <DataType Name="VFD_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="VFD tag name" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Motor_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Motor tag name" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process function (e.g Main circulation pump 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Running" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Motor running" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Remote" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="VFD remote operation" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_OxygenControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="73" OffsetType="NJ">
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process function (e.g Oxygen control fish tank 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PWMControl_Visible" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="PWM setting visible if true" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_LightControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="69" OffsetType="NJ">
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process function (e.g light control fish tank 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="StateDesc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Status string (e.g &quot;Dimming up&quot;)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_FeedControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="50" OffsetType="NJ">
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process function (e.g Feeding fish tank 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="StateDesc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Status string (e.g &quot;Dimming up&quot;)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group_Name" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of group" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group_Type" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Group type (type of fish etc.)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AnalogControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="55" OffsetType="NJ">
+      <DataType Name="Connected_ControlCabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of connected control cabinet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controlled_FromController" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name/TAG for control CPU/PLC" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_DigitalControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="60" OffsetType="NJ">
+      <DataType Name="Connected_ControlCabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of connected control cabinet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controlled_FromController" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name/TAG for control CPU/PLC" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_DigitalValue" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="10" OffsetType="NJ">
+      <DataType Name="Connected_ControlCabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of connected control cabinet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controlled_FromController" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name/TAG for control CPU/PLC" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Component TAG" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad, 3=Simulating" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AnalogValue" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="15" OffsetType="NJ">
+      <DataType Name="Connected_ControlCabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name of connected control cabinet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controlled_FromController" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Name/TAG for control CPU/PLC" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG for the process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Unit" BaseType="STRING[12]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit for the value (e.g barg, cm, m)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="State_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad, 3=Simulating" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="State_AlarmAnalog" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= No alarm, 1=LL alarm, 2=L alarm, 3=H alarm, 4=HH alarm" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AlarmGeneral" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="2" OffsetType="NJ">
+      <DataType Name="Sts_Alarm_Message" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm message/suffix (ex 'Module fault', 'Low limit')" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Alarm_Status" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm status (triggers also from analog alam if used) | 0=No alarm/OK | 1= Alarm activated | 2= Alarm supressed" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_SMS_Settings" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="43" OffsetType="NJ">
+      <DataType Name="Sts_ProgramStatus" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Status string for SMS sending" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_ConnectionFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Faulted connection to modem (Controller-&gt;modem)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Modem_SignalStrength" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Signal strength modem connection (%)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Modem_LinkState" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Link state of connected modem" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Modem_Operator" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Operator modem is connected to" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Modem_NetworkMode" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Network mode (e.g LTE)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Modem_FaultState" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Modem faulted (bad signal or SIM fault)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_ControllerStat" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="37" OffsetType="NJ">
+      <DataType Name="Controller_Cabinet" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG/name for cabinet controller is placed in" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controller_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG/name for controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Controller_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

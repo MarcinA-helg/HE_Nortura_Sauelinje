@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[1986]	N=Wrk_Command	G=VAR
+++D=DINT	N=Wrk_arr_lb	G=VAR
+++D=DINT	N=Wrk_arr_ub	G=VAR
+++D=DINT	N=Wrk_size	G=VAR
+++D=DINT	N=Wrk_i	G=VAR
+++D=UINT	N=Wrk_Pos	G=VAR
+++D=DINT	N=Wrk_MessageLen	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=ARRAY[*] OF STRING[20]	N=Ext_PhoneNumbers	Ord=1	G=VAR_IN_OUT
+++D=STRING[1986]	N=Inp_Message	Ord=2	G=VAR_INPUT
+++D=WORD	N=Val_Error	Ord=3	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[1986]	N=HE_RT100SendSMSCmd	G=RETURN

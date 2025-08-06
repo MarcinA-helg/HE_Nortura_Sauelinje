@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types7" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="EXT_VFDControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="75" OffsetType="NJ">
+      <DataType Name="EnergyConsumption_Today" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Energy consumption today (kWh)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Power" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Actual power consuption (kW)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Current (A)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NumberOfStarts" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of operation starts" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ontime_VFD" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="VFD ontime (days)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Runtime_VFD" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="VFD runtime (days)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OperatingHours_MotorTotal" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Total motor operating time (hours)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OperatingHours_MotorService" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Total motor operating time since last service (hours)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetDate_VFD" BaseType="STRING[11]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Date of reset for VFD runtime" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetDate_MotorTotal" BaseType="STRING[11]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Date of reset for motor total runtime" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetDate_MotorService" BaseType="STRING[11]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Date of reset for motor service runtime" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reset_MotorTotal" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reset motor total runtime (and reset date)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reset_MotorService" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reset motor service runtime (and reset date)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_OxygenControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="70" OffsetType="NJ">
+      <DataType Name="AvgGain_Last24h" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Average gain last 24h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_DigitalControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="57" OffsetType="NJ">
+      <DataType Name="ChangesToday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value today" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ChangesYesterday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value yesterday" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_FeedControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="47" OffsetType="NJ">
+      <DataType Name="Group_Days" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Antall dager på dette innsettet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group_DegreeDays" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Antall dager på dette innsettet" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group_SGR_Calculated" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Kalkulert SGR (Daglig tilvekst). Faktisk verdi basert på startvekt, aktuell vekt og dager." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group_TGC_Calculated" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Kalkulert TGC (Vekstfaktor). Faktisk verdi basert på startvekt, aktuell vekt og døgngrader." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Feed_Amount_Yesterday" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Faktisk utfôrt igår(kg)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Feed_Amount_Tomorrow" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Planlagt utfôring imorgen(kg)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Amount_Deadfish_Total" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Antall total dødfisk" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AnalogControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="52" OffsetType="NJ">
+      <DataType Name="ChangesToday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value today" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ChangesYesterday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value yesterday" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AnalogValue" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="12" OffsetType="NJ">
+      <DataType Name="Date_LastFault" BaseType="STRING[11]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Timestamp last fault" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MinValue_Today" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Minimum value today" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MaxValue_Today" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Maximum value today" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_DigitalValue" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="7" OffsetType="NJ">
+      <DataType Name="ChangesToday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value today" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ChangesYesterday" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Number of changes in value yesterday" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AccumulatedData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="39" OffsetType="NJ">
+      <DataType Name="Total_Yesterday" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Total_Today" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Total_Week" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Total_Month" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Total_Year" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Total" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_MultiControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="62" OffsetType="NJ">
+      <DataType Name="AvgGain_Last24h" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Average gain last 24h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_SMS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="110" OffsetType="NJ">
+      <DataType Name="NumberSendt_Today" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NumberSendt_Yesterday" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

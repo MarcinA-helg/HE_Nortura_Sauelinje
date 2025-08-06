@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AnalogValue_Logic	N=Wrk_AnalogInput_Logic	G=VAR
+++D=BOOL	N=Wrk_ValueType	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_AnalogValue	N=Ext_AnalogValue	Ord=2	G=VAR_IN_OUT	Com=AnalogValue structure
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=REAL	N=Inp_ProcessValue	Ord=4	G=VAR_INPUT	Com=Raw value input (channel input)
+++D=STRING[12]	N=Cfg_ProcessValue_Unit	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Inp_ModuleFault	IV=False	Ord=6	G=VAR_INPUT	Com=State of RIO/IO module (FALSE= OK, TRUE= Fault)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=7	G=VAR_INPUT	Com=Process TAG
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=8	G=VAR_INPUT	Com=Controller TAG
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=9	G=VAR_INPUT	Com=Control cabinet name/TAG
+++D=USINT	N=Cfg_AlarmSMS_SignificantDigits	IV=3	Ord=10	G=VAR_INPUT	Com=Number of significant digits
+++D=BOOL	N=Cfg_AlarmSMS_UseUnitPrefix	IV=True	Ord=11	G=VAR_INPUT	Com=Use unit prefix ex. k
+++D=BOOL	N=Inp_AlmSuppress	Ord=12	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=13	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_Fault	Ord=14	G=VAR_OUTPUT	Com=TRUE = Communication error, sensor failure, or loop break
+++D=UINT	N=Sts_AlarmToken	Ord=15	G=VAR_OUTPUT	Com=Used alarm token/index
+++D=REAL	N=Out_ProcessValue	Ord=16	G=VAR_OUTPUT	Com=Process value
+++D=REAL	N=Out_ProcessValue_Percent	Ord=17	G=VAR_OUTPUT	Com=Process value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

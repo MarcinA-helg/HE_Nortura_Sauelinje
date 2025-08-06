@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types10" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="Interlock" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="22" OffsetType="NJ">
+      <DataType Name="Sts_Trig_Type" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delays apply in all cases)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Trig_Digital" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\DigitalValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Digital trigger (Type = 1) with info and value (0 = OK, 1 = Triggered)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Trig_Analog" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Analog trigger (Type = 2 or 3) with info and value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Trig_Description" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description of trigger" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Trig_AnaLimit" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Analog trigger limit (Type = 2 or 3)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Trig_OnDelay" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Trigger delay (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Trig_OffDelay" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reset delay (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Bypassable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Trigger allowed to be bypassed" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Latch" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activate latching of trigger (no auto reset if latched)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="StateMode" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="NJ">
+      <DataType Name="Sts_Desc" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description of state trigger" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Visible" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="If active/in use" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_State" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="State of parameter (TRUE=Triggered)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Action" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Use input, 1=Hold last, 2=Pre defined value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Quality" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0= Good, 1=Uncertain, 2=Bad" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Alarm" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TRUE=Triggers alarm if active" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

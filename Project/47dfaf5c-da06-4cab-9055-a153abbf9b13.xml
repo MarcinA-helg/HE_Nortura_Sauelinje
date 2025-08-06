@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=Wrk_StatusValue	G=VAR
+++D=STRING[10]	N=Wrk_HMIS_Value	G=VAR
+++D=STRING[72]	N=Wrk_StateString	G=VAR
+++D=STRING[60]	N=Wrk_StateDescription	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=WORD	N=Inp_InverterStatus	Ord=2	G=VAR_INPUT	Com=Drive state from CFW900 register ID: 6
+++D=STRING[5]	N=Cfg_Delimiter	IV=' - '	Ord=3	G=VAR_INPUT
+++D=WORD	N=Cfg_Composition	IV=7	Ord=4	G=VAR_INPUT	Com=Bit 0 = Status Code , Bit 1 = StatusDescription
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[256]	N=HE_FC202_Drive_State	G=RETURN	Com=Faultcode

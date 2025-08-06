@@ -1,0 +1,60 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[1986]	N=Wrk_RecvMessage	G=VAR
+++D=STRING[1986]	N=Wrk_Request	G=VAR
+++D=HE_RT100_States	N=Wrk_State	G=VAR
+++D=TIME	N=Wrk_TimeInState	G=VAR
+++D=TIME	N=Wrk_TaskIntervalTime	G=VAR
+++D=SktTCPConnect	N=Wrk_SktTCPConnect	G=VAR
+++D=SktClearBuf	N=Wrk_SktClearBuf	G=VAR
+++D=SktGetTCPStatus	N=Wrk_SktGetTCPStatus	G=VAR
+++D=SktTCPSend	N=Wrk_SktTCPSend	G=VAR
+++D=SktTCPRcv	N=Wrk_SktTCPRcv	G=VAR
+++D=_sSOCKET	N=Wrk_Socket	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Wrk_SendData	IV=[2000(16#0)]	G=VAR
+++D=ARRAY[0..1999] OF BYTE	N=Wrk_RecvData	IV=[2000(16#0)]	G=VAR
+++D=UINT	N=Wrk_RecvSize	G=VAR
+++D=SktClose	N=Wrk_SktClose	G=VAR
+++D=BOOL	N=Wrk_TCP_Connect	G=VAR
+++D=BOOL	N=Wrk_SktClearBuffer	G=VAR
+++D=BOOL	N=Wrk_SktGetStatus	G=VAR
+++D=BOOL	N=Wrk_TCPSend	G=VAR
+++D=BOOL	N=Wrk_CloseSocket	G=VAR
+++D=BOOL	N=Wrk_TCPRecv	G=VAR
+++D=BOOL	N=Wrk_NewMessage	G=VAR
+++D=STRING[22]	N=Wrk_FromAddress	G=VAR
+++D=STRING[22]	N=Wrk_DateTime	G=VAR
+++D=STRING[1986]	N=Wrk_RecieveMessage	G=VAR
+++D=DINT	N=Wrk_Index	G=VAR
+++D=DWORD	N=Wrk_ErrorCode	G=VAR
+++D=BOOL	N=Wrk_ConnectionError	G=VAR
+++D=BOOL	N=Wrk_SendSMSLast	G=VAR
+++D=BOOL	N=Wrk_SendSMSBusy	G=VAR
+++D=TIME	N=STEP_TIMEOUT	IV=T#1m	G=VAR
+++D=BOOL	N=Wrk_SendSMSDone	G=VAR
+++D=BOOL	N=Wrk_SendSMSError	G=VAR
+++D=BOOL	N=Wrk_RecvSMSNew	G=VAR
+++D=BOOL	N=Wrk_RecvSMSNewLast	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF STRING[20]	N=Ext_PhoneNumbers	Ord=2	G=VAR_IN_OUT
+++D=STRING[161]	N=Inp_Message	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Inp_SendSMS	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Inp_RecvSMSAck	Ord=5	G=VAR_INPUT	Com=Acknowledge new recieved SMS message
+++D=STRING[15]	N=Cfg_IP_Adresse	Ord=6	G=VAR_INPUT
+++D=UINT	N=Cfg_Port	IV=UINT#26864	Ord=7	G=VAR_INPUT
+++D=TIME	N=Cfg_CheckInboxInterval	IV=T#10S	Ord=8	G=VAR_INPUT
+++D=BOOL	N=Cfg_CheckInbox	Ord=9	G=VAR_INPUT
+++D=TIME	N=Cfg_Timeout	IV=T#10s	Ord=10	G=VAR_INPUT
+++D=STRING[22]	N=Out_FromAddress	Ord=11	G=VAR_OUTPUT
+++D=STRING[22]	N=Out_DateTime	Ord=12	G=VAR_OUTPUT
+++D=STRING[161]	N=Out_Message	Ord=13	G=VAR_OUTPUT
+++D=DWORD	N=Val_Error	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=Sts_ConnectionError	Ord=15	G=VAR_OUTPUT
+++D=BOOL	N=Sts_SendSMSBusy	Ord=16	G=VAR_OUTPUT
+++D=BOOL	N=Sts_SendSMSDone	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=Sts_SendSMSError	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=Sts_RecvSMSNew	Ord=19	G=VAR_OUTPUT	Com=New SMS message recieved
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

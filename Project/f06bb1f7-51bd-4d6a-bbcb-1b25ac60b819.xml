@@ -1,0 +1,15 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:			Differanse&#xD;
+//	CREATOR:		Helgevold - Daniel Årvik&#xD;
+// &#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	VERSION			DATE				SIGN						DESCRIPTION&#xD;
+//	1.0				2023-02-10			Daniel Årvik				Initial release&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+&#xD;
+// Regner ut absoluttverdien av differansen&#xD;
+Diff:=Inn1-Inn2;&#xD;
+HE_Difference := ABS(Diff);</Text></StructuredTextModel>

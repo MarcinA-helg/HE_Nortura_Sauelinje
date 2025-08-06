@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>HE_Library_BaseBlocks</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>869af25d-905a-45a9-99d4-de60ab8eca25</LibraryId>
+      <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+      <Company>HELGEVOLD ELEKTRO</Company>
+      <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+      <DateModified>2025-07-23T10:45:01.0085285+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>HE_Str2TOD</PublicName>
+        <PublicName>HE_INT2TOD</PublicName>
+        <PublicName>HE_Str2TIME</PublicName>
+        <PublicName>HE_INT2TIME</PublicName>
+        <PublicName>HE_Str2Minute</PublicName>
+        <PublicName>HE_INT2Minute</PublicName>
+        <PublicName>HE_StrAdd</PublicName>
+        <PublicName>HE_INTAdd</PublicName>
+        <PublicName>HE_Sec2Str</PublicName>
+        <PublicName>HE_StrConcatAdv</PublicName>
+        <PublicName>HE_StrReplace</PublicName>
+        <PublicName>HE_ABSValue</PublicName>
+        <PublicName>HE_SNMP_EncodeInteger</PublicName>
+        <PublicName>HE_SNMP_EncodeNull</PublicName>
+        <PublicName>HE_SNMP_EncodeString</PublicName>
+        <PublicName>HE_SNMP_EncodeOID</PublicName>
+        <PublicName>HE_SNMP_Decode</PublicName>
+        <PublicName>HE_AnaExdToAnaSimp</PublicName>
+        <PublicName>HE_DigExsToDigSimp</PublicName>
+        <PublicName>HE_PVSelect</PublicName>
+        <PublicName>HE_StateControl</PublicName>
+        <PublicName>HE_Liquiline_AnUnit</PublicName>
+        <PublicName>HE_CIM500_Last_Fault</PublicName>
+        <PublicName>HE_WEG_Drive_State</PublicName>
+        <PublicName>HE_WEG_Drive_Fault</PublicName>
+        <PublicName>HE_WEG_Drive_Alarms</PublicName>
+        <PublicName>HE_FC202_Drive_State</PublicName>
+        <PublicName>HE_FC202_Drive_Fault</PublicName>
+        <PublicName>HE_100F_Drive_State</PublicName>
+        <PublicName>HE_100F_Drive_Fault</PublicName>
+        <PublicName>HE_ATV_Drive_State</PublicName>
+        <PublicName>HE_ATV_Drive_Fault</PublicName>
+        <PublicName>HE_RT100BuildRequest</PublicName>
+        <PublicName>HE_RT100SendSMSCmd</PublicName>
+        <PublicName>HE_RT100ParseSMS</PublicName>
+        <PublicName>HE_RT100ParseIfaces</PublicName>
+        <PublicName>HE_String_TO_Real</PublicName>
+        <PublicName>HE_REAL2STRING</PublicName>
+        <PublicName>HE_PercentEncoding</PublicName>
+        <PublicName>HE_AIn_Module</PublicName>
+        <PublicName>HE_AOut_Module</PublicName>
+        <PublicName>HE_VFD_Logic</PublicName>
+        <PublicName>HE_AnalogValue_Logic</PublicName>
+        <PublicName>HE_DigitalValue_Logic</PublicName>
+        <PublicName>HE_Ramp_Gain</PublicName>
+        <PublicName>HE_EWMA</PublicName>
+        <PublicName>HE_RateOfChange</PublicName>
+        <PublicName>HE_TimeSync</PublicName>
+        <PublicName>HE_DiffCheck</PublicName>
+        <PublicName>HE_Deadband</PublicName>
+        <PublicName>HE_DigitalFault</PublicName>
+        <PublicName>HE_AnalogFault</PublicName>
+        <PublicName>HE_Average</PublicName>
+        <PublicName>HE_Statistics</PublicName>
+        <PublicName>HE_PID</PublicName>
+        <PublicName>HE_Alternation</PublicName>
+        <PublicName>HE_TaskTimeMonitor</PublicName>
+        <PublicName>HE_SD_Backup</PublicName>
+        <PublicName>HE_AlarmGeneral</PublicName>
+        <PublicName>HE_AlarmAnalog</PublicName>
+        <PublicName>HE_RT100SMS</PublicName>
+        <PublicName>HE_RT100Status</PublicName>
+        <PublicName>HE_RT100_States</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX502-1300</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>66</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.66</DisplayVersion>
+        <Packages>
+          <Package Name="DBCon" Version="2.4" />
+          <Package Name="Motion" Version="1.66" />
+          <Package Name="OPCUA" Version="1.66" />
+          <Package Name="SecureSocket" Version="1.66" />
+          <Package Name="jre8" Version="8.3" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibraryFilePath>
+      <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+      <ApplicationProductVersion>1.60.0.64010</ApplicationProductVersion>
+    </LibraryModel>
+  </data>
+</data>

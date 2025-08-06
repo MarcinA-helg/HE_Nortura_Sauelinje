@@ -1,0 +1,55 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AlarmGeneral	N=Wrk_AlarmGeneral	G=VAR
+++D=HE_TaskTimeMonitor	N=TaskTime	G=VAR
+++D=HE_TimeSync	N=TimeSync	G=VAR
+++D=HE_SD_Backup	N=SD_Backup	G=VAR
+++D=DATE	N=SD_Date_Sample	G=VAR
+++D=DATE	N=SD_Date_Actual	G=VAR
+++D=UINT	N=SD_Days_Sample	G=VAR
+++D=TIME_OF_DAY	N=SD_Time_Actual	G=VAR
+++D=BOOL	N=Wrk_TaskTime_Exceeded	G=VAR
+++D=BOOL	N=Wrk_PLC_Error	G=VAR
+++D=BOOL	N=Wrk_EIP_Error	G=VAR
+++D=BOOL	N=Wrk_NXB_Error	G=VAR
+++D=BOOL	N=Wrk_TimeSync_Fault	G=VAR
+++D=BOOL	N=Wrk_SDBackup_Fault	G=VAR
+++D=BOOL	N=Wrk_SMS_Error	G=VAR
+++D=UINT	N=Wrk_ValueState	G=VAR
+++D=BOOL	N=Wrk_ProcessValue	G=VAR
+++D=STRING[30]	N=Wrk_AlarmSuffix	G=VAR
+++D=BOOL	N=Wrk_AlarmState	G=VAR
+++D=BOOL	N=Wrk_ArrayOutOfRange	G=VAR
+++D=_ePLC_UNIT_TYPE	N=Wrk_CPU_Unit	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_ControllerStat	N=Ext_ControllerStat	Ord=2	G=VAR_IN_OUT	Com=Data structure for controller data
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_SMS_Error	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Inp_AlarmArrayOutOfRange	Ord=5	G=VAR_INPUT	Com=Alarm array out of range (all alarms used)
+++D=BOOL	N=Cfg_HoldOutput	Ord=6	G=VAR_INPUT	Com=Hold device (and ETC output when syncronising)
+++D=BOOL	N=Cfg_TimeSync_Activate	Ord=7	G=VAR_INPUT	Com=Activate time sync from NTP
+++D=BOOL	N=Cfg_SDCard_InUse	Ord=8	G=VAR_INPUT
+++D=TIME_OF_DAY	N=Cfg_SDBackup_Time	Ord=9	G=VAR_INPUT	Com=Time on day for SD backup
+++D=UINT	N=Cfg_SDBackup_Days	Ord=10	G=VAR_INPUT	Com=Days between backup
+++D=REAL	N=Cfg_TaskTime_Limit	IV=100	Ord=11	G=VAR_INPUT	Com=Limit % of total task time before alarm trigger
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=12	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=13	G=VAR_INPUT
+++D=DATE_AND_TIME	N=Out_TimeSync_ExcTime	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=Sts_HoldOutput	Ord=15	G=VAR_OUTPUT	Com=Hold output state
+++D=BOOL	N=Sts_TimeSync_Fault	Ord=16	G=VAR_OUTPUT
+++D=BOOL	N=Sts_ControllerFault	Ord=17	G=VAR_OUTPUT	Com=Controller fault state
+++D=BOOL	N=Sts_SDBackup_Fault	Ord=18	G=VAR_OUTPUT	Com=SD backup faulted
+++D=BOOL	N=Sts_TaskTime_Exceeded	Ord=19	G=VAR_OUTPUT	Com=Task time exceeded
+++D=BOOL	N=Sts_NXBusFault	Ord=20	G=VAR_OUTPUT
+++D=BOOL	N=Sts_EIPFault	Ord=21	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=WORD	N=_PLC_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_NXB_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_EIP_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnCount	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnHour	G=VAR_EXTERNAL
+++D=WORD	N=_DeviceOutHoldCfg	G=VAR_EXTERNAL
+++D=BOOL	N=_DeviceOutHoldStatus	Const=1	G=VAR_EXTERNAL

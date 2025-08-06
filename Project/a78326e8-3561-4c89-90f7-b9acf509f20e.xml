@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=FileIsOpen	G=VAR
+++D=FileOpen	N=fbOpenFile	G=VAR
+++D=DWORD	N=FileID	G=VAR
+++D=UINT	N=WriteCounter	G=VAR
+++D=STRING[4]	N=CRLF	G=VAR
+++D=STRING[255]	N=StringToWrite	G=VAR
+++D=FilePuts	N=fbWriteToSD	G=VAR
+++D=FileClose	N=fbCloseFile	G=VAR
+++D=INT	N=I	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=SaveToFile	Ord=0	G=VAR_INPUT	Com=Create file and Save on SD
+++D=ARRAY[1..9,0..9] OF INT	N=DataArray	Ord=1	G=VAR_INPUT	Com=Array of 9 Columns and 10 rows
+++D=ARRAY[0..9] OF STRING[20]	N=Column0	Ord=2	G=VAR_INPUT	Com=Text in front of each row of data
+++D=UINT	N=NumberOfRows	Ord=3	G=VAR_INPUT	Com=How many Rows to write to File
+++D=STRING[256]	N=Filename	Ord=4	G=VAR_INPUT	Com=Filename for SD-card
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=_Card1Ready	Const=1	G=VAR_EXTERNAL

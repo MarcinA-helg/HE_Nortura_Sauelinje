@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=Error	G=VAR
+++D=INT	N=i	G=VAR
+++D=WORD	N=PortError	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=WORD	N=EIP_ErrSta	Ord=1	G=VAR_INPUT	Com=Connect System variable "_EIP_ErrSta"
+++D=WORD	N=EIP_Port1Err	Ord=2	G=VAR_INPUT	Com=Connect System variable "_EIP_Port1Err" or "_EIP_PortErr"
+++D=ARRAY[0..255] OF BOOL	N=EIP1_RegTargetSta	Ord=3	G=VAR_INPUT	Com=Connect System variable "_EIP1_RegTargetSta" or  "_EIP_RegTargetSta"
+++D=ARRAY[0..255] OF BOOL	N=EIP1_EstbTargetSta	Ord=4	G=VAR_INPUT	Com=Connect System variable "_EIP1_EstbTargetSta" or  "_EIP_EstbTargetSta"
+++D=ARRAY[0..255] OF BOOL	N=EIP1_TargetNodeErr	Ord=5	G=VAR_INPUT	Com=Connect System variable "_EIP1_TargetNodeErr" or  "_EIP_TargetNodeErr"
+++D=WORD	N=EIP_Port2Err	Ord=6	G=VAR_INPUT	Com=Connect System variable "_EIP_Port2Err" when using Port2
+++D=ARRAY[0..255] OF BOOL	N=EIP2_RegTargetSta	Ord=7	G=VAR_INPUT	Com=Connect System variable "_EIP2_RegTargetSta" when using Port2
+++D=ARRAY[0..255] OF BOOL	N=EIP2_EstbTargetSta	Ord=8	G=VAR_INPUT	Com=Connect System variable "_EIP2_EstbTargetSta" when using Port2
+++D=ARRAY[0..255] OF BOOL	N=EIP2_TargetNodeErr	Ord=9	G=VAR_INPUT	Com=Connect System variable "_EIP2_TargetNodeErr" when using Port2
+++D=OEN\nEIP\sEIP_Network	N=EthernetIP	Ord=10	G=VAR_OUTPUT	Com=Ethernet/IP Status Structure
+++D=USINT	N=Port1Registered	Ord=11	G=VAR_OUTPUT	Com=Number of registered Nodes on Port1
+++D=USINT	N=Port1Communicates	Ord=12	G=VAR_OUTPUT	Com=Number of communicating Nodes on Port1
+++D=USINT	N=Port1NodesInError	Ord=13	G=VAR_OUTPUT	Com=Number of Nodes in Error on Port1
+++D=USINT	N=Port2Registered	Ord=14	G=VAR_OUTPUT	Com=Number of registered Nodes on Port2
+++D=USINT	N=Port2Communicates	Ord=15	G=VAR_OUTPUT	Com=Number of communicating Nodes on Port2
+++D=USINT	N=Port2NodesInError	Ord=16	G=VAR_OUTPUT	Com=Number of Nodes in Error on Port2
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=EIP_Control	G=RETURN

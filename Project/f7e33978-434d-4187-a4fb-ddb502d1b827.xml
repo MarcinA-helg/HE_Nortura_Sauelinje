@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[10]	N=RoutePath	G=VAR
+++D=_sREQUEST_PATH	N=ReqPath	IV=(ClassID := 1, InstanceID := 1, isAttributeID := False, AttributeID := 0)	G=VAR
+++D=ARRAY[0..0] OF BYTE	N=RespServiceDat	G=VAR
+++D=CIPUCMMSend	N=FB_EIPReset	G=VAR
+++D=UINT	N=ServiceDat	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT
+++D=UINT(1..2)	N=Port	IV=1	Ord=1	G=VAR_INPUT	Com=EIP-port #1 or #2
+++D=BOOL	N=Done	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

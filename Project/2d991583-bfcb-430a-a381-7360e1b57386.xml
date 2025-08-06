@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[256]	N=Wrk_ValueString	G=VAR
+++D=DINT	N=Wrk_Magnitude	G=VAR
+++D=DINT	N=Wrk_Decimals	G=VAR
+++D=REAL	N=Wrk_Log	G=VAR
+++D=REAL	N=Wrk_Number	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=REAL	N=Inp	Ord=2	G=VAR_INPUT
+++D=STRING[16]	N=Cfg_Unit	Ord=3	G=VAR_INPUT
+++D=USINT	N=Cfg_SignificantDigits	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Cfg_UsePrefix	Ord=5	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[256]	N=HE_REAL2STRING	G=RETURN

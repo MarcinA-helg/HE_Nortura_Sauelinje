@@ -1,0 +1,34 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=StandardWeightSettingStart	G=VAR
+++D=WORD	N=StandardWeightCommand	IV=16#0093	Const=1	G=VAR
+++D=WORD	N=ZeroCalibrationCommand	IV=16#0020	Const=1	G=VAR
+++D=BOOL	N=ZeroCalibrationStart	G=VAR
+++D=WORD	N=SpanCalibrationCommand	IV=16#0030	Const=1	G=VAR
+++D=BOOL	N=SpanCalibrationStart	G=VAR
+++D=REAL	N=StandardWeightValue	Ord=4	G=VAR	Com=The known load for calibration
+++D=TON	N=FB_Timeout	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Unit_OK	Ord=1	G=VAR_INPUT	Com=Activate input when NX-RS1201 is Ok
+++D=OEN\nUnit\sRS1201	N=Loadcell	Ord=2	G=VAR_IN_OUT
+++D=WORD	N=DetectionStatus	Ord=3	G=VAR_INPUT	Com=From IOMap
+++D=WORD	N=ExecutingStatus	Ord=4	G=VAR_INPUT	Com=From IOMap
+++D=UINT	N=CalibCommandResponseSID	Ord=5	G=VAR_INPUT	Com=From IOMap
+++D=WORD	N=CalibCommandResponse	Ord=6	G=VAR_INPUT	Com=From IOMap
+++D=REAL	N=GrossWeightValue	Ord=7	G=VAR_INPUT	Com=From IOMap
+++D=REAL	N=StandardWeight	Ord=8	G=VAR_INPUT	Com=The known load
+++D=BOOL	N=SetStandardWeight	Ord=9	G=VAR_INPUT	Com=Step#1 Save value for known load in Step#3
+++D=BOOL	N=SetZero	Ord=10	G=VAR_INPUT	Com=Step#2 Set zeropoint for loadcell without any load
+++D=BOOL	N=SetSpan	Ord=11	G=VAR_INPUT	Com=Step#3 Set span after putting the known load on the loadcell
+++D=WORD	N=ErrorID	Ord=12	G=VAR_OUTPUT	Com=Calibration Error
+++D=WORD	N=OperationCommand	Ord=13	G=VAR_OUTPUT	Com=From IOMap
+++D=UINT	N=CalibCommandSID	Ord=14	G=VAR_OUTPUT	Com=From IOMap
+++D=WORD	N=CalibCommand	Ord=15	G=VAR_OUTPUT	Com=From IOMap
+++D=REAL	N=CalibData	Ord=16	G=VAR_OUTPUT	Com=From IOMap
+++D=BOOL	N=CalibrationDone	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=SetWeightOK	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=SetZeroOK	Ord=19	G=VAR_OUTPUT
+++D=BOOL	N=SetSpanOK	Ord=20	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\General\HasChanged	N=FB_NewStep	G=VAR
+++D=BOOL	N=NextStep	G=VAR
+++D=TON	N=TON_TriggerDelay	G=VAR
+++D=TON	N=TON_TimeOut	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=StepNext	Ord=0	G=VAR_INPUT	Com=A pulse here increments StepActive until NumberOfSteps
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT	Com=Set StepActive=0
+++D=BOOL	N=Continuous	Ord=2	G=VAR_INPUT	Com=If FALSE then Stop if StepActive=NumberOfSteps ELSE Loop back to 1
+++D=INT	N=NumberOfSteps	Ord=3	G=VAR_INPUT	Com=Loop from 1 to NumberOfSteps
+++D=TIME	N=TriggerDelay	Ord=4	G=VAR_INPUT	Com=Delay Trigger after StepNext
+++D=TIME	N=TimeOutTime	Ord=5	G=VAR_INPUT	Com=StepNext if no Input after TimeOutTime
+++D=BOOL	N=Trigger	Ord=6	G=VAR_OUTPUT	Com=OneShot Trigger after StepNext
+++D=INT	N=StepActive	Ord=7	G=VAR_OUTPUT	Com=Active Step
+++D=TIME	N=TD_Timer	Ord=8	G=VAR_OUTPUT	Com=Trigger Delay
+++D=TIME	N=TOT_Timer	Ord=9	G=VAR_OUTPUT	Com=StepNext TimeOutTime
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

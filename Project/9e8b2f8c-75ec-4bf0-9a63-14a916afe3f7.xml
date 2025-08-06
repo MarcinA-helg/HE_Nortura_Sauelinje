@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[480]	N=Wrk_PercentEncoded	G=VAR
+++D=ARRAY[0..480] OF BYTE	N=Wrk_Buffer	G=VAR
+++D=UINT	N=Wrk_Length	G=VAR
+++D=UINT	N=Wrk_i	G=VAR
+++D=ARRAY[0..2] OF BYTE	N=Wrk_NumBuf	G=VAR
+++D=STRING[3]	N=Wrk_NumStr	G=VAR
+++D=UINT	N=Wrk_Num	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[160]	N=Inp_String	Ord=1	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[480]	N=HE_PercentEncoding	G=RETURN

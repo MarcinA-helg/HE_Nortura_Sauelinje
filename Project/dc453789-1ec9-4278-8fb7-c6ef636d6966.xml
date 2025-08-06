@@ -1,0 +1,56 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_DiffCheck	N=Wrk_DiffCheck	G=VAR
+++D=HE_Average	N=Wrk_Average	G=VAR
+++D=HE_AlarmGeneral	N=Wrk_AlarmGeneral	G=VAR
+++D=HE_AlarmAnalog	N=Wrk_AlarmAnalog	G=VAR
+++D=TON	N=TON_InitialCycles	G=VAR
+++D=TON	N=TON_ProcessValueOutOfRange	G=VAR
+++D=DATE	N=Wrk_Date_Now	G=VAR	Com=Date, Now
+++D=TIME_OF_DAY	N=Wrk_CurrentTime	G=VAR
+++D=R_TRIG	N=RE_MidnightPulse	G=VAR
+++D=BOOL	N=Wrk_ProscessValueMaxInit	R=1	G=VAR
+++D=BOOL	N=Wrk_ProscessValueMinInit	R=1	G=VAR
+++D=STRING[30]	N=Wrk_AlarmSuffix	G=VAR
+++D=UINT	N=Wrk_ValueState	G=VAR
+++D=BOOL	N=Wrk_AlarmState	G=VAR
+++D=REAL	N=Wrk_InputValue	G=VAR
+++D=BOOL	N=Wrk_InputStuck	G=VAR
+++D=BOOL	N=Wrk_ProcessValueOutOfRange	G=VAR
+++D=BOOL	N=Wrk_ModuleFault	G=VAR
+++D=BOOL	N=Wrk_LoopBreak	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=REAL	N=Wrk_ProcessValue	G=VAR
+++D=REAL	N=Wrk_MinValue	G=VAR
+++D=REAL	N=Wrk_MaxValue	G=VAR
+++D=REAL	N=Wrk_Dummy	IV=0.0	Const=1	G=VAR
+++D=BOOL	N=Wrk_Initialise	R=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_AnalogValue	N=Ext_AnalogValue	Ord=2	G=VAR_IN_OUT	Com=AnalogValue structure
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Cfg_ValueType	Ord=4	G=VAR_INPUT	Com=Input value type (FALSE=Signal value, TRUE=Process value)
+++D=REAL	N=Inp_Value	Ord=5	G=VAR_INPUT	Com=Input value (signal or process value)
+++D=BOOL	N=Inp_LoopBreak	Ord=6	G=VAR_INPUT
+++D=REAL	N=Cfg_SignalValue_Y0	Ord=7	G=VAR_INPUT	Com=Normal range signal value (ex 4mA)
+++D=REAL	N=Cfg_SignalValue_Y1	Ord=8	G=VAR_INPUT	Com=Normal range signal value (ex 20mA)
+++D=STRING[5]	N=Cfg_SignalValue_Unit	IV='mA'	Ord=9	G=VAR_INPUT	Com=Unit of input value (mA, V, mV)
+++D=STRING[12]	N=Cfg_ProcessValue_Unit	IV=''	Ord=10	G=VAR_INPUT	Com=Unit of process value (bar, m) Only in use for locked units/read units (Liquiline etc)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=11	G=VAR_INPUT	Com=Process TAG
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=12	G=VAR_INPUT	Com=Controller TAG
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=13	G=VAR_INPUT	Com=Control cabinet name/TAG
+++D=USINT	N=Cfg_AlarmSMS_SignificantDigits	IV=3	Ord=14	G=VAR_INPUT	Com=Number of significant digits
+++D=BOOL	N=Cfg_AlarmSMS_UseUnitPrefix	IV=True	Ord=15	G=VAR_INPUT	Com=Use unit prefix ex. k
+++D=BOOL	N=Inp_AlmSuppress	Ord=16	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=17	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Inp_ModuleFault	IV=False	Ord=18	G=VAR_INPUT	Com=State of RIO/IO module (FALSE= OK, TRUE= Fault)
+++D=STRING[30]	N=Inp_State4_Desc	Ord=19	G=VAR_INPUT	Com=State description (e.g 'Input stuck')
+++D=BOOL	N=Inp_State4_State	Ord=20	G=VAR_INPUT	Com=Actual state (False=OK, TRUE=Fault)
+++D=BOOL	N=Cfg_State4_InUse	Ord=21	G=VAR_INPUT	Com=Set TRUE if state in use
+++D=STRING[30]	N=Inp_State5_Desc	Ord=22	G=VAR_INPUT	Com=State description (e.g 'Input stuck')
+++D=BOOL	N=Inp_State5_State	Ord=23	G=VAR_INPUT	Com=Actual state (False=OK, TRUE=Fault)
+++D=BOOL	N=Cfg_State5_InUse	Ord=24	G=VAR_INPUT	Com=Set TRUE if state in use
+++D=UINT	N=Out_AlarmToken	Ord=25	G=VAR_OUTPUT	Com=Alarm token (index)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=UpperLimit	G=VAR
+++D=REAL	N=LowerLimit	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=REAL	N=Input	Ord=1	G=VAR_INPUT	Com=Process value
+++D=REAL	N=OffsetHigh	Ord=2	G=VAR_INPUT	Com=Offset high from Value
+++D=REAL	N=Value	Ord=3	G=VAR_INPUT	Com=Check value
+++D=REAL	N=OffsetLow	Ord=4	G=VAR_INPUT	Com=Deviation low from Value
+++D=BOOL	N=InputAbove	Ord=5	G=VAR_OUTPUT	Com=Input higher than Value plus OffsetHigh
+++D=BOOL	N=InputWithin	Ord=6	G=VAR_OUTPUT	Com=Input within Offset limits
+++D=BOOL	N=InputBelow	Ord=7	G=VAR_OUTPUT	Com=Input lower than Value minus OffsetLow
+++D=REAL	N=Deviation	Ord=8	G=VAR_OUTPUT	Com=Input minus Value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=ZoneCheck	G=RETURN

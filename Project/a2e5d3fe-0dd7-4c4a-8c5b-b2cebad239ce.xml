@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DINT	N=wrk_D1_LB	G=VAR	Com=Array first dimension Lower Bound
+++D=DINT	N=wrk_D1_UB	G=VAR	Com=Array first dimension Upper Bound
+++D=DINT	N=wrk_D1_S	G=VAR	Com=Array first dimension size
+++D=DINT	N=wrk_D2_LB	G=VAR	Com=Array second dimension Lower Bound
+++D=DINT	N=wrk_D2_UB	G=VAR	Com=Array second dimension Upper Bound
+++D=DINT	N=wrk_D2_S	G=VAR	Com=Array second dimension size
+++D=DINT	N=wrk_index	G=VAR	Com=Array index
+++D=REAL	N=wrk_Y	G=VAR	Com=temporary output storage
+++D=INT	N=SUCCESS	IV=0	Const=1	G=VAR	Com=Successfull execution
+++D=INT	N=ERROR_FIRST_DIM	IV=-1	Const=1	G=VAR	Com=Size of the first dimension is too small
+++D=INT	N=ERROR_SECOND_DIM	IV=-2	Const=1	G=VAR	Com=Size of the second dimension is not exactly 2
+++D=INT	N=InputLessThanDefined	IV=1	G=VAR
+++D=INT	N=InputGreaterThanDefined	IV=2	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=REAL	N=Inp	Ord=1	G=VAR_INPUT	Com=Input X coordinate
+++D=BOOL	N=Cfg_Clamp	IV=False	Ord=2	G=VAR_INPUT	Com=True = if input value is undefined in the tabel, limit value to closest X value. False = if input value is undefined use the closest coordinates and continue linear scaling
+++D=ARRAY[*,*] OF REAL	N=Ext_table	Ord=3	G=VAR_IN_OUT	Com=First dimension 2 or more elements, second dimension exactly 2 elements. First dimension is an orderd (by X) list of coordiantes, second dimension is X,Y values.
+++D=REAL	N=Val	Ord=4	G=VAR_OUTPUT	Com=Linearly scaled value between closest coordinate values
+++D=INT	N=Status	Ord=5	G=VAR_OUTPUT	Com=0 = SUCCESS, -1 = ERROR_FIRST_DIM, -2 = ERROR_SECOND_DIM
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_TableScale	G=RETURN	Com=Always True

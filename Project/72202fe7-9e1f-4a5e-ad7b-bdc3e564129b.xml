@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_IncreaseOutput	G=VAR
+++D=TIME	N=ET_ChangeTime	G=VAR
+++D=REAL	N=Wrk_Output	G=VAR
+++D=REAL	N=Wrk_Input	G=VAR
+++D=UINT	N=Wrk_StrokeTime	G=VAR
+++D=TON	N=TON_OutputEqual	G=VAR
+++D=TIME	N=ET_OutputEqual	G=VAR
+++D=REAL	N=Resolution	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=REAL	N=Inp_Value	Ord=2	G=VAR_INPUT	Com=Input value
+++D=TIME	N=Cfg_StrokeTime	Ord=3	G=VAR_INPUT	Com=Time between X0-X1 (s)
+++D=REAL	N=Cfg_Output_X0	IV=0	Ord=4	G=VAR_INPUT	Com=Lowest value of output (overwritten if the original output is lower)
+++D=REAL	N=Cfg_Output_X1	IV=100	Ord=5	G=VAR_INPUT	Com=Highest value of output (overwritten if the original output is higher)
+++D=BOOL	N=Cfg_Resolution	IV=False	Ord=6	G=VAR_INPUT	Com=Stepwise change in control. (FALSE = 1%, TRUE = 0.1%)
+++D=REAL	N=Out_Output	Ord=7	G=VAR_OUTPUT	Com=Output value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,25 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			CommStatus                                                                                                                                                                                                                                                                      &#xD;
+//	CREATOR:		Helgevold - William Veim                                                                                                                                                                                                                                                              &#xD;
+//                                                                                                                                                                                                                                                                                                                            &#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION			DATE				  SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0				2023-09-06		  William Veim			    Initial release&#xD;
+// 2.0.0				2025-03-11		Fredrik Bjerkenes			Rework&#xD;
+//	2.0.1				2025-04-29		Ruben Byman				Inverted and renamed CommFault&#xD;
+//===============================================================================================================================&#xD;
+//&#xD;
+//		Description:&#xD;
+//		Checks communication with the node based on IP and port connection&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+CASE PORT OF&#xD;
+	1://Port 1 connection&#xD;
+	HE_CommFault:=_EIP1_TargetNodeErr[IP];&#xD;
+&#xD;
+	2://Port 2 connection&#xD;
+	HE_CommFault:=_EIP2_TargetNodeErr[IP];&#xD;
+END_CASE;&#xD;
+</Text></StructuredTextModel>

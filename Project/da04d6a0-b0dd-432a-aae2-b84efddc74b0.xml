@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types6" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="IO_EH_Liquiline_AnCh" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Endress + Hauser Liquiline - Analog process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="33" OffsetType="User">
+      <DataType Name="Value" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Process Value" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Status" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Sensor Status" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EngUnit" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Process Value Engineering Unit" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="IO_EH_Liquiline_DiCh" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Endress + Hauser Liquiline - Discrete process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="32" OffsetType="User">
+      <DataType Name="Value" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Process Value" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Status" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Sensor Status" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

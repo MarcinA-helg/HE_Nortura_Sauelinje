@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_Fault	G=VAR	Com=Teller akkumulert tid
+++D=REAL	N=Sample	G=VAR	Com=Sammenligningsverdi som oppdateres når det ikke er feil
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT	Com=Overvåking er aktiv
+++D=REAL	N=Input	Ord=2	G=VAR_INPUT	Com=Analog input
+++D=REAL	N=MaxValue	Ord=3	G=VAR_INPUT	Com=Max value
+++D=REAL	N=AllowedDeviation	Ord=4	G=VAR_INPUT	Com=Tillatt % avvik
+++D=TIME	N=Delay	Ord=5	G=VAR_INPUT	Com=Tid feil må ligge inne før alarm
+++D=BOOL	N=Fault	Ord=6	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

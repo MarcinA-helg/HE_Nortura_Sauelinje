@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_VFD_Logic	N=Wrk_VFD_Logic	G=VAR
+++D=TIME	N=Wrk_Runtime	G=VAR
+++D=DINT	N=Wrk_Interval	G=VAR
+++D=BOOL	N=Wrk_Running	G=VAR
+++D=REAL	N=Wrk_ActualSpeed	G=VAR
+++D=REAL	N=Wrk_SpeedRef	G=VAR
+++D=REAL	N=Wrk_IntervalSec	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_VFDControl	N=Ext_VFD	Ord=2	G=VAR_IN_OUT	Com=Struktur for frekvensomformer
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT
+++D=BOOL	N=Inp_LOTO	IV=True	Ord=4	G=VAR_INPUT	Com=FALSE = Avslått/Feil
+++D=BOOL	N=Inp_Ready	R=1	IV=True	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Inp_Online	R=1	IV=True	Ord=6	G=VAR_INPUT
+++D=BOOL	N=Inp_Estop	R=1	IV=False	Ord=7	G=VAR_INPUT
+++D=REAL	N=Cfg_AccelerationTime	R=1	IV=3	Ord=8	G=VAR_INPUT	Com=(s)
+++D=REAL	N=Cfg_MaxSpeed	R=1	IV=50.0	Ord=9	G=VAR_INPUT	Com=Hz
+++D=BOOL	N=Inp_AutoRunFwd	Ord=10	G=VAR_INPUT
+++D=BOOL	N=Inp_Feil	Ord=11	G=VAR_INPUT
+++D=REAL	N=Inp_AutoSpeedRef	Ord=12	G=VAR_INPUT	Com=%
+++D=BOOL	N=Cfg_AlmSuppress_IfOff	Ord=13	G=VAR_INPUT	Com=Auto suppress alarm if off mode
+++D=BOOL	N=Inp_AlmSuppress	Ord=14	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=15	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_AvailableAuto	Ord=16	G=VAR_OUTPUT	Com=Frekvensomformer er tilgjengeling i Auto
+++D=BOOL	N=Sts_Interlock	Ord=17	G=VAR_OUTPUT	Com=Frekvensomformer er forriglet
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

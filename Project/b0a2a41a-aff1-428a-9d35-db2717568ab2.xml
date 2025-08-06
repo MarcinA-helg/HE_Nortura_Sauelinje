@@ -1,0 +1,29 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Got1s	G=VAR
+++D=REAL	N=PulsesLastSecond	G=VAR
+++D=ULINT	N=LastPulseCount	R=1	G=VAR
+++D=REAL	N=PulsesLastMinute	G=VAR
+++D=USINT	N=i	G=VAR
+++D=ARRAY[0..59] OF REAL	N=PulsesAtSecond	R=1	G=VAR
+++D=REAL	N=PulsesPrHour	G=VAR
+++D=ULINT	N=Pulses	R=1	G=VAR
+++D=ULINT	N=BatchPulseStart	G=VAR
+++D=LINT	N=TimeBetweenPulses	G=VAR
+++D=LINT	N=Tasktime	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=OEN\nGeneral\sPulseMeter	N=Meter	Ord=2	G=VAR_IN_OUT	Com=Pulse Meter Structure
+++D=BOOL	N=PulseInput	E=UpDirection	Ord=3	G=VAR_INPUT	Com=Pulse input for Meter
+++D=REAL	N=PulsesPrUnit	Ord=4	G=VAR_INPUT	Com=Number of pulses per Meter Units
+++D=BOOL	N=PresetTotal	Ord=5	G=VAR_INPUT	Com=Preset new value to Total
+++D=REAL	N=PresetValue	Ord=6	G=VAR_INPUT	Com=Value for Preset
+++D=BOOL	N=ResetBatch	Ord=7	G=VAR_INPUT
+++D=REAL	N=UnitsPrSec	Ord=8	G=VAR_OUTPUT	Com=Units/sec$tBased on number of pulses last minute
+++D=REAL	N=UnitsLastMin	Ord=9	G=VAR_OUTPUT	Com=Units last minute$tBased on number of pulses last minute
+++D=REAL	N=UnitsPrHour	Ord=10	G=VAR_OUTPUT
+++D=REAL	N=UnitsTotal	Ord=11	G=VAR_OUTPUT	Com=Units Total
+++D=REAL	N=UnitsBatch	Ord=12	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

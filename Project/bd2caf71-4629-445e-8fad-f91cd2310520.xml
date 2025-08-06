@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="HE_RT100_States" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Initialize" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorCloseSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Idle" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="16" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSOpenSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="32" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSClearBuffer" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="33" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSVerifySocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="34" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSBuildRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="35" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSSendRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="36" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSRecieveResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="37" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSParseResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="38" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSCloseSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="39" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSPasrseMessage" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="40" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSOpenSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="48" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSClearBuffer" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="49" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSVerifySocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="50" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSBuildRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="51" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSSendRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="52" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSRecieveResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="53" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSParseResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="54" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMSCloseSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="55" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSOpenSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="64" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSClearBuffer" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="65" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSVerifySocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="66" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSBuildRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="67" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSSendRequest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="68" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSRecieveResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="69" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSParseResponse" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="70" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMSCloseSocket" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="71" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

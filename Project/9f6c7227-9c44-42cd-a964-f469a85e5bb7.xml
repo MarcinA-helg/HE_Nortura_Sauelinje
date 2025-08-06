@@ -1,0 +1,16 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:				HE_CalcDewPoint&#xD;
+//	CREATOR:			Helgevold - Jan Magne Dybvik&#xD;
+//&#xD;
+// DESCRTIPTION: 	Calculate DewPoint from Relative Air Humidity and Temperature&#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	 VERSION			DATE				SIGN						DESCRIPTION&#xD;
+//	 1.0					2025-02-17		Jan Magne Dybvik	Initial release&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+a := LN(In:= LREAL_TO_REAL(Humidity / REAL#100.0));&#xD;
+b :=  (17.62*Temperature)/(243.12+Temperature);&#xD;
+&#xD;
+HE_CalcDewPoint := (243.12 * (a + b)) / (17.62 - (a + b));</Text></StructuredTextModel>

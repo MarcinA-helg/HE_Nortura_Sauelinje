@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=AccumulationTimer	N=TotalTimer	G=VAR
+++D=TIME	N=TotalTime	R=1	Ord=0	G=VAR
+++D=LINT	N=TotalSeconds	R=1	Ord=6	G=VAR
+++D=LINT	N=RetainTime	R=1	G=VAR
+++D=LINT	N=ModTotalSeconds	G=VAR
+++D=BOOL	N=Q	G=VAR
+++D=BOOL	N=LastActive	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT	Com=Connect
+++D=BOOL	N=Active	R=1	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=3	G=VAR_INPUT
+++D=UDINT	N=Hours	R=1	Ord=4	G=VAR_OUTPUT
+++D=UINT	N=Minutes	R=1	Ord=5	G=VAR_OUTPUT
+++D=UINT	N=Seconds	R=1	Ord=6	G=VAR_OUTPUT
+++D=LINT	N=ActiveCounter	R=1	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Sample	G=VAR	Com=Sampler når pådraget oppdateres
+++D=REAL	N=FS_abs	G=VAR	Com=Absoluttverdi av full skala
+++D=REAL	N=FS	G=VAR	Com=Full skala
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=REAL	N=InputValue	Ord=2	G=VAR_INPUT	Com=Input value
+++D=REAL	N=PercentValue	Ord=3	G=VAR_INPUT	Com=Deadband percent from scale (MaxValue-MinValue) (%)
+++D=REAL	N=MinValue	Ord=4	G=VAR_INPUT	Com=Minimum value
+++D=REAL	N=MaxValue	Ord=5	G=VAR_INPUT	Com=Maximum value
+++D=REAL	N=OutputValue	Ord=6	G=VAR_OUTPUT	Com=Output value deadband
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

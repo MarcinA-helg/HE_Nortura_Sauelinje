@@ -1,0 +1,13 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:			HE_DigExdToDigSimp&#xD;
+//	CREATOR:		Helgevold - William Veim&#xD;
+// &#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	VERSION			DATE					SIGN							DESCRIPTION&#xD;
+//	1.0.0					2025-03-14			William Veim				Initial release&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+DigitalValueSimplified.Process_Desc:=DigitalValue.EXT_General.Process_Desc;&#xD;
+DigitalValueSimplified.Process_TAG:=DigitalValue.EXT_General.Process_TAG;&#xD;
+DigitalValueSimplified.ProcessValue:=DigitalValue.EXT_Operator.ProcessValue;</Text></StructuredTextModel>

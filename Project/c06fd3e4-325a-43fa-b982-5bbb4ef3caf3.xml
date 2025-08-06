@@ -1,0 +1,14 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			Str2Minute                                                                                                                                                                                                                                                                            &#xD;
+//	CREATOR:		Helgevold - Daniel Årvik                                                                                                                                                                                                                                                              &#xD;
+//                                                                                                                                                                                                                                                                                                                            &#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION		DATE				SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0.0				2023-05-25		Daniel Årvik 			Initial release                                                                                                                                                                                                                                                                                                                                                                                                                              &#xD;
+//===============================================================================================================================&#xD;
+&#xD;
+Hour := STRING_TO_UINT(LEFT(Inn,2));&#xD;
+Minute := STRING_TO_UINT(Right(Inn,2));&#xD;
+&#xD;
+HE_Str2Minute := Hour*60 + Minute;</Text></StructuredTextModel>

@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_Fault	G=VAR
+++D=TON	N=TON_ResetFault	G=VAR
+++D=BOOL	N=Wrk_Fault	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=2	G=VAR_INPUT	Com=Manual reset of error
+++D=BOOL	N=Output	Ord=3	G=VAR_INPUT	Com=Actual output
+++D=USINT	N=Feedback_Type	Ord=4	G=VAR_INPUT	Com=0= Not in use (loopback), 1= General feedback, 2= Open and closed feedback
+++D=BOOL	N=Feedback_General	Ord=5	G=VAR_INPUT	Com=General Feedback signal (FALSE = Closed, TRUE = Open) (Type = 1)
+++D=BOOL	N=Feedback_Open	Ord=6	G=VAR_INPUT	Com=TRUE = Open (Type = 2)
+++D=BOOL	N=Feedback_Closed	Ord=7	G=VAR_INPUT	Com=TRUE = Closed (Type = 2)
+++D=TIME	N=Delay	Ord=8	G=VAR_INPUT	Com=Fault delay
+++D=BOOL	N=Fault	Ord=9	G=VAR_OUTPUT	Com=Fault
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

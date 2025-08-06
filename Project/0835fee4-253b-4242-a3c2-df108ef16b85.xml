@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=UINT(0..5)	N=Select	Ord=2	G=VAR_INPUT	Com=Set select to 1..5. Select=0 outputs 0.
+++D=REAL	N=Value1	Ord=3	G=VAR_INPUT	Com=Output when Select=1
+++D=REAL	N=Value2	Ord=4	G=VAR_INPUT	Com=Output when Select=2
+++D=REAL	N=Value3	Ord=5	G=VAR_INPUT	Com=Output when Select=3
+++D=REAL	N=Value4	Ord=6	G=VAR_INPUT	Com=Output when Select=4
+++D=REAL	N=Value5	Ord=7	G=VAR_INPUT	Com=Output when Select=5
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=REAL	N=ValueSelect	G=RETURN

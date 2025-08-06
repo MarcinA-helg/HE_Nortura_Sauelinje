@@ -1,0 +1,7 @@
+<StructuredTextModel i:type="a:string" xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:a="http://www.w3.org/2001/XMLSchema" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">&lt;?xml version="1.0" encoding="utf-16"?&gt;&#xD;
+&lt;EncryptedFile&gt;&#xD;
+  &lt;EncryptionLock&gt;EMKB5A703/527M8DISN-------------&lt;/EncryptionLock&gt;&#xD;
+  &lt;Unicode&gt;Utf8&lt;/Unicode&gt;&#xD;
+  &lt;Body&gt;QRoNacbESlaGKGCIVl6o0cPLxVNgtsOuOrT1RC4G9i7udgCUPY02GL4hKwFxIx6MQMoiqiVhzTKKO4u14gQImzcz/kEYVGAs6AWpPhfTRPWMoXNKlDFOZZxZOybDgIrLU4u/BiJ5cfGGlVwVfBisi4lyFXGq0tw+fNHuyfJgGZizQybgmFtK87RHPWFo+J/4dOrNWlsiuD5JPMYeVTJ6lkCzSCbYIst1XGqNnZc2d805HKQhXoanPlOW3UkelRyNaPewPXsI5SudyrSculVCUttYn+jdIS3PWCEoVhb+Ha9nKjkAzvqNuffAgXyzs3Cgyu2cibfo1Hhkwa3rCirM9L2C1fYqmCysH/guRFRkODT2oxzj/jjoHv5C349y5RjkuVmtkgP7MAXD05I3JI/uCdFkXrJ9u1eg7Q/PSzyvZKZJb2xbEVbYbDJJVy3Sm1qofkxpV92d02K7Qmr84rkCLl3eBAGkNOgFVU0XAs2isABc/YV2KcdpO/btbWviHnHNgMNsZ3ulJrtfA15f4N5n4PZR7qVDWgVKQ9TtqsxF5nqqeU2gjgJe5T+3HscejwzDaXPTAA3SahCKewtN61Wbo3xQnmTLgQkF0+N729CKvptWHT3gsYzkjO0MwtCudgmnOI97kjhoenUfUcYyp3BBq2leyAxo9YgM3QgZYZDi+Xg=&lt;/Body&gt;&#xD;
+  &lt;Checksum&gt;620131701&lt;/Checksum&gt;&#xD;
+&lt;/EncryptedFile&gt;</StructuredTextModel>

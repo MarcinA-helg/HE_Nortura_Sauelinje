@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OEN_Communication</Name>
+              <NameSpace></NameSpace>
+              <Version>1.06.00</Version>
+              <Revision>1</Revision>
+              <LibraryId>58cb989a-8241-4513-9c3d-f0f6444479bf</LibraryId>
+              <Author>OEE-N Bjarte Myklebust/Kjell Baardsgaard</Author>
+              <Company>Omron Electronics Norway AS</Company>
+              <DateCreated>2012-05-08T13:04:04.1180337+02:00</DateCreated>
+              <DateModified>2025-04-10T13:32:52.1810044+02:00</DateModified>
+              <Comment>NX/NJ FW 1.18 and up</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OEN\Serial\CIF\GetByteCount</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatCmp_Read_Write</PublicName>
+                <PublicName>OEN\EIP\OS32C_DM</PublicName>
+                <PublicName>OEN\EIP\EIP_Control</PublicName>
+                <PublicName>OEN\Serial\DevicePort_Setup</PublicName>
+                <PublicName>OEN\Serial\NMEA</PublicName>
+                <PublicName>OEN\ECat\DummyOENC</PublicName>
+                <PublicName>OEN\DB\DB_ErrorCodes</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatRead</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatWrite</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_SendSMS</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_RcvSMS</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_ClearModemBuffer</PublicName>
+                <PublicName>OEN\Modbus\NX_ModbusRTU_Master</PublicName>
+                <PublicName>OEN\Modbus\NX_ModbusRTU_Slave</PublicName>
+                <PublicName>OEN\Modbus\ModbusTCP_Client</PublicName>
+                <PublicName>OEN\Modbus\ModbusTCP_Server</PublicName>
+                <PublicName>OEN\Eth\TCP\TCP_Server</PublicName>
+                <PublicName>OEN\Serial\SCU\SCU_PortSetup</PublicName>
+                <PublicName>OEN\ECat\EC_Control</PublicName>
+                <PublicName>OEN\Eth\TCP_Messaging</PublicName>
+                <PublicName>OEN\Eth\TCP_Connect</PublicName>
+                <PublicName>OEN\EIP\EIP_PortReset</PublicName>
+                <PublicName>OEN\nECat\nSDO\sSDOList</PublicName>
+                <PublicName>OEN\nECat\nSDO\sNodeDat</PublicName>
+                <PublicName>OEN\nEIP\sOS32C_In_EIP</PublicName>
+                <PublicName>OEN\nEIP\sOS32C_Out_EIP</PublicName>
+                <PublicName>OEN\nEIP\sNetw_Status</PublicName>
+                <PublicName>OEN\nEIP\sEIP_Errors</PublicName>
+                <PublicName>OEN\nEIP\sEIP_Status</PublicName>
+                <PublicName>OEN\sNetw_Command</PublicName>
+                <PublicName>OEN\nEIP\sEIP_Network</PublicName>
+                <PublicName>OEN\nSerial\nNMEA\sGGA</PublicName>
+                <PublicName>OEN\nSerial\nNMEA\sGLL</PublicName>
+                <PublicName>OEN\nSerial\nNMEA\sWPL</PublicName>
+                <PublicName>OEN\nSerial\nNMEA\sRMC</PublicName>
+                <PublicName>OEN\nSerial\nNMEA\sNMEA</PublicName>
+                <PublicName>OEN\nECat\sEC_Control</PublicName>
+                <PublicName>OEN\nECat\sEC_ControlMonitor</PublicName>
+                <PublicName>OEN\nECAT\sErrorStatusBits</PublicName>
+                <PublicName>OEN\nECAT\sNetw_Status</PublicName>
+                <PublicName>OEN\nECAT\sEC_Status</PublicName>
+                <PublicName>OEN\nECat\sEC_Network</PublicName>
+                <PublicName>OEN\Modbus\eFun</PublicName>
+                <PublicName>OEN\Modbus\sAddressReq</PublicName>
+                <PublicName>OEN\Modbus\sModbusReq</PublicName>
+                <PublicName>OEN\Modbus\eRegisterType</PublicName>
+                <PublicName>OEN\Modbus\eAccess</PublicName>
+                <PublicName>OEN\Modbus\sAddress</PublicName>
+                <PublicName>OEN\Modbus\sModbusAccess</PublicName>
+                <PublicName>OEN\nEth\sSetup</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>OEN\Modbus\ModbusErrorIDEx</InternalName>
+                <InternalName>OEN\nECat\sNetw_Status</InternalName>
+                <InternalName>OEN\nECat\sErrorStatusBits</InternalName>
+                <InternalName>OEN\nECat\nSDO\sSdoList</InternalName>
+                <InternalName>OEN\nEth\sTCPMessaging</InternalName>
+                <InternalName>OEN\nCommunication\sFBSignals</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-1040DT</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>a51d4973-7d2f-42e5-b95a-78e2c9fe090b</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\ruben.byman\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_Communication\OEN_Communication1.06.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_Communication\OEN_Communication1.06.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\ruben.byman\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_Communication\OEN_Communication1.06.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.62.0.64009</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OEN_BaseBlocks</Name>
+              <NameSpace></NameSpace>
+              <Version>5.02.09</Version>
+              <Revision>1</Revision>
+              <LibraryId>a1c9da45-91e4-4caf-bea6-5c8f214b4b22</LibraryId>
+              <Author>Kjell Baardsgaard</Author>
+              <Company>Omron Electronics Norway AS</Company>
+              <DateCreated>2018-08-17T15:29:14.2858973+02:00</DateCreated>
+              <DateModified>2025-02-28T09:52:41.6088714+01:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OEN\Analog\AnaScaling</PublicName>
+                <PublicName>OEN\General\ASCIItoHEX</PublicName>
+                <PublicName>OEN\General\BinSelect</PublicName>
+                <PublicName>OEN\General\BitDataMonitor</PublicName>
+                <PublicName>OEN\General\DateAndTime</PublicName>
+                <PublicName>OEN\General\GroupAlarms</PublicName>
+                <PublicName>OEN\General\Swap4Bytes</PublicName>
+                <PublicName>OEN\Analog\JoyStick_Control</PublicName>
+                <PublicName>OEN\General\Loop</PublicName>
+                <PublicName>OEN\General\MovingHolidays</PublicName>
+                <PublicName>OEN\ECat\NX_ECC_Status</PublicName>
+                <PublicName>OEN\General\SunsetAndSunrise</PublicName>
+                <PublicName>OEN\General\Table_Logging10Col</PublicName>
+                <PublicName>OEN\Digital\Tx4bitTo4bit</PublicName>
+                <PublicName>OEN\Digital\Tx6bitTo6bit</PublicName>
+                <PublicName>OEN\Digital\Tx8bitTo8bit</PublicName>
+                <PublicName>OEN\Digital\Tx8bitToByte</PublicName>
+                <PublicName>OEN\Digital\Tx16bitToWORD</PublicName>
+                <PublicName>OEN\Digital\Tx32bitToDWORD</PublicName>
+                <PublicName>OEN\Digital\TxByteTo8bit</PublicName>
+                <PublicName>OEN\Digital\TxWORDTo16bit</PublicName>
+                <PublicName>OEN\Digital\TxDWORDTo32bit</PublicName>
+                <PublicName>OEN\General\ValueSelect</PublicName>
+                <PublicName>OEN\Analog\ZoneCheck</PublicName>
+                <PublicName>OEN\Digital\BOOL_To_UINT</PublicName>
+                <PublicName>OEN\Digital\UINT_To_BOOL</PublicName>
+                <PublicName>OEN\Analog\LowPassFilter_IIR</PublicName>
+                <PublicName>OEN\USGallonsToLiters</PublicName>
+                <PublicName>OEN\InchTomm</PublicName>
+                <PublicName>OEN\OunceToGrams</PublicName>
+                <PublicName>OEN\psiTobar</PublicName>
+                <PublicName>OEN\FahrenheitToCelsius</PublicName>
+                <PublicName>OEN\TimeToTIME</PublicName>
+                <PublicName>OEN\General\Tank_Volume</PublicName>
+                <PublicName>OEN\General\WordsToDINT</PublicName>
+                <PublicName>OEN\General\WordsTo</PublicName>
+                <PublicName>OEN\General\RealTo</PublicName>
+                <PublicName>OEN\General\Alarms</PublicName>
+                <PublicName>OEN\Digital\BitControl</PublicName>
+                <PublicName>OEN\General\CountDownTimer</PublicName>
+                <PublicName>DST_TimeChange</PublicName>
+                <PublicName>OEN\General\CPU_System</PublicName>
+                <PublicName>OEN\General\FIFOStack</PublicName>
+                <PublicName>OEN\General\GroupTrigger</PublicName>
+                <PublicName>OEN\General\HasChanged</PublicName>
+                <PublicName>OEN\General\MeanMaxMin</PublicName>
+                <PublicName>OEN\Unit\NX_RS1201</PublicName>
+                <PublicName>OEN\Unit\PRM21_Control</PublicName>
+                <PublicName>OEN\General\PWM</PublicName>
+                <PublicName>OEN\General\PulseConverter</PublicName>
+                <PublicName>OEN\General\PulseGenerator</PublicName>
+                <PublicName>OEN\General\SD_Logging10Col</PublicName>
+                <PublicName>OEN\General\Sequencer</PublicName>
+                <PublicName>OEN\General\Stack_Integers</PublicName>
+                <PublicName>OEN\General\SummationCounter</PublicName>
+                <PublicName>OEN\General\TimeDateSwitch</PublicName>
+                <PublicName>OEN\General\Stack_Reals</PublicName>
+                <PublicName>OEN\Eth\Read_IPAddress</PublicName>
+                <PublicName>OEN\nGeneral\sAlarmLimits</PublicName>
+                <PublicName>OEN\nGeneral\sAnalog</PublicName>
+                <PublicName>OEN\eNX_Atype</PublicName>
+                <PublicName>OEN\nGeneral\sAlarms</PublicName>
+                <PublicName>OEN\eSwap</PublicName>
+                <PublicName>OEN\nGeneral\sJoystick</PublicName>
+                <PublicName>OEN\nGeneral\sMovingHolidaysDT</PublicName>
+                <PublicName>OEN\nGeneral\sNX_Status</PublicName>
+                <PublicName>OEN\eTank</PublicName>
+                <PublicName>OEN\nGeneral\sAlarmWorkData</PublicName>
+                <PublicName>OEN\nGeneral\sSDCard</PublicName>
+                <PublicName>OEN\nGeneral\eCPUModelName</PublicName>
+                <PublicName>OEN\nGeneral\sCPUSystem</PublicName>
+                <PublicName>OEN\nUnit\sDetectionStatus</PublicName>
+                <PublicName>OEN\nUnit\sExecutingStatus</PublicName>
+                <PublicName>OEN\nUnit\sOperationCommand</PublicName>
+                <PublicName>OEN\nUnit\sRS1201</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sSwCmd</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sMstrErrSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sMstrSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sUnitError</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sUnitSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sSLvSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sGlobCtlCmd</PublicName>
+                <PublicName>OEN\nUnit\sPRM21</PublicName>
+                <PublicName>OEN\nGeneral\sPulseMeter</PublicName>
+                <PublicName>OEN\nGeneral\sTimeDateSwitch</PublicName>
+                <PublicName>OEN\nGeneral\sTimeDateChannel</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>DST_March</InternalName>
+                <InternalName>DST_October</InternalName>
+                <InternalName>OEN\Analog\Hysteresis</InternalName>
+                <InternalName>OEN\Analog\Ramp</InternalName>
+                <InternalName>OEN\General\xAlarms_old</InternalName>
+                <InternalName>ERROR_DATA</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-1040DT</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>c6a0c087-ec14-4f73-98ce-d156e65e963c</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_BaseBlocks\OEN_BaseBlocks 5.02.09.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_BaseBlocks\OEN_BaseBlocks 5.02.09.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_BaseBlocks\OEN_BaseBlocks 5.02.09.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.61.0.64007</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OEN_DataTypes</Name>
+              <NameSpace></NameSpace>
+              <Version>5.02.09</Version>
+              <Revision>1</Revision>
+              <LibraryId>7eb50ee7-c097-4978-8573-9a5673f7b63d</LibraryId>
+              <Author>Kjell Baardsgaard</Author>
+              <Company>Omron Electronics Norway AS</Company>
+              <DateCreated>2018-08-17T15:29:14.2858973+02:00</DateCreated>
+              <DateModified>2025-04-02T13:26:16.6354607+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>DummyDataTypes</PublicName>
+                <PublicName>OEN\uWORD</PublicName>
+                <PublicName>OEN\uBYTE</PublicName>
+                <PublicName>OEN\uDWORD</PublicName>
+                <PublicName>OEN\uLWORD</PublicName>
+                <PublicName>OEN\eNX_Atype</PublicName>
+                <PublicName>OEN\eSwap</PublicName>
+                <PublicName>OEN\eTank</PublicName>
+                <PublicName>OEN\sFBSignals</PublicName>
+                <PublicName>OEN\nEIP\sNX_EICStatus</PublicName>
+                <PublicName>OEN\nEIP\sNX_DA2x0x</PublicName>
+                <PublicName>OEN\nEIP\sNX_AD260x</PublicName>
+                <PublicName>OEN\nEIP\sNX_TS2xxx</PublicName>
+                <PublicName>OEN\nEIP\sNX_TS3xxx</PublicName>
+                <PublicName>OEN\nEIP\sNX_EC01xxStatus</PublicName>
+                <PublicName>OEN\nEIP\sNX_EC01xx</PublicName>
+                <PublicName>OEN\nEIP\sNX_EC01xxCommand</PublicName>
+                <PublicName>OEN\nGeneral\sReset</PublicName>
+                <PublicName>OEN\nGeneral\sAnalog</PublicName>
+                <PublicName>OEN\nGeneral\sDByte</PublicName>
+                <PublicName>OEN\nGeneral\sPulseMeter</PublicName>
+                <PublicName>OEN\nGeneral\sJoystick</PublicName>
+                <PublicName>OEN\nGeneral\sAlarms</PublicName>
+                <PublicName>OEN\nGeneral\sAlarmWorkData</PublicName>
+                <PublicName>OEN\nGeneral\sAlarmLimits</PublicName>
+                <PublicName>OEN\nGeneral\sPIDAT</PublicName>
+                <PublicName>OEN\nGeneral\sIAG_PIDAT</PublicName>
+                <PublicName>OEN\nGeneral\sScaling_IAG_PIDAT</PublicName>
+                <PublicName>OEN\nGeneral\sFBOutputs</PublicName>
+                <PublicName>OEN\nGeneral\sNX_Status</PublicName>
+                <PublicName>OEN\nGeneral\sError</PublicName>
+                <PublicName>OEN\nGeneral\sCPUSystem</PublicName>
+                <PublicName>OEN\nGeneral\sSDCard</PublicName>
+                <PublicName>OEN\nGeneral\eCPUModelName</PublicName>
+                <PublicName>OEN\nGeneral\sTimeDateSwitch</PublicName>
+                <PublicName>OEN\nGeneral\sTimeDateChannel</PublicName>
+                <PublicName>OEN\nGeneral\sMovingHolidaysDT</PublicName>
+                <PublicName>OEN\nUnit\sRS1201</PublicName>
+                <PublicName>OEN\nUnit\sPRM21</PublicName>
+                <PublicName>OEN\nUnit\sDetectionStatus</PublicName>
+                <PublicName>OEN\nUnit\sExecutingStatus</PublicName>
+                <PublicName>OEN\nUnit\sOperationCommand</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sSwCmd</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sMstrSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sUnitError</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sUnitSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sMstrErrSta</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sGlobCtlCmd</PublicName>
+                <PublicName>OEN\nUnit\nPRM\sSlvSta</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-9024DT1</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>c6a0c087-ec14-4f73-98ce-d156e65e963c</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\EXTERNAL\OEN_DataTypes\OEN_DataTypes 5.02.09.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.62.0.64009</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>HE_Library_DataStruct</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>cc5278a7-6c2f-4962-aae4-1ef69c5bbee5</LibraryId>
+              <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+              <Company>HELGEVOLD ELEKTRO</Company>
+              <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+              <DateModified>2025-07-16T13:33:04.42395+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>HE_AInModule</PublicName>
+                <PublicName>HE_AOutModule</PublicName>
+                <PublicName>Control_ST\ST_Interlock</PublicName>
+                <PublicName>Control_ST\ST_VFDControl</PublicName>
+                <PublicName>Control_ST\WORD2BYTE2BIT</PublicName>
+                <PublicName>Control_ST\BYTE2BIT</PublicName>
+                <PublicName>Control_ST\DWORD2WORD2BYTE2BIT</PublicName>
+                <PublicName>Control_ST\ST_OxygenControl</PublicName>
+                <PublicName>Control_ST\ST_LightControl</PublicName>
+                <PublicName>Control_ST\ST_MultiControl</PublicName>
+                <PublicName>Control_ST\ST_DigitalControl</PublicName>
+                <PublicName>Control_ST\ST_AnalogControl</PublicName>
+                <PublicName>Control_ST\ST_AnalogValue</PublicName>
+                <PublicName>Control_ST\ST_DigitalValue</PublicName>
+                <PublicName>Control_ST\ST_FeedControl</PublicName>
+                <PublicName>Control_ST\ST_FeedControl_Common</PublicName>
+                <PublicName>Control_ST\ST_SMS_ShiftTeam</PublicName>
+                <PublicName>Control_ST\ST_SMS_Contacts</PublicName>
+                <PublicName>Control_ST\ST_SMS_Settings</PublicName>
+                <PublicName>Control_ST\ST_AccumulatedData</PublicName>
+                <PublicName>Control_ST\ENUM_LightControl</PublicName>
+                <PublicName>Control_ST\ENUM_Mode</PublicName>
+                <PublicName>Control_ST\ST_ControllerStat</PublicName>
+                <PublicName>Control_ST\LWORD2DWORD2WORD2BIT</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_VFDControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_DigitalValue</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_AnalogValue</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_OxygenControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_LightControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_AlarmGeneral</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_AlarmAnalog</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_MultiControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_DigitalControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_AnalogControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_Interlock</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedControl_Common</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedControl</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution_Common</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_FeedDistribution_Container</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_Settings</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_ShiftTeam</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EXT_SMS_Contacts</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_VFDControl</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_LightControl</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_AnalogControl</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_DigitalControl</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_MultiControl</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_SNMP_GetTelegram</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_Interlock_Triggers</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_SMS_Settings</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_SMS_IncommingBuffer</PublicName>
+                <PublicName>Control_ST\INT_ST\ENUM_SNMP_Get_States</PublicName>
+                <PublicName>Control_ST\INT_ST\ENUM_SNMP_GetAcyclic_States</PublicName>
+                <PublicName>Control_ST\INT_ST\INT_Alarm</PublicName>
+                <PublicName>IO_ST\WORD2BYTE2BIT</PublicName>
+                <PublicName>IO_ST\BYTE2BIT</PublicName>
+                <PublicName>IO_ST\DWORD2WORD2BYTE2BIT</PublicName>
+                <PublicName>IO_ST\IO_ExplicitMessageTelegram</PublicName>
+                <PublicName>IO_ST\IO_VFD_Vacon100x_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_Vacon100x_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_FC202_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_FC202_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_ATV6xx_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_ATV6xx_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_ATV320_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_ATV320_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_CIM500_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_CIM500_Out</PublicName>
+                <PublicName>IO_ST\IO_Dali_HD67840_In</PublicName>
+                <PublicName>IO_ST\IO_Dali_HD67840_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_WEG_CFW900_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_WEG_CFW900_Out</PublicName>
+                <PublicName>IO_ST\IO_VFD_WEG_CFW500_In</PublicName>
+                <PublicName>IO_ST\IO_VFD_WEG_CFW500_Out</PublicName>
+                <PublicName>IO_ST\IO_EH_Liquiline</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_OxygenControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_LightControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_MultiControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_VFDControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_AnalogControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_DigialControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_DigitalValue</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_AnalogValue</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_ControllerStat</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_AlarmGeneral</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_FeedControl</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_AlarmAnalog</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_Interlock</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_AccumulatedData</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EXT_SMS_Settings</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_VFDControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_OxygenControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_DigitalControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_FeedControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_AnalogControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_AnalogValue</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_DigitalValue</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_AccumulatedData</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_MultiControl</PublicName>
+                <PublicName>Control_ST\EXT_STATS\EXT_SMS</PublicName>
+                <PublicName>Control_ST\EXT_ALARM\EXT_AlarmGeneral</PublicName>
+                <PublicName>Control_ST\EXT_ALARM\EXT_AlarmAnalog</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_MultiControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_VFDControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_OxygenControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_LightControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_FeedControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_AnalogControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_DigitalControl</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_DigitalValue</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_AnalogValue</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_AlarmGeneral</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_SMS_Settings</PublicName>
+                <PublicName>Control_ST\EXT_GENERAL\EXT_ControllerStat</PublicName>
+                <PublicName>IO_ST\EMBEDDED\IO_EH_Liquiline_AnCh</PublicName>
+                <PublicName>IO_ST\EMBEDDED\IO_EH_Liquiline_DiCh</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EMBEDDED\Interlock</PublicName>
+                <PublicName>Control_ST\EXT_ENGINEERING\EMBEDDED\StateMode</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\SP_Change</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\Interlock</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified</PublicName>
+                <PublicName>Control_ST\EXT_OPERATOR\EMBEDDED\DigitalValue_Simplified</PublicName>
+                <PublicName>Control_ST\INT_ST\EMBEDDED\SMS_IncommingBuffer</PublicName>
+                <PublicName>Control_ST\INT_ST\EMBEDDED\Interlock_Triggers</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX502-1300</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>66</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.66</DisplayVersion>
+                <Packages>
+                  <Package Name="DBCon" Version="2.4" />
+                  <Package Name="Motion" Version="1.66" />
+                  <Package Name="OPCUA" Version="1.66" />
+                  <Package Name="SecureSocket" Version="1.66" />
+                  <Package Name="jre8" Version="8.3" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibraryFilePath>
+              <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_DataStruct.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.63.0.64007</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>HE_Library_BaseBlocks</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>869af25d-905a-45a9-99d4-de60ab8eca25</LibraryId>
+              <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+              <Company>HELGEVOLD ELEKTRO</Company>
+              <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+              <DateModified>2025-07-23T10:45:01.0085285+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>HE_Str2TOD</PublicName>
+                <PublicName>HE_INT2TOD</PublicName>
+                <PublicName>HE_Str2TIME</PublicName>
+                <PublicName>HE_INT2TIME</PublicName>
+                <PublicName>HE_Str2Minute</PublicName>
+                <PublicName>HE_INT2Minute</PublicName>
+                <PublicName>HE_StrAdd</PublicName>
+                <PublicName>HE_INTAdd</PublicName>
+                <PublicName>HE_Sec2Str</PublicName>
+                <PublicName>HE_StrConcatAdv</PublicName>
+                <PublicName>HE_StrReplace</PublicName>
+                <PublicName>HE_ABSValue</PublicName>
+                <PublicName>HE_SNMP_EncodeInteger</PublicName>
+                <PublicName>HE_SNMP_EncodeNull</PublicName>
+                <PublicName>HE_SNMP_EncodeString</PublicName>
+                <PublicName>HE_SNMP_EncodeOID</PublicName>
+                <PublicName>HE_SNMP_Decode</PublicName>
+                <PublicName>HE_AnaExdToAnaSimp</PublicName>
+                <PublicName>HE_DigExsToDigSimp</PublicName>
+                <PublicName>HE_PVSelect</PublicName>
+                <PublicName>HE_StateControl</PublicName>
+                <PublicName>HE_Liquiline_AnUnit</PublicName>
+                <PublicName>HE_CIM500_Last_Fault</PublicName>
+                <PublicName>HE_WEG_Drive_State</PublicName>
+                <PublicName>HE_WEG_Drive_Fault</PublicName>
+                <PublicName>HE_WEG_Drive_Alarms</PublicName>
+                <PublicName>HE_FC202_Drive_State</PublicName>
+                <PublicName>HE_FC202_Drive_Fault</PublicName>
+                <PublicName>HE_100F_Drive_State</PublicName>
+                <PublicName>HE_100F_Drive_Fault</PublicName>
+                <PublicName>HE_ATV_Drive_State</PublicName>
+                <PublicName>HE_ATV_Drive_Fault</PublicName>
+                <PublicName>HE_RT100BuildRequest</PublicName>
+                <PublicName>HE_RT100SendSMSCmd</PublicName>
+                <PublicName>HE_RT100ParseSMS</PublicName>
+                <PublicName>HE_RT100ParseIfaces</PublicName>
+                <PublicName>HE_String_TO_Real</PublicName>
+                <PublicName>HE_REAL2STRING</PublicName>
+                <PublicName>HE_PercentEncoding</PublicName>
+                <PublicName>HE_AIn_Module</PublicName>
+                <PublicName>HE_AOut_Module</PublicName>
+                <PublicName>HE_VFD_Logic</PublicName>
+                <PublicName>HE_AnalogValue_Logic</PublicName>
+                <PublicName>HE_DigitalValue_Logic</PublicName>
+                <PublicName>HE_Ramp_Gain</PublicName>
+                <PublicName>HE_EWMA</PublicName>
+                <PublicName>HE_RateOfChange</PublicName>
+                <PublicName>HE_TimeSync</PublicName>
+                <PublicName>HE_DiffCheck</PublicName>
+                <PublicName>HE_Deadband</PublicName>
+                <PublicName>HE_DigitalFault</PublicName>
+                <PublicName>HE_AnalogFault</PublicName>
+                <PublicName>HE_Average</PublicName>
+                <PublicName>HE_Statistics</PublicName>
+                <PublicName>HE_PID</PublicName>
+                <PublicName>HE_Alternation</PublicName>
+                <PublicName>HE_TaskTimeMonitor</PublicName>
+                <PublicName>HE_SD_Backup</PublicName>
+                <PublicName>HE_AlarmGeneral</PublicName>
+                <PublicName>HE_AlarmAnalog</PublicName>
+                <PublicName>HE_RT100SMS</PublicName>
+                <PublicName>HE_RT100Status</PublicName>
+                <PublicName>HE_RT100_States</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX502-1300</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>66</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.66</DisplayVersion>
+                <Packages>
+                  <Package Name="DBCon" Version="2.4" />
+                  <Package Name="Motion" Version="1.66" />
+                  <Package Name="OPCUA" Version="1.66" />
+                  <Package Name="SecureSocket" Version="1.66" />
+                  <Package Name="jre8" Version="8.3" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\Base Library\HE_Library_BaseBlocks.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.60.0.64010</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>HE_Library</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.0</Version>
+            <Revision>1</Revision>
+            <LibraryId>f350eebb-6226-41eb-9fc6-c38160600bad</LibraryId>
+            <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+            <Company>HELGEVOLD ELEKTRO</Company>
+            <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+            <DateModified>2025-07-24T08:46:01.4229342+02:00</DateModified>
+            <Comment></Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames>
+              <PublicName>HE_Volume_Cube</PublicName>
+              <PublicName>HE_Difference</PublicName>
+              <PublicName>HE_CalcDewPoint</PublicName>
+              <PublicName>HE_Hypotenuse</PublicName>
+              <PublicName>HE_TableScale</PublicName>
+              <PublicName>HE_CommFault</PublicName>
+              <PublicName>HE_LightControl</PublicName>
+              <PublicName>HE_OxygenControl</PublicName>
+              <PublicName>HE_MultiControl</PublicName>
+              <PublicName>HE_DigitalControl</PublicName>
+              <PublicName>HE_AnalogControl</PublicName>
+              <PublicName>HE_AnalogInput_OmronNX</PublicName>
+              <PublicName>HE_AnalogInput_Advanced</PublicName>
+              <PublicName>HE_AnalogInput_Simple</PublicName>
+              <PublicName>HE_AnalogInput_Liquiline</PublicName>
+              <PublicName>HE_DigitalInput</PublicName>
+              <PublicName>HE_PowerFuseBlock</PublicName>
+              <PublicName>HE_PulseData</PublicName>
+              <PublicName>HE_Consumption</PublicName>
+              <PublicName>HE_Interlock</PublicName>
+              <PublicName>HE_Watchdog</PublicName>
+              <PublicName>HE_NXEIC202_Restart</PublicName>
+              <PublicName>HE_NXEIC202_Status</PublicName>
+              <PublicName>HE_FeedControl</PublicName>
+              <PublicName>HE_FeedingCommon</PublicName>
+              <PublicName>HE_ControllerStat</PublicName>
+              <PublicName>HE_VFD_Simulering_Wrapper</PublicName>
+              <PublicName>HE_VFD_AnaContr_Wrapper</PublicName>
+              <PublicName>HE_VFD_100Flow_Wrapper</PublicName>
+              <PublicName>HE_VFD_FC202_Wrapper</PublicName>
+              <PublicName>HE_VFD_CIM500_Wrapper</PublicName>
+              <PublicName>HE_VFD_CFW500_Wrapper</PublicName>
+              <PublicName>HE_VFD_CFW900_Wrapper</PublicName>
+              <PublicName>HE_VFD_ATV650_Wrapper</PublicName>
+              <PublicName>HE_VFD_ATV320_Wrapper</PublicName>
+              <PublicName>HE_VFD_ATV320_RuntimeData</PublicName>
+              <PublicName>HE_VFD_CalculatedFlow_P</PublicName>
+              <PublicName>HE_VFD_CalculatedFlow_Q</PublicName>
+              <PublicName>HE_SNMP_Get</PublicName>
+              <PublicName>HE_SNMP_GetAcyclic</PublicName>
+              <PublicName>HE_SMS</PublicName>
+            </PublicPartsNames>
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category>Controller</Category>
+              <Family>Nex</Family>
+              <FullModel>NX502-1300</FullModel>
+              <MajorVersion>1</MajorVersion>
+              <MinorVersion>66</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion>1.66</DisplayVersion>
+              <Packages>
+                <Package Name="DBCon" Version="2.4" />
+                <Package Name="Motion" Version="1.66" />
+                <Package Name="OPCUA" Version="1.66" />
+                <Package Name="SecureSocket" Version="1.66" />
+                <Package Name="jre8" Version="8.3" />
+              </Packages>
+            </BuildDevice>
+            <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+            <IsSource>true</IsSource>
+            <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>3</SchemaVersion>
+            <Parameter1>false</Parameter1>
+            <ApplicationProductVersion>1.60.0.64010</ApplicationProductVersion>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts />
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>a3b00acd-ab60-44ab-9acc-8855bdc077ef</LibraryEntityTrackingId>
+        <PartTrackingIds>
+          <ConversionItem Id="204ad0e3-c8f0-4854-bda2-3ab2fe45a4cf" NewId="ffe937e2-f8f5-475c-b6f9-9264c07935ab" />
+          <ConversionItem Id="0fa3e7ad-1dab-4966-8bc5-90efcc6aff1a" NewId="181ca094-2b33-46ee-b75a-5fe8902d5eca" />
+          <ConversionItem Id="71ff6e25-345f-415f-a23c-4e53bc4cb382" NewId="0e246511-cc64-4a22-b6c0-acd05eb6cb36" />
+          <ConversionItem Id="a32dbff7-336a-4568-acf6-f8955010c13b" NewId="d6eee1c7-4be7-4756-b0eb-7d1c9688fa83" />
+          <ConversionItem Id="702ccdbc-0956-4b81-93b2-661107d7e8af" NewId="a9a708c5-e4e9-4d68-ba94-77d49b8a4083" />
+          <ConversionItem Id="d517a758-20cc-4b38-83a7-5d4519b3ca7c" NewId="ca3f85fa-ad84-45dc-962b-2d13f92ae9b7" />
+          <ConversionItem Id="781ebb9e-2637-41ee-b4c2-260bae77341a" NewId="25f82cf6-bb36-460e-864f-d31fe0102d90" />
+          <ConversionItem Id="acadc97a-f993-4824-a186-41b1abf9ab37" NewId="0212b583-8e9d-49ee-8b58-9c74469f0f0d" />
+          <ConversionItem Id="3b54922b-1bf4-4343-97f8-13a51c777c2b" NewId="3268609d-b7df-4926-bf5a-7800d8002f9b" />
+          <ConversionItem Id="88da9378-e940-45ad-8c38-e2e8ba799bfb" NewId="b0d9264c-249d-45fa-836f-938826c9c93f" />
+          <ConversionItem Id="530f0332-80e3-41f9-b359-52fd9947dbc4" NewId="e32c0549-cb8c-4d12-be33-047b0c392083" />
+          <ConversionItem Id="6491e319-9dde-451c-af87-2eacbdc8f2c5" NewId="80576bb3-0569-4ab7-b1af-185eb84123a7" />
+          <ConversionItem Id="b6fc6a96-9d33-4b91-aef0-33346f81a185" NewId="b8f3dc7c-36b0-4211-8c60-76396ec47441" />
+          <ConversionItem Id="3b60d15f-3d76-46a2-9eed-c27689f49a4a" NewId="8977d2a4-ac6e-47ff-9f6e-0830c016766f" />
+          <ConversionItem Id="a4f19d8f-d0c7-40d2-8c6f-b2a7a9177069" NewId="02f75d2d-b389-4cab-bbed-4b81504f6d3f" />
+          <ConversionItem Id="7e40a161-0f5e-4e23-bcca-2b2a8b486eb4" NewId="aece8370-2044-44dc-8f15-2496ae738c3f" />
+          <ConversionItem Id="e5f87104-697f-4396-9fa1-239eab737435" NewId="11bece84-11d6-4d3e-b86c-d2469d44e617" />
+          <ConversionItem Id="f2dafa30-9dd9-4aa6-b4e4-d528f9793ac3" NewId="b551a51f-397f-42f0-a07f-b87a9f09d8f9" />
+          <ConversionItem Id="6c443c12-a661-4ff4-aec0-cc252c3a38eb" NewId="b6b4e5fa-f70c-487f-a9fb-b3e0432400c3" />
+          <ConversionItem Id="93a506d7-b5fe-4f27-8c4b-bc2600afa871" NewId="7470b6a7-270a-458a-b05c-fa16574d99a7" />
+          <ConversionItem Id="8308f0dd-2523-448c-bc7c-3b8e9dc4bcc1" NewId="8df59bb6-64bc-4fd4-aa0d-2683def75c58" />
+          <ConversionItem Id="fe382d19-6c8a-40c5-bab4-af435c1cffb8" NewId="fa9cdcd7-2f8a-47ac-a529-8007c0f28d92" />
+          <ConversionItem Id="6302d64e-84d4-4509-93ad-073401768fe9" NewId="8e0c2acd-10ba-4c2b-853d-deedc839b4d9" />
+          <ConversionItem Id="ae15287f-1312-49b0-8e30-fd2afb24cc1a" NewId="360e5a65-0db1-4de9-878c-c13e84c30411" />
+          <ConversionItem Id="c2271885-fed3-47dc-86b3-7560f8e37b77" NewId="e96b4955-8773-4e78-b9a2-b66ba63cd96b" />
+          <ConversionItem Id="8b0873bd-a497-49bf-ae54-a1cd2856de3a" NewId="7a8b97f5-0102-487b-9bd7-b02b432639eb" />
+          <ConversionItem Id="2df3e253-0e70-41ab-8e4c-d89f51f479c6" NewId="fac2056e-ce65-45f8-9560-bcab99fcdbe0" />
+          <ConversionItem Id="cb53e680-13d6-4ada-ae04-ae72c9c54ea8" NewId="95cb3aad-7b65-48ba-928e-f1918c26b30d" />
+          <ConversionItem Id="7df6860f-c18e-4803-a167-e071e033027f" NewId="559a6826-ee79-411c-8789-d6c6ad2bf20e" />
+          <ConversionItem Id="b5941b83-e9a5-4bd4-939d-7791bc713336" NewId="b9b0f4aa-054d-448b-a96e-6767c2aa7b0a" />
+          <ConversionItem Id="188f97db-2171-49bf-8342-9df83d6fe263" NewId="da47c039-9b59-4198-b946-28fa2e46c7cc" />
+          <ConversionItem Id="00f2754b-9626-4b39-a6f4-ef6643cdab92" NewId="edba240b-37d6-4bfa-8888-2e6b48a1a2f3" />
+          <ConversionItem Id="f896843c-0b99-4cbc-b49e-7c6ceb524f18" NewId="0828d4d9-11e6-45c7-81b0-a57b37d0dc45" />
+          <ConversionItem Id="608eefdf-4966-4ceb-9258-cf3dba2ac0b0" NewId="6b3283b2-9133-458d-baff-c4709339bb25" />
+          <ConversionItem Id="3597b71b-9475-4fcc-90d1-e25646525294" NewId="fd5b5ab8-6477-4162-af3b-86941f777151" />
+          <ConversionItem Id="aaefe977-2a6c-4048-bbd2-987c2acc8edc" NewId="adc190d9-a4bb-422c-bc5f-02327dfc713b" />
+          <ConversionItem Id="ac620f63-58fc-4d9d-8cb4-aaaf701752eb" NewId="3a438671-0fc5-4502-8352-ff0b5678a860" />
+          <ConversionItem Id="658c7859-667c-4a4a-88c1-ff96c19ae0f9" NewId="2e4afdab-600d-447b-8002-ac249c9fef9d" />
+          <ConversionItem Id="5bd18bbd-cd6f-48cd-aa9d-b563d199018f" NewId="56c92876-6f82-4833-8576-6abca1ff7627" />
+          <ConversionItem Id="044fb0a6-9992-4431-9295-63223be54344" NewId="578782ea-ddb5-434c-ac24-b83de59d3f1d" />
+          <ConversionItem Id="a74c5697-b50b-4ed5-a733-b2134d9e64aa" NewId="f41f6e29-eaac-44e3-9876-c816d14f26b3" />
+          <ConversionItem Id="8a8d1dc4-1a9c-431d-8044-08f912d34f58" NewId="cf9421f8-d7e2-4298-b629-f2f5ed6a2685" />
+          <ConversionItem Id="ca033e57-e6de-4d11-a27f-d66bae738826" NewId="1d27c8a9-8a03-4952-b6e6-6b68de872cca" />
+          <ConversionItem Id="e5bb5f85-4a3b-4089-a5b1-1990279144f3" NewId="0237fcfd-8c7a-4515-be3d-c53123177d3a" />
+          <ConversionItem Id="1af273a5-bdfd-4462-ae48-2e84effc8495" NewId="f79a66cc-bf2b-49c3-b947-d0045198ded1" />
+          <ConversionItem Id="036af953-eeb5-48d6-a47d-9026254c4d45" NewId="4981d0c5-7657-49b4-a945-c4e580d51acf" />
+          <ConversionItem Id="e00f9efa-f8f9-4c24-adbe-5369e7e046a3" NewId="2cb5409d-9f3f-4318-ab51-26f538ac25ff" />
+          <ConversionItem Id="74404d6f-c789-4593-bc67-4e34bdb9af72" NewId="761efa23-b1d2-4312-9151-a760228aeab8" />
+          <ConversionItem Id="b1fd76d4-e28a-4937-95d5-09505de77f99" NewId="7b1c64bb-4dd1-43a1-afd5-9dbfd3cdb211" />
+          <ConversionItem Id="1444588e-049b-462b-b154-25d46dca15a1" NewId="ca234be5-4525-473f-9798-030d4a7345cb" />
+          <ConversionItem Id="1538e8ab-d0a4-4d15-b620-9b4499c32c9f" NewId="184d9d58-6627-47ad-a662-51359704ad8c" />
+          <ConversionItem Id="c80f9ddc-2e8e-44e9-aaed-53a2d028e463" NewId="d929c084-ce05-4c72-861c-5a90c8b88161" />
+          <ConversionItem Id="231928d4-8867-48b5-8f66-180418ab1701" NewId="5af43b21-58f5-4cae-8e9b-5663e08337d9" />
+          <ConversionItem Id="998116a9-9e43-4576-bf2b-4c744716e659" NewId="ef1f4746-06f9-4740-b5a5-72a500913ac0" />
+          <ConversionItem Id="6e9617be-9242-4321-a3d9-9ebe52ab2342" NewId="67a469fe-0854-4a5d-8a89-79e83e3ec8f2" />
+          <ConversionItem Id="0b59b91f-b676-4d62-a5c0-d66f5fa16965" NewId="5c162748-bfda-4827-9829-0c83c69e54d9" />
+          <ConversionItem Id="fea056c5-771b-4f70-b663-f8dafc5643b2" NewId="96f2f475-7fbe-4df9-9efa-0ae7c847332e" />
+          <ConversionItem Id="7b90a2dc-b1a2-4767-ac63-a88ee2ae5709" NewId="3b28f6b7-eb15-4c1d-a367-79c9b508f815" />
+          <ConversionItem Id="29340969-c330-4027-99a8-e25867ce074a" NewId="b8641493-c8c8-4435-905f-2961b23dfd4a" />
+          <ConversionItem Id="59b40f6a-44de-48c7-8ccf-1e8c84c806b8" NewId="28ed3bfc-c03f-4630-83a8-298d1dd9886b" />
+          <ConversionItem Id="d710d6a2-998a-4ccc-a8b4-b6f7bbebe463" NewId="09880f0b-9159-4f01-9561-b2a668c88a20" />
+          <ConversionItem Id="d7238b16-e814-4fe2-8cdd-3eec0cdebaab" NewId="9bcbcdfd-066e-4793-9c46-0597571d35c6" />
+          <ConversionItem Id="3ae334c7-a8a6-4024-aba5-f440ebbd0caf" NewId="7348d024-9873-4a14-afb3-cbf4c14bae9c" />
+          <ConversionItem Id="f78c2ced-ab56-44b9-a1f0-f7191424872b" NewId="df834113-f160-460f-b9c4-1460ce18015d" />
+          <ConversionItem Id="5f319185-18ec-4a00-b2dc-f7f4b3023298" NewId="90e45761-ee82-4fc8-8a8a-4dd19e82bd4a" />
+          <ConversionItem Id="17669d12-d735-4724-a765-483d2499ebd4" NewId="df0ee79d-4ddc-46fd-90df-599204b89c82" />
+          <ConversionItem Id="8fc2a521-1642-4294-bb0f-1dbc8197d70f" NewId="f22f17ea-56b7-4f06-bdd2-5d3c11cb4a20" />
+          <ConversionItem Id="593a3efd-648b-40f6-b57a-98e6f7c4ce01" NewId="a25111f5-fbd2-4407-8cf9-7d6b6301f716" />
+          <ConversionItem Id="33b2ef63-9a6e-40fb-97bb-342ac1a62b93" NewId="9c5d6561-608d-48cb-8fe5-0a2184ddb725" />
+          <ConversionItem Id="aeff430c-49a1-4c2b-b5a3-f1f6d7e2d47a" NewId="1af7dc46-2101-4070-8c6b-7d8b55756b1a" />
+          <ConversionItem Id="8bd0c8e6-ea62-4466-9f3f-7fa8511855ef" NewId="f474f7bc-b968-432e-8207-a3d3737c8f45" />
+          <ConversionItem Id="7bc9c1e9-eb34-45fc-93b3-5ce63d250315" NewId="918b4939-10f9-418d-b69b-bd49cb90783e" />
+          <ConversionItem Id="4befec3a-d11c-433f-b95d-14a820d109a8" NewId="8eda4012-e3b0-432f-8220-c8b156ff1811" />
+          <ConversionItem Id="5dde6cd7-552c-480e-a4df-c8cb46dbf970" NewId="78f4c217-fab9-40cd-888e-40690c27e871" />
+          <ConversionItem Id="a35d1048-8111-4a24-a595-ab0dce3055e9" NewId="11290f5a-41d8-415b-a4c3-51fedb2219d3" />
+          <ConversionItem Id="692fa2da-87ae-4a44-bd60-3122983a758e" NewId="edc69f22-cb09-4a87-9799-b7fcdd88493c" />
+          <ConversionItem Id="b71ee05d-76fd-4a6c-966a-17a721dcc3d5" NewId="9afe6947-41d4-40aa-abc1-1ff18b752b77" />
+          <ConversionItem Id="55dea10a-932c-4c0c-8f65-5ddd46c72c31" NewId="813db342-101a-48dd-b0c3-2e51719a5c59" />
+          <ConversionItem Id="ff3ff645-5799-4c53-a391-3f2e4f03d045" NewId="e0afc77d-be32-419b-90a4-93c78265bab5" />
+          <ConversionItem Id="8a095f0d-fbaa-4e85-b854-b4ba560a2488" NewId="0f7ea1df-a2be-4230-9951-938d548ad81e" />
+          <ConversionItem Id="7b476b7f-39fc-4735-9441-8afb8cd3019c" NewId="6c1c5c63-5ef1-4e82-8490-8e36e5793248" />
+          <ConversionItem Id="50139096-5f52-47bd-8dc1-fa66ce1731db" NewId="cb959092-5773-4b4a-80d1-170036b3799f" />
+          <ConversionItem Id="fdc9976a-b310-4695-b1ea-37002c8e1ef2" NewId="e5b6b010-a282-475c-9365-08f5d91e6d23" />
+          <ConversionItem Id="61a3bb3b-46ea-4882-9405-dc4dadb895cf" NewId="cd84706c-adbf-4dde-a212-a285be937f0e" />
+          <ConversionItem Id="3428a58f-30c1-4374-92ae-d10e60f8e084" NewId="2750143b-68b1-4b6b-b85a-b4a2aea38005" />
+          <ConversionItem Id="1bf8af82-4d16-4dfd-84e5-124d5092b9b2" NewId="2fc7c716-23a7-4b01-91aa-2aa69d3c368f" />
+          <ConversionItem Id="d1ce6b3a-7dc7-4386-a8b1-1130035999bf" NewId="8353a73c-ff04-4bfa-9a2d-66edae54d60c" />
+          <ConversionItem Id="b70a5970-d5f9-4eaf-bc4e-93266f0d4311" NewId="58d9dcda-5aaa-4f0c-86b3-63c74fd4d041" />
+          <ConversionItem Id="1e786135-ff98-4f84-b013-f55ef72719a1" NewId="2cd2badc-77c6-40c7-996c-50464d3b2c64" />
+          <ConversionItem Id="06643031-b379-4f9e-ac54-0c70401a0f5b" NewId="29f25cbb-0692-43f2-bf8a-22edb6db325f" />
+          <ConversionItem Id="b82c2368-c1c4-4aa7-a54e-5fb37d1ff634" NewId="f20a6f86-2244-4f7c-b78f-35a895b3a739" />
+          <ConversionItem Id="5345622d-998c-48c9-a382-5c5bdf71831c" NewId="816d26a8-682f-4aa0-b9a0-28774a0d55b9" />
+          <ConversionItem Id="980a7c4d-f8f1-4f01-94bb-ddd96dcd07c2" NewId="c13379e5-f9a5-4f0d-95df-87b0fea38fdc" />
+          <ConversionItem Id="1fd2e5bc-d85f-4d3d-90be-5dfe28012b16" NewId="98721e84-a6ab-4660-afde-60157f5de4e4" />
+          <ConversionItem Id="4e3f0b76-4c12-4d11-8d74-4c2bcbe07136" NewId="2ee67c82-13f1-4d93-b47b-37e9b6bebbd5" />
+          <ConversionItem Id="04bcd4a1-fb26-4ec2-91d6-b1eef0328176" NewId="90dc357c-4d4d-4b70-848e-3d0ddc215b9c" />
+          <ConversionItem Id="965cfdad-5961-47fb-b54a-7e2b59920e13" NewId="515fb08f-3cc1-421e-9fc8-c488aa767a31" />
+          <ConversionItem Id="3be2d7ff-11fe-4278-a707-43622a1656b8" NewId="734b3c1a-9a1d-4788-bc0e-6addab598aff" />
+          <ConversionItem Id="8acaa615-54d0-4e50-865f-108980fecc56" NewId="5cc00932-34f3-4a1f-a06b-552f56da2119" />
+          <ConversionItem Id="8e1525ee-6146-4ae8-be0e-889d95d18902" NewId="76ae3057-3962-4d9c-a770-72499b8f801b" />
+          <ConversionItem Id="8d25e5ed-c3d7-4899-858d-a564b91d7480" NewId="dbe88e9a-ed2a-476f-905e-cf32137c1de2" />
+          <ConversionItem Id="c6e7be7b-2340-4334-b759-7a373955f6bb" NewId="790823db-2f72-488d-9006-656aeb335953" />
+          <ConversionItem Id="4df94814-8e83-4e80-ab43-121f9134ac5f" NewId="fedf2fc6-11d4-4891-b578-5c0b7e3c2c68" />
+          <ConversionItem Id="91ed4a04-1735-4381-801e-cf984dd4fa3b" NewId="726f9a59-6768-43a7-bd69-e87f48270103" />
+          <ConversionItem Id="59924410-3e59-492c-9e4f-444a07c808e6" NewId="49afd54f-6bb4-4783-81b8-e374c8e33c2e" />
+          <ConversionItem Id="a073d05f-2036-4242-919e-d8904e7cd9fb" NewId="eecfeb94-e224-4cd9-b27e-ff896b3b6b8e" />
+          <ConversionItem Id="fcfec7f8-1cd3-46a2-ae1f-f7d967a27756" NewId="62b333b0-b5a3-49be-b9ee-4f8c2fbcf32b" />
+          <ConversionItem Id="a8bd776f-6cdf-42d5-8a90-da28d30a6b9e" NewId="e2ff75a1-ac30-4952-8829-2e7bbd502a79" />
+          <ConversionItem Id="99598431-987f-42e2-9568-01ac78958713" NewId="6961d7c0-951b-4f68-943d-69efa385450a" />
+          <ConversionItem Id="07856d22-f590-49ad-9783-967608278db4" NewId="7091a5ed-4b14-4ea7-9876-b9b10f1b6a08" />
+          <ConversionItem Id="addad861-7eb5-4ca3-b8c0-5249ab9431b3" NewId="0503a97e-15cd-4314-9073-2af8607e7bc6" />
+          <ConversionItem Id="3e952f37-48a3-47f5-979d-9dbbebc55e10" NewId="ceadd7b8-9ab1-4f97-a969-66c2b64649d8" />
+          <ConversionItem Id="791e0927-b14e-4afe-9195-328f66011074" NewId="12c5f14c-cc09-4321-943e-c676149a2d13" />
+          <ConversionItem Id="3615dcc9-fd82-4699-b66f-76e24c2c9fcf" NewId="d86bc804-996c-490f-adfe-59f80785ab1b" />
+          <ConversionItem Id="751ef185-03fe-4263-ac17-6d0ae06b6c30" NewId="d637cd4e-1143-4245-9801-55259a0fcb56" />
+          <ConversionItem Id="a69bb09f-af92-4c2a-a92c-c04b1c266586" NewId="f15cafcd-2fab-4bb7-970a-5f2afb975a48" />
+          <ConversionItem Id="17ce61dc-edce-4382-8f5c-5f6b611fdd19" NewId="fc33c2d9-68f8-4f5b-853a-846f3a039257" />
+          <ConversionItem Id="aaf48348-c696-46de-b7ad-d7a616df9898" NewId="84b2a6a2-deb9-4626-b2e2-8ebfd3719875" />
+          <ConversionItem Id="4968481a-85d7-4006-9c31-a3cd20eafee2" NewId="136c7eee-8c58-4799-830c-0f45be8595b6" />
+          <ConversionItem Id="42900714-ba2a-443d-bb41-4efb5f15436f" NewId="201be23c-16c5-4352-983b-f252d57f16fd" />
+          <ConversionItem Id="92a0b965-636d-420e-a7fc-da76a1bc7731" NewId="1bb7c8bb-cfad-4402-98e7-5d9a64393be7" />
+          <ConversionItem Id="27b08cbe-82e5-4d98-a6b2-cb3845bc8162" NewId="6419555c-477b-4ec4-a078-d1c2ed107aff" />
+          <ConversionItem Id="2c5cdcb3-f744-4509-9525-ea514d43ab24" NewId="3368158b-9b5e-4995-9a04-adabfbd885a4" />
+          <ConversionItem Id="59a8b052-5010-4424-8dca-ee04a7c61b82" NewId="9d8c1b6e-5112-4c5a-931f-8cff9bd11a3d" />
+          <ConversionItem Id="c5ece69c-fcd7-4e21-bde3-e6624e92819b" NewId="319f557b-5d1c-4e19-a616-e5398e67d8b0" />
+          <ConversionItem Id="6e77d0e3-5b73-42cf-b6c1-db94b610afac" NewId="a97df0c4-9908-4ac6-a660-2ee32d93c3f9" />
+          <ConversionItem Id="1d0ae54a-c360-4c70-a68f-ad60d728667b" NewId="6677ec29-4641-4d27-9c7c-e0ad5eb2a1f3" />
+          <ConversionItem Id="d2592676-54bd-4e92-ba01-e362c16a1035" NewId="ff0954db-7d9e-4e70-a9c4-31252b6d54d4" />
+          <ConversionItem Id="03e03ef2-fbad-43d4-95a7-19bffdaf97fa" NewId="ce38e5f6-d8f8-446b-ab03-80ef99161559" />
+          <ConversionItem Id="b6eddf0d-539e-433e-926d-e29f9c089f6b" NewId="ccc12f61-e7f4-4866-8cdf-336a72f5432e" />
+          <ConversionItem Id="ffba7ed9-57fd-47d0-b36c-5fc9bc6d867d" NewId="8ea8ab57-521e-4720-aadc-7bd93af3c5c9" />
+          <ConversionItem Id="6214c5fe-3fb8-4804-8798-867447cf37b4" NewId="2d66b796-97cb-4067-9a08-4e5c47a3bcb2" />
+          <ConversionItem Id="a5e8aabb-f636-4a98-a14e-5931ac16a083" NewId="79478c99-8c02-4cf3-98eb-e74b80d0b40a" />
+          <ConversionItem Id="44084929-4de7-47e3-ae13-3aae7b5efef4" NewId="3113eea1-6528-458b-847f-569e3eed5dda" />
+          <ConversionItem Id="b3bac934-cc82-42b5-b342-ca31d6a2d705" NewId="d41e0145-b721-402d-aa77-f7ebcbf6d6e7" />
+          <ConversionItem Id="473edf03-5661-4fbe-a18b-7c457d3e0dbe" NewId="848d0757-905e-47d6-b1e7-30fcc13fb233" />
+          <ConversionItem Id="89d08b0b-0a8f-4695-b02b-d691847f8464" NewId="71f439b2-1801-4bbd-b54c-81df6383ad0f" />
+          <ConversionItem Id="37a25d26-e867-4430-a5a0-7ba2f952f644" NewId="f81223fd-d845-4972-9a53-8dcb53f878a0" />
+          <ConversionItem Id="7b3a8386-ff9e-4a4a-be62-69602da1b30f" NewId="c9f75e81-bbda-4639-a425-4907def3e4bf" />
+          <ConversionItem Id="f2fe5fae-3ba7-4b45-9e9b-78b1241b8bf8" NewId="aa0d898f-25c1-4e81-8bfc-698569052ab3" />
+          <ConversionItem Id="da3b097c-1921-4798-a744-5720d8677c8b" NewId="ba1259d5-2144-474f-8300-0dc39501230d" />
+          <ConversionItem Id="768f907b-fddb-4a61-92d8-d99e4e799981" NewId="cef05776-94ac-47d3-a7f3-fb8a3bb8e60b" />
+          <ConversionItem Id="00a3d6d7-8256-4fa8-ab25-6e898f20339e" NewId="faf10360-6758-4849-95b1-2bd4edf0b87a" />
+          <ConversionItem Id="ce8a9bc0-0532-4a73-a5f4-854333afa4d0" NewId="40243beb-99bd-4a67-ae9b-34cb0c9b2c00" />
+          <ConversionItem Id="4f3814a1-f1cf-43d4-b496-2479671367e6" NewId="410d4ca4-628d-4d61-9fed-de85097b4a82" />
+          <ConversionItem Id="9850cc6b-359b-4eef-b6a6-553206609c2f" NewId="e5c1b040-be75-49bd-b143-1cb8a7d8884e" />
+          <ConversionItem Id="fa150d3a-5f15-456c-acf2-710a5cafda49" NewId="b2666d19-dcaa-4f2f-ad44-c9da8f7ff947" />
+          <ConversionItem Id="98671fbf-3663-45fd-adc9-9301d8c5530a" NewId="b520e677-44c8-4595-8b90-dc2306fe0319" />
+          <ConversionItem Id="54485b0d-4510-48b3-a2fb-ecc6c3d9cef0" NewId="be7a3acf-1c98-43d4-a353-0d27aee6e4f1" />
+          <ConversionItem Id="d39f7115-0f94-48ef-9163-1a44a145ff6f" NewId="74cd9281-8b90-4d8f-ba88-a929c7348971" />
+          <ConversionItem Id="663d42d6-86c9-480d-86a0-57cf1e18221b" NewId="e8f55e61-889e-4c86-8bfa-27f99a47724c" />
+          <ConversionItem Id="9a0e74de-2480-4b88-91ab-2a178a810e71" NewId="587aab02-d847-4a6e-91d5-cd96461c1b00" />
+          <ConversionItem Id="76fcdd88-2100-4b6c-9659-aa32bc36b45e" NewId="c0f77265-071b-49b3-937f-416d57d288bd" />
+          <ConversionItem Id="37cec9b1-6654-4b65-be2b-6d1d37cecbe1" NewId="70ca590b-7271-4934-a8d1-1b0df7d8649d" />
+          <ConversionItem Id="9b3bc0e0-0191-4916-ab74-26c500d0fc30" NewId="34af4d0d-262a-4109-81b8-e9ba19353b39" />
+          <ConversionItem Id="2007e1a5-6925-45ed-8ca3-452e2eee6e0e" NewId="a82d76d6-aff2-4e3f-9456-0cd8274709d3" />
+          <ConversionItem Id="ebee067e-4e6f-4750-b08f-c5dac4e33b8f" NewId="a38ff6bd-bef1-4baa-a83e-a65598571103" />
+          <ConversionItem Id="de0f69bb-c942-40d7-910e-743ec423cc82" NewId="de2b7083-8461-4f3b-b9b5-c06393bd057d" />
+          <ConversionItem Id="4fc7830f-f403-4624-bb34-391c45164755" NewId="09e3794b-1821-49cd-b186-ebb2577496e7" />
+          <ConversionItem Id="f065d804-a056-48a2-8ef1-5ffefc35e308" NewId="bde76a94-3c01-4a4f-9ebf-f44bac57699e" />
+          <ConversionItem Id="2e89ff27-c85d-44cd-8cc0-8f5629faac3b" NewId="36153c86-630c-4650-99b9-00bdb04dbc88" />
+          <ConversionItem Id="198437e5-a84e-44a3-8b8f-185a58c8553c" NewId="6390d3eb-79a5-49a1-a95d-694a073d5f88" />
+          <ConversionItem Id="9ba2dda1-0758-4923-8b03-c6bed3158ce7" NewId="e08e7184-a730-4051-ba6f-04d0fb24bc8a" />
+          <ConversionItem Id="3dbc602b-7198-44df-a7e1-b1adc07b45cc" NewId="480ce7eb-158f-4a91-b7f6-85a51c9b566b" />
+          <ConversionItem Id="e2357bc0-87b0-4cf3-ad45-c7c0a2e8d84f" NewId="243b3b14-d7af-4d4a-b423-0c835057f088" />
+          <ConversionItem Id="87c37801-c80a-4077-8a4e-8b0065c6d9cc" NewId="474afee1-6626-4370-9031-1321008256e5" />
+          <ConversionItem Id="a942a719-7fee-499d-899d-cfe17be2b71b" NewId="410b6d1c-9436-4b45-90f0-787f7fff3723" />
+          <ConversionItem Id="9a5dff51-940c-41fb-a584-8f795f4ea673" NewId="d26c26d9-3a76-45b6-a34a-af995ffe3b2b" />
+          <ConversionItem Id="0a865ff3-9ac6-42b2-a5ad-e9f6ef53a5f0" NewId="80524693-6cf5-4ca4-9ef8-7eb56c05339d" />
+          <ConversionItem Id="e6768ed2-ea2f-4e16-825e-f39e8d78ed76" NewId="215c9b9d-8162-4af5-ac2f-c9f5da4257ee" />
+          <ConversionItem Id="89175af7-8ab2-4a51-b60f-5b6080426216" NewId="f4064d86-f49f-4e04-85c8-6fffa6309dab" />
+          <ConversionItem Id="0d33d2ec-728e-4a2b-9f30-bee919dfa31a" NewId="96dce1dc-c59b-48a1-aeb5-27eb8c2f2a35" />
+          <ConversionItem Id="a5eb925f-8495-42f3-9440-4937449a1dc5" NewId="5dade58b-cfb8-47e9-aa02-5125f01a9f34" />
+          <ConversionItem Id="beb60055-bf89-462b-b296-6322315b9624" NewId="b0dcd9af-1515-4513-ac4d-c36187816a82" />
+          <ConversionItem Id="8e1354fa-4d80-4680-ad5a-fd659c74b2a7" NewId="706914c4-edb2-4f92-9f94-17e7750e3f56" />
+          <ConversionItem Id="6076406c-5843-4c26-aca9-b625a5241276" NewId="37b828d6-e154-4875-a3a1-8639357e9894" />
+          <ConversionItem Id="273d746c-988f-4477-9c85-badf4c16836b" NewId="0f519785-65ac-4b55-8fff-63af6c2c5dac" />
+          <ConversionItem Id="b16ebdc6-6ac7-4cbd-89c1-184a79636429" NewId="17f18dbb-d99f-4fe4-a5ef-780a0f934df6" />
+          <ConversionItem Id="1a8a3135-cacb-443d-8191-eab2782f3bb7" NewId="9963c80f-d802-4206-9254-4ca82a9a32bd" />
+          <ConversionItem Id="187b0309-4474-47b3-a58d-c1158b9dee58" NewId="c5cc6aec-e9cc-491b-b481-63de4a21372b" />
+          <ConversionItem Id="e3f08d2d-5ad0-4433-aaef-62a63324164b" NewId="5167ad3c-b5bc-4fdc-a94e-0797d30791b4" />
+          <ConversionItem Id="455352da-c70b-45fa-b972-541f9556321c" NewId="2b18e171-49ce-49c9-902f-a91c2e8821ea" />
+          <ConversionItem Id="96affa49-f1f2-4b05-9e2e-66b1884adf07" NewId="0e097dba-7b59-42d6-8e7f-77563ac1cd0c" />
+          <ConversionItem Id="0d99e569-77a2-4a9d-877b-0281942f5e45" NewId="713e9354-acb4-4298-8166-d54189da949b" />
+          <ConversionItem Id="fe362385-3380-45fe-8d0e-8cbdb2bf789e" NewId="8bb1d47d-34d7-4e04-9f8c-96e36cde7c8b" />
+          <ConversionItem Id="2b819062-c5a7-4a30-b772-25f1929433f8" NewId="86b3c869-2837-4a51-aeca-895ac2e2381d" />
+          <ConversionItem Id="8d36874a-7cd6-4bd2-aef3-f50d1242a90e" NewId="0baa87ea-5401-44ce-9be5-b2b0f1428921" />
+          <ConversionItem Id="e949e7ec-1663-4f05-807c-c9c528a5f9dc" NewId="253a80ef-0513-430b-b086-4be2b3046d14" />
+          <ConversionItem Id="86025f2c-0a35-488b-878d-d9d2897b87ed" NewId="c12796da-0a01-4fbb-9b7b-77b33800f7aa" />
+          <ConversionItem Id="dc8a3a05-b7f4-4a18-9e7b-aef6139d9be4" NewId="bcf24e3f-4996-48a0-b4d7-82716ff6b22d" />
+          <ConversionItem Id="54e3fbcd-9e18-4239-b00b-5bcf54fbb259" NewId="43a8d7b0-d591-4c81-878b-38fc5429437e" />
+          <ConversionItem Id="3892e20f-2b80-45f0-bc22-e4ecffb14c99" NewId="785e525b-1d2f-41f4-8ca1-958ade7bae9c" />
+          <ConversionItem Id="c87af72c-539d-497a-9517-1ff4a8ffe75b" NewId="1a18b76b-e403-43e1-a218-30afcd97dad4" />
+          <ConversionItem Id="9ecfe056-e5a3-4f8c-9d60-fc3a57e5c807" NewId="29b5edf7-8b36-4c99-bf1e-660311a25c20" />
+          <ConversionItem Id="ddac3b74-2143-4bb5-bf0b-e66fdd59e588" NewId="731287e7-40dc-4e44-9831-78f3de1abd9c" />
+          <ConversionItem Id="b0cf9cfc-abb4-4cf9-bba6-fd8010e72b21" NewId="973159af-4480-476b-85c4-9b325d5a4f79" />
+          <ConversionItem Id="ee4216c8-444f-4de5-9e28-cb5546a569df" NewId="60f9e36e-ef9c-41a6-9fed-f9ece281d870" />
+          <ConversionItem Id="6edfe0e7-91f1-4b43-85d2-33cc7bb3ef39" NewId="674d9e75-87a5-4d31-bf17-cbc817d7d244" />
+          <ConversionItem Id="4b547458-2e65-4b6e-869b-56e871d4640d" NewId="c1b9fe9a-00f8-4ee3-8e33-af8e5fec1007" />
+          <ConversionItem Id="98174537-70e2-4c7e-a632-7030cb145d9d" NewId="8809fb4e-fae7-480e-9eb3-aa9e07f39dc7" />
+          <ConversionItem Id="dbbacb9a-160b-4465-9c8f-7378deabd2bf" NewId="2fa24358-83ab-4e58-a9a0-e9df27dbfe45" />
+          <ConversionItem Id="447852e4-c629-4b2e-bfc3-9d34b21efff5" NewId="e76dff7e-201b-4116-bf02-ddf7adb7cd3b" />
+          <ConversionItem Id="74244d68-66c1-426c-ac78-1fdd83ea81a1" NewId="d8e1c02f-1d2c-40a0-b98d-650dd94bb0ef" />
+          <ConversionItem Id="688b4828-7322-4185-b1ee-3f8cc8f3dd67" NewId="b841f9f1-ab32-4f39-85af-482fd482e221" />
+          <ConversionItem Id="bafca621-894a-405c-88ed-d3cc5f69a843" NewId="708ebf25-f55e-4cd3-8f1b-d4c05f8c8130" />
+          <ConversionItem Id="ac2143c5-d61c-4dd6-9cba-8bbed29b7407" NewId="afab7f71-3cb0-4c16-8f5d-2fcb48173637" />
+          <ConversionItem Id="d178010c-5d93-47d4-a0eb-f01935d20e51" NewId="2bec0c39-0ba8-4607-b2a3-4b990622c125" />
+          <ConversionItem Id="05c391f9-1d32-43b9-948f-aa6fd8488a7e" NewId="53a0b8cf-b1dc-4cec-877d-5171e4db04a6" />
+          <ConversionItem Id="f63e417a-e39a-4f1b-a021-4c0774369682" NewId="4abc40d3-e402-4912-ab81-a0ece26da0f6" />
+          <ConversionItem Id="5237af32-14c7-47ea-989c-b5f221613594" NewId="e8570653-c82f-4541-964b-0b906bb002db" />
+          <ConversionItem Id="a62420af-bf4e-4218-94f5-385e8533a8a1" NewId="1c1e0cda-8f79-40b9-b773-81c9cb185607" />
+          <ConversionItem Id="891b14ad-ac0b-40c0-a693-62bb9a6642de" NewId="651d9578-e1e6-4edd-902e-2f7c887dd347" />
+          <ConversionItem Id="080cb3ee-0ac7-478b-ad67-a9c1fee59bd8" NewId="949e9abc-d915-417c-a622-c51aeba55fb5" />
+          <ConversionItem Id="a247fd43-5bfb-4608-ad4a-763821b9a605" NewId="06cdab81-8449-4e5b-8b64-0fdf2575f5a7" />
+          <ConversionItem Id="2cc14949-77d5-47ab-9099-b4ce07768cca" NewId="b7ba0a95-ead6-49ae-ada5-eaa877a15ed6" />
+          <ConversionItem Id="c1bb0c6d-c162-4c67-a0f2-4b3756a7c96a" NewId="e98fef90-8907-4004-950c-f35cc69dc114" />
+          <ConversionItem Id="abe32c2d-fafd-4ff9-abd9-6a629aa973f9" NewId="1cd15b5e-bf48-4e51-b10d-d2c468604f64" />
+          <ConversionItem Id="60887826-342b-4915-8861-d7c47513d346" NewId="6894d674-14f2-4b76-9d81-2f1584d49fdf" />
+          <ConversionItem Id="2695372d-b3d9-4dc2-8beb-cd534f1cda5e" NewId="d955b238-938b-4b81-bd21-d3b57e074b4f" />
+          <ConversionItem Id="5502d622-da5e-485d-9c1e-3f0a10f9f16e" NewId="be5f0c69-f3a5-4d60-b511-33a8a444bc63" />
+          <ConversionItem Id="a757087b-50e7-4d8f-b5a7-72b7fa10dbcf" NewId="28d22f6b-457c-4841-9a08-bac96c6431a7" />
+          <ConversionItem Id="64b3d85f-dc8b-4624-aa98-576889c88729" NewId="bc883823-9644-4978-9bb6-e1e94347f1cb" />
+          <ConversionItem Id="b5861a92-b8ad-4b8a-af63-22d8d2c0a701" NewId="4201fb5d-be06-4232-a9ac-75d036dbcc07" />
+          <ConversionItem Id="009aee26-91a1-4523-94df-c1fc5fd65a22" NewId="2e718c62-4168-4865-a097-10e63ff5bb9e" />
+          <ConversionItem Id="4cee1b01-8db8-4713-8d2c-fe01fb2688e2" NewId="8e79bc3b-2704-4cc5-9b0d-0b9582a9169b" />
+          <ConversionItem Id="09a4be52-f185-42cc-9aa1-fc8cc839980d" NewId="3c7437d4-ccce-4c9d-a911-8a848edf211a" />
+          <ConversionItem Id="acb149dc-2fb2-4a83-81bc-c82c02b6aa35" NewId="67b4f0fd-e399-48ed-b4dc-9bed1669e7db" />
+          <ConversionItem Id="b42debe8-8b75-4c23-9aaf-05ebd296c710" NewId="31926b45-d9b8-4dab-8849-5f3e31d8438f" />
+          <ConversionItem Id="0b1b99bd-d54e-401e-934d-a05ea2320c47" NewId="fb27db49-1809-4089-8480-7d50cb9567b9" />
+          <ConversionItem Id="ecb4591a-4a6b-4df4-b3b6-0d2a1e6d0dca" NewId="3b0fe7ef-40b5-4f1d-8eb5-ea384ceb2d4c" />
+          <ConversionItem Id="4d067cfe-cf04-4f94-b9c2-78dabd860c13" NewId="6eccbd97-107d-4280-bd01-1875fa0bf037" />
+          <ConversionItem Id="0c351ad3-62d4-4e4f-9f08-97f96a64c715" NewId="1a4f4de6-1cb9-4ffb-a3a3-0d34d04f24b6" />
+          <ConversionItem Id="312a3ba7-9bd6-49f6-a049-5f6b7f2bbaa1" NewId="e4a8f9f3-2a84-4ec6-8926-2a3d1d421a11" />
+          <ConversionItem Id="a7016cc1-f227-46fe-93bf-58b28f565343" NewId="0e330e08-723b-43b1-8dd6-9dbd1cd750a3" />
+          <ConversionItem Id="1383cfc8-0a64-43ef-9e0b-377c35ace2fa" NewId="976bfd6e-54a1-4b6a-8f6e-22315d1c8510" />
+          <ConversionItem Id="71ee3609-0672-4924-9ca0-e3668f0fa66f" NewId="dc1db23d-be17-4913-85a5-d44ef6cb95df" />
+          <ConversionItem Id="05553933-45a8-4841-b545-191e2baf6e04" NewId="75215abc-c6fb-4e99-9864-3186cb983ff2" />
+          <ConversionItem Id="3f8e7e6e-4d23-4be8-879f-a1434889a382" NewId="aab45865-e2b2-4a44-b176-b053131e6704" />
+          <ConversionItem Id="4a8c9c6f-d093-4888-9b4d-b995663d0791" NewId="3e13aeb8-32cf-496b-9143-f1927ec2fbe5" />
+          <ConversionItem Id="974aa2c0-8ef7-4452-852e-86553f1ef96d" NewId="fb6ccae4-7583-43f3-8b8f-a52a2192540a" />
+          <ConversionItem Id="004a53e7-9fe2-4e03-8208-cc70e91d588c" NewId="ee69917c-7547-436f-a234-5a67d3dc2ab5" />
+          <ConversionItem Id="ce18767f-59ee-4f9a-8f5a-d1e17bdb17fc" NewId="e9800cf5-eb9a-4d6f-a253-6f22912ac89b" />
+          <ConversionItem Id="a0cdadd0-f178-46f2-b254-197d92ed9647" NewId="06dde0b5-4961-478a-960d-e03485bbd4a2" />
+          <ConversionItem Id="76dd038f-f431-4b84-bf95-9bff8729cdc2" NewId="933ba5bd-08f4-4301-9984-7350ee1ed23e" />
+          <ConversionItem Id="0dcabb47-0edd-49c8-95fe-c04bdca28a62" NewId="69a7e158-7e0a-4af2-9ec4-d07208e35337" />
+          <ConversionItem Id="301260cf-d08c-4936-9785-8bced73539d2" NewId="1b28f17e-2c66-42be-9223-61e282d48ac2" />
+          <ConversionItem Id="6e71c29d-49ab-43d2-9747-660c09d26118" NewId="64db102c-db6c-490d-8113-78738e69c003" />
+          <ConversionItem Id="0df77f79-6fb7-4bcc-8eda-fdbd36343b0c" NewId="03b1c0b6-ec93-4202-80dc-654a72098f7f" />
+          <ConversionItem Id="4601a741-26c7-4189-b61b-7c5603ce0cd2" NewId="2fa51d02-f1ef-40e2-ae1a-d26f87df4d76" />
+          <ConversionItem Id="7576664e-4b8e-47fb-b860-18b75e2d8050" NewId="4a933bbc-f7d4-468f-831a-22ab2b323ac4" />
+          <ConversionItem Id="76e73c7c-d485-485f-8226-096adb35c1c5" NewId="240a777d-fdf8-43ca-a30d-c2bac0f0f9dc" />
+          <ConversionItem Id="a186207f-96c5-4675-83ee-15d69ac645e6" NewId="fbd90ebf-0a0c-4555-8d32-a033c17dbf58" />
+          <ConversionItem Id="f569b7a3-c488-4fad-ab69-4cda8010ac1f" NewId="aefc9663-337f-4c37-b46a-fe7a6e910425" />
+          <ConversionItem Id="d3cab08a-1cdb-4416-ad90-b658b78f357b" NewId="50fcba8e-722a-436e-aa04-ee8b91a08e3b" />
+          <ConversionItem Id="ef6cb758-cd95-43b1-ad55-68cb0694f5cb" NewId="9e5b8dea-3f62-4e18-880b-1362c0c50c10" />
+          <ConversionItem Id="6a5fbe06-8a44-493c-ba28-ef9c19e54b0d" NewId="f1c030ef-36b6-41ac-954d-bd00c1e689ff" />
+          <ConversionItem Id="981d4e7f-e405-438d-8521-95ad032faf2b" NewId="20eebe5a-e436-4f42-b856-799f06c985b3" />
+          <ConversionItem Id="b87e022a-0fc1-4307-939c-48f7dfca4fbf" NewId="e6cd77ee-ec14-492e-b1a1-dbc0d488e18d" />
+          <ConversionItem Id="d288d45d-4823-4f27-b241-be88c7924f84" NewId="32ae603e-afd3-4896-bca7-5d45c7355304" />
+          <ConversionItem Id="a2abf9cc-5a6b-4fef-8112-e646d893caff" NewId="3d7ca46e-b955-48d3-9fb2-2d906c67135a" />
+          <ConversionItem Id="d66b6267-a43b-4e87-93ac-6f3bd3735a68" NewId="41287842-7082-4700-9948-dc9aa2b1afe4" />
+          <ConversionItem Id="a99999c2-b52d-4358-93cd-e4aca011556a" NewId="0917bd43-cbdd-4ec4-8a1c-77fc8407b058" />
+          <ConversionItem Id="3b808476-912c-4e02-8034-a2fc3c4086b2" NewId="3e040b10-deaa-4b9c-a883-3b550080e68d" />
+          <ConversionItem Id="619074a1-9469-4257-a477-53f44bd0fa41" NewId="9655fab3-2e9f-4893-90da-5c9594ad3a4d" />
+          <ConversionItem Id="d5cebdc7-375e-4bfe-be02-1bfa7c81a596" NewId="37831385-02dd-4a76-baf4-63b10809c62e" />
+          <ConversionItem Id="5ea939bf-7003-494c-9cb3-ec566bc53fb6" NewId="817387c5-925e-4e43-9d05-cb63dc6e5638" />
+          <ConversionItem Id="d799ff2c-ebc7-4d68-bcbe-79dbe6c37af9" NewId="4539f124-a038-445a-92b3-20a71d5ff2a5" />
+          <ConversionItem Id="1f26075e-05cf-4594-9c53-192a30d1e004" NewId="2cdecdc4-0542-4e4b-925b-f2ada2e21750" />
+          <ConversionItem Id="130c671f-ee25-4f7e-924a-68c71d0968e6" NewId="9a7f09db-bb3d-414e-8a25-1882637411dc" />
+          <ConversionItem Id="0fd8fcec-267e-4d36-9852-f1a1558d3d33" NewId="997be250-ea77-4146-80ad-84f2a532b5b4" />
+          <ConversionItem Id="4ca4949c-cab9-4855-be25-984a7d01da06" NewId="38209613-b6bf-4e70-8111-5ee7da7f0524" />
+          <ConversionItem Id="3e0da644-7725-4368-aab5-243fcfa422c3" NewId="0da21d9f-5a66-4150-b82e-49889d5324ce" />
+          <ConversionItem Id="972098d1-1d53-4e2e-bdb3-03ca01683524" NewId="a1fcda5a-2d26-4d17-b0dc-e0e7b76589a2" />
+          <ConversionItem Id="4bfd16ba-a06c-4be9-9f99-70716668ab8d" NewId="f564182a-ef66-482b-81b1-031653c9414f" />
+          <ConversionItem Id="2a25fa87-7c6e-4231-b611-4232b81f0d71" NewId="30af27a2-7c4c-4a9f-a8e3-b578a1caf782" />
+          <ConversionItem Id="5d7cb1d7-2e68-4a7f-85c3-f28bc8e13648" NewId="5c1d5aeb-793a-4234-b35b-2af50c16f7f9" />
+          <ConversionItem Id="fafc4c5d-4029-42c0-a6a0-e307282af9c6" NewId="83901c76-9f0e-4be8-8180-ccab9e63f122" />
+          <ConversionItem Id="533b4cd4-7e01-4c5f-b7fe-ec8499f3659a" NewId="3aa12d6d-f8e6-4d67-86a1-e068cd874a45" />
+          <ConversionItem Id="8c3c738e-c051-492f-93a6-fc71c541d087" NewId="721abf63-9c2e-4d83-9859-951c2e06af52" />
+          <ConversionItem Id="168a3e47-0c2c-4062-a9c7-1dc010afca2e" NewId="2405023e-f9bf-4158-8f3b-2ce24fd894d6" />
+          <ConversionItem Id="acca87e9-94d5-4933-a314-3c23482f2772" NewId="b92047d9-97d4-4271-8880-38ea8a073566" />
+          <ConversionItem Id="dfb60958-1352-4bf0-8c3c-cc1c9e0a41c5" NewId="91610d08-f88f-419f-bed7-76ca76c98deb" />
+          <ConversionItem Id="82e44bd6-c144-411d-ab35-cd33286e6b22" NewId="c2c20521-cd8f-41b9-a51e-ec124c3d6a0c" />
+          <ConversionItem Id="f4d23f34-96f9-4399-96e1-812b50fd47a0" NewId="677ca61f-5da0-46f5-a314-e1abc3404a9f" />
+          <ConversionItem Id="919a36fc-68b3-4478-b4f5-b42906d632c5" NewId="7ea3e50e-986d-4eba-934c-0acb444aa78f" />
+          <ConversionItem Id="45bfb0b6-57d1-4697-b5d4-c3704a2063fe" NewId="03ed2216-bc4f-438a-9a96-912e1114d5b3" />
+          <ConversionItem Id="e4f6827b-24da-42db-b424-67806f642032" NewId="0faec20c-4bfc-42bc-9743-6a8756002cea" />
+          <ConversionItem Id="096b3323-8ab1-4c31-87ff-7b703206ad55" NewId="5be00d2e-a466-4e0d-a4c6-45ea6d33b935" />
+          <ConversionItem Id="5c72ed9e-614c-4483-a332-ab766632ad83" NewId="24caad4e-098a-470e-a57d-f4940616b818" />
+          <ConversionItem Id="d1563bb9-5e64-4668-aa9c-550e4b484912" NewId="76b9c573-7c27-4e60-908e-6c0399b9a3f4" />
+          <ConversionItem Id="51600c78-46b7-46f8-aee4-b37d6495712b" NewId="2b277924-c756-455a-87df-fd10d3c25fed" />
+          <ConversionItem Id="23d6feaa-fd3f-42af-8c9e-1733e598c2f2" NewId="47b299c1-6352-47a2-bc66-dbb335c18d17" />
+          <ConversionItem Id="372e78da-2457-492b-a502-688301f61de8" NewId="86257f60-2992-4f48-9c79-78be040d5529" />
+          <ConversionItem Id="9ef1d3b2-e947-457a-bb0b-8f6876b8f3c4" NewId="f0900ba2-b811-4a78-8006-01f96d3f33f7" />
+          <ConversionItem Id="9582ae50-dd84-4272-a560-bfd3ad9064f3" NewId="524835a6-e367-4465-8b08-d62442dba541" />
+          <ConversionItem Id="8b684f59-3071-47fb-bb58-ad22c9704271" NewId="037372ba-8d9b-4df8-b26f-7dddbfb7656b" />
+        </PartTrackingIds>
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

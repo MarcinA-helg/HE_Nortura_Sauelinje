@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=DeadpointXpos	G=VAR
+++D=REAL	N=DeadpointXneg	G=VAR
+++D=REAL	N=HalfpointYpos	G=VAR
+++D=REAL	N=HalfpointYneg	G=VAR
+++D=REAL	N=Output	G=VAR
+++D=ARRAY[0..6,0..1] OF REAL	N=XY	Ord=7	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=OEN\nGeneral\sJoystick	N=JoyStick	Ord=1	G=VAR_IN_OUT	Com=$tJoystick Data Structure
+++D=REAL	N=ZeroSpan	Ord=2	G=VAR_INPUT	Com=% - Of input to give Output=0. Deadband.$tSpan in % around Zero to give 0% output
+++D=REAL	N=Vertex50	Ord=3	G=VAR_INPUT	Com=% - Of MaxOutput at Input50%$tOutput in % at Vertex 50% input
+++D=BOOL	N=Calibrate	Ord=4	G=VAR_INPUT	Com=Set ON to define zero. Input Max and Min to Input. Set OFF$tStart Calibrating
+++D=REAL	N=OutputPos	Ord=5	G=VAR_OUTPUT	Com=$t% Joystick in positive direction
+++D=REAL	N=OutputNeg	Ord=6	G=VAR_OUTPUT	Com=$t% Joystick in negative direction
+++D=BOOL	N=Calibrates	Ord=7	G=VAR_OUTPUT	Com=$tCalibration in progress
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=JoyStick_Control	G=RETURN

@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=AccumulationTimer	N=Counter_Service	G=VAR	Com=Akkumulerende teller for total tid siden service
+++D=AccumulationTimer	N=Counter_Total	G=VAR	Com=Akkumulerende teller for total driftstid
+++D=R_TRIG	N=RE_Running	G=VAR	Com=Rising edge for drift
+++D=TIME	N=Wrk_RunTime_Total	G=VAR
+++D=TIME	N=Wrk_RunTime_Service	G=VAR
+++D=TIME	N=Tmp_RunTime_Service	G=VAR
+++D=TIME	N=Tmp_RunTime_Total	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Run	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Reset_Total	E=UpDirection	Ord=2	G=VAR_INPUT	Com=Resets total operating hours
+++D=BOOL	N=Reset_Service	E=UpDirection	Ord=3	G=VAR_INPUT	Com=Resets time since service
+++D=DATE	N=ResetDate_Total	R=1	Ord=4	G=VAR_OUTPUT	Com=Date of the previous total reset
+++D=TIME	N=RunTime_Total	R=1	Ord=5	G=VAR_OUTPUT	Com=Total operating hours since reset
+++D=TIME	N=RunTime_Service	R=1	Ord=6	G=VAR_OUTPUT	Com=Total operating hours since service
+++D=DATE	N=ResetDate_Service	R=1	Ord=7	G=VAR_OUTPUT	Com=Date of last service
+++D=UINT	N=NumberOfStarts	R=1	Ord=8	G=VAR_OUTPUT	Com=Number of starts
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

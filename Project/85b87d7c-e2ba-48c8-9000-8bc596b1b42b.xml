@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LINT	N=NowSec	G=VAR
+++D=_sDT	N=Now	G=VAR
+++D=_sDT	N=Start	G=VAR
+++D=LINT	N=StartSec	G=VAR
+++D=_sDT	N=EndStart	G=VAR
+++D=LINT	N=EndStartSec	G=VAR
+++D=UINT	N=Days	G=VAR
+++D=DINT	N=CurrentWeekDay	G=VAR
+++D=UINT	N=InOutPos	G=VAR
+++D=DINT	N=i	G=VAR
+++D=UINT	N=ChannelNum	G=VAR
+++D=BOOL	N=Within	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF OEN\nGeneral\sTimeDateSwitch	N=TimeDateArray	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF OEN\nGeneral\sTimeDateChannel	N=Channel	Ord=3	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=DATE_AND_TIME	N=_CurrentTime	Const=1	G=VAR_EXTERNAL

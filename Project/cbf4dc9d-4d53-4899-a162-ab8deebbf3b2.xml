@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=D1_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL	Com=Stop relay D1 active$t$t$t$tDI
+++D=BOOL	N=D2_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL	Com=Stop relay D2 active$t$t$t$tDI
+++D=BOOL	N=D3_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL	Com=Stop relay D3 active$t$t$t$tDI
+++D=BOOL	N=D4_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 03	G=VAR_GLOBAL	Com=Stop relay D4 active$t$t$t$tDI
+++D=BOOL	N=D9_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 04	G=VAR_GLOBAL	Com=Stop relay D9 active$t$t$t$tDI
+++D=BOOL	N=D10_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 05	G=VAR_GLOBAL	Com=Stop relay D10 active$t$t$t$tDI
+++D=BOOL	N=D11_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 06	G=VAR_GLOBAL	Com=Stop relay D11 active$t$t$t$tDI
+++D=BOOL	N=D12_DI	AT=IOBus://unit#1/Input Bit 8 bits/Input Bit 07	G=VAR_GLOBAL	Com=Stop relay D12 active$t$t$t$tDI
+++D=BOOL	N=D13_DI	AT=IOBus://unit#2/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL	Com=Stop relay D13 active$t$t$t$tDI
+++D=BOOL	N=U1_Run	AT=IOBus://unit#2/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL	Com=Drive U1 running signal$t$t$t$tDI
+++D=TIME	N=U1TimeDay	G=VAR_GLOBAL	Com=$t$t$t$tU1
+++D=TIME	N=U1TimeWeek	G=VAR_GLOBAL	Com=$t$t$t$tU1
+++D=TIME	N=U1TimeMonth	G=VAR_GLOBAL	Com=$t$t$t$tU1
+++D=TIME	N=D1TimeDay	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=TIME	N=D1TimeWeek	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=TIME	N=D1TimeMonth	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=UINT	N=D1CounterDay	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=UINT	N=D1CounterWeek	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=UINT	N=D1CounterMonth	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=STRING[256]	N=D1Name	G=VAR_GLOBAL	Com=$t$t$t$tD1
+++D=TIME	N=D2TimeDay	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=TIME	N=D2TimeWeek	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=TIME	N=D2TimeMonth	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=UINT	N=D2CounterDay	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=UINT	N=D2CounterWeek	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=UINT	N=D2CounterMonth	G=VAR_GLOBAL	Com=$t$t$t$tD2
+++D=STRING[256]	N=D2Name	G=VAR_GLOBAL	Com=$t$t$t$tD2

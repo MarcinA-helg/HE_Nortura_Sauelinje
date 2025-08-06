@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[256]	N=ASCIIstring	Ord=1	G=VAR_INPUT
+++D=STRING[256]	N=HEXstring	Ord=2	G=VAR_OUTPUT	Com=Non standard characters are 2-bytes.
+++D=UINT	N=NumOfBytes	Ord=3	G=VAR_OUTPUT
+++D=ARRAY[*] OF BYTE	N=ByteArray	Ord=4	G=VAR_IN_OUT	Com=Minimum size is 256
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=ASCIItoHEX	G=RETURN

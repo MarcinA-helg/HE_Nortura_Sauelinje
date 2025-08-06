@@ -1,0 +1,70 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_RT100SMS	N=Wrk_RT100_SMS	G=VAR
+++D=HE_RT100Status	N=Wrk_RT100_Status	G=VAR
+++D=TIME_OF_DAY	N=Time_Current	G=VAR
+++D=_eDAYOFWEEK	N=DayOfWeek	G=VAR
+++D=UINT	N=Wrk_ShiftTeam_Index	G=VAR
+++D=UINT	N=Wrk_RecvList_ShiftTeam_Index	G=VAR
+++D=UINT	N=Wrk_RecvList_ShiftTeamPos_Index	G=VAR
+++D=UINT	N=Wrk_AlarmST_Index	R=1	G=VAR
+++D=UINT	N=AlarmSend_Index	R=1	G=VAR
+++D=BOOL	N=AlarmSend_Found	R=1	G=VAR
+++D=UINT	N=AlarmSend_Priority	R=1	G=VAR
+++D=UINT	N=Wrk_Signal	G=VAR
+++D=STRING[161]	N=Wrk_SMS_Message	R=1	G=VAR
+++D=BOOL	N=Wrk_SMS_Send	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_Snd_RetryCount	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_AlarmIndex	G=VAR
+++D=UINT	N=Wrk_SMS_SendBuffer_Pos	G=VAR
+++D=ARRAY[0..50] OF STRING[20]	N=Wrk_SMS_SendBuffer	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_SendBuffer_Index	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_AlarmNumber	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_IdentificationPos	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_FindBufferPos	G=VAR
+++D=UINT	N=Wrk_AlarmCheck_Index	G=VAR
+++D=TIME	N=Wrk_TaskIntervalTime	G=VAR
+++D=UINT	N=Wrk_NumberAlarmUsed	G=VAR
+++D=UINT	N=Wrk_Contact_Index	G=VAR
+++D=UINT	N=Wrk_NumContacts	G=VAR
+++D=Control_ST\INT_ST\EMBEDDED\SMS_IncommingBuffer	N=Wrk_RecvSMSMessage	G=VAR
+++D=UINT	N=Wrk_RecvSMSMessageStackSize	G=VAR
+++D=Control_ST\INT_ST\INT_SMS_IncommingBuffer	N=Wrk_ReciveBuffer	G=VAR
+++D=UINT	N=Wrk_State	G=VAR
+++D=TIME	N=Wrk_TimeInState	G=VAR
+++D=BOOL	N=Wrk_RecvSMSNewLast	G=VAR
+++D=DINT	N=Wrk_LB	G=VAR
+++D=DINT	N=Wrk_UB	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_AlarmIndexPos	G=VAR
+++D=STRING[10]	N=Wrk_AlarmIndexStr	G=VAR
+++D=BOOL	N=Wrk_AlarmIndexFound	G=VAR
+++D=BOOL	N=Wrk_AlertStarted	G=VAR
+++D=TON	N=TON_Siren	G=VAR
+++D=BOOL	N=Wrk_AlarmActive	G=VAR
+++D=BOOL	N=Wrk_AlarmArrayOutOfRange	G=VAR
+++D=TIME	N=Wrk_DayShift_Duration	G=VAR
+++D=TIME	N=Wrk_DayShift_DurationCurrent	R=1	G=VAR
+++D=TIME	N=Wrk_NightShift_Duration	G=VAR
+++D=TIME	N=Wrk_NightShift_DurationCurrent	R=1	G=VAR
+++D=R_TRIG	N=RE_DayShiftActive	G=VAR
+++D=R_TRIG	N=RE_NightShiftActive	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF Control_ST\ST_SMS_ShiftTeam	N=Ext_ShiftTeam	Ord=3	G=VAR_IN_OUT
+++D=ARRAY[*] OF Control_ST\ST_SMS_Contacts	N=Ext_Contacts	Ord=4	G=VAR_IN_OUT	Com=Max 50 contacts
+++D=Control_ST\ST_SMS_Settings	N=Ext_Settings	Ord=5	G=VAR_IN_OUT
+++D=STRING[10]	N=Cfg_Indentification	Ord=6	G=VAR_INPUT	Com=Controller identification (Configured in RT100, se SMS "Agent: ")
+++D=STRING[15]	N=Cfg_IP_Adress	Ord=7	G=VAR_INPUT	Com=IP adress of RT100
+++D=STRING[17]	N=Cfg_TLSSession	Ord=8	G=VAR_INPUT	Com=TLSSession[#]
+++D=BOOL	N=Cfg_CheckInbox	IV=True	Ord=9	G=VAR_INPUT	Com=Check RT100 SMS inbox for new message. FALSE=Slave, TRUE=Master (read state and incomming message)
+++D=BOOL	N=Cfg_CheckStatus	IV=True	Ord=10	G=VAR_INPUT	Com=Check RT100 Status
+++D=TIME	N=Cfg_Master_ReadInbox_Interval	Ord=11	G=VAR_INPUT
+++D=TIME	N=Cfg_Master_ReadState_Interval	Ord=12	G=VAR_INPUT
+++D=STRING[256]	N=Cfg_Master_ReadState_Auth	Ord=13	G=VAR_INPUT	Com=Base64: [Username]:[Password]
+++D=BOOL	N=Sts_ConnectionError	Ord=14	G=VAR_OUTPUT	Com=Connection error modem
+++D=BOOL	N=Sts_AlarmArrayOutOfRange	Ord=15	G=VAR_OUTPUT	Com=Alarm array out of range (all alarms used)
+++D=UINT	N=Sts_NumberAlarmUsed	Ord=16	G=VAR_OUTPUT	Com=Number of used alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

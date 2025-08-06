@@ -1,0 +1,32 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_VFD_Logic	N=Wrk_VFD_Logic	G=VAR
+++D=TIME	N=Wrk_Runtime	G=VAR
+++D=REAL	N=Wrk_Energy	G=VAR
+++D=TON	N=Wrk_SwitchedOnDisabled_TON	G=VAR
+++D=TON	N=Wrk_LOTO_TON	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_VFDControl	N=Ext_VFD	Ord=2	G=VAR_IN_OUT	Com=Strcture for VFD control
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT
+++D=IO_ST\IO_VFD_ATV6xx_In	N=Ext_VFD_Input	Ord=4	G=VAR_IN_OUT	Com=Strcture for VFD raw data input
+++D=IO_ST\IO_VFD_ATV6xx_Out	N=Ext_VFD_Output	Ord=5	G=VAR_IN_OUT	Com=Strcture for VFD raw data output
+++D=BOOL	N=Cfg_AutoAvailable	Ord=6	G=VAR_INPUT	Com=Auto available/in use
+++D=REAL	N=Inp_AutoSpeedRef	Ord=7	G=VAR_INPUT	Com=Speed in auto mode
+++D=BOOL	N=Inp_AutoStartRef	Ord=8	G=VAR_INPUT	Com=Start in auto mode
+++D=BOOL	N=Cfg_LOTO_InUse	Ord=9	G=VAR_INPUT	Com=LOTO/servicebreaker is used
+++D=BOOL	N=Inp_LOTO	IV=False	Ord=10	G=VAR_INPUT	Com=LOTO/serviecebreaker signail (FALSE=triggerd)
+++D=BOOL	N=Cfg_Interlock_InUse	Ord=11	G=VAR_INPUT	Com=Interlock available/in use
+++D=BOOL	N=Inp_Interlock	Ord=12	G=VAR_INPUT	Com=Interlock signal
+++D=BOOL	N=Cfg_STO_InUse	Ord=13	G=VAR_INPUT	Com=STO in use
+++D=ARRAY[0..255] OF BOOL	N=Inp_EIP_Interface	Ord=14	G=VAR_INPUT	Com=Controller EIP interface number
+++D=USINT	N=Cfg_DriveIP	Ord=15	G=VAR_INPUT	Com=Last octet in IP adress (e.g 69)
+++D=BOOL	N=Cfg_AlmSuppress_IfOff	Ord=16	G=VAR_INPUT	Com=Auto suppress alarm if off mode
+++D=BOOL	N=Inp_AlmSuppress	Ord=17	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=18	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_AvailableAuto	Ord=19	G=VAR_OUTPUT	Com=VFD available for auto control
+++D=BOOL	N=Sts_Interlock	Ord=20	G=VAR_OUTPUT	Com=VFD interlocked
+++D=BOOL	N=Sts_RunningFwd	Ord=21	G=VAR_OUTPUT	Com=Running status
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

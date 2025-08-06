@@ -1,0 +1,68 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_Alternation	N=Alternation	G=VAR
+++D=HE_PID	N=PID	G=VAR
+++D=HE_AlarmGeneral	N=Wrk_AlarmGeneral	G=VAR
+++D=TON	N=TON_StartAuto	G=VAR
+++D=TON	N=TON_StepIn	G=VAR
+++D=TON	N=TON_StepOut	G=VAR
+++D=REAL	N=Wrk_Gain	G=VAR
+++D=BOOL	N=Wrk_StepIn	G=VAR
+++D=BOOL	N=Wrk_StepOut	G=VAR
+++D=ARRAY[0..15] OF BOOL	N=State_Word	G=VAR
+++D=ARRAY[0..15] OF BOOL	N=Start_Word	R=1	G=VAR
+++D=USINT	N=Wrk_NumberOfReady	R=1	G=VAR
+++D=USINT	N=Wrk_NumberOfRunning	R=1	G=VAR
+++D=R_TRIG	N=RE_Alterner	G=VAR
+++D=BOOL	N=Wrk_Alterner	G=VAR
+++D=TIME_OF_DAY	N=CurrentTime	G=VAR
+++D=TON	N=TON_StepOut_FirstCycle	G=VAR
+++D=R_TRIG	N=RE_StepIn	G=VAR
+++D=R_TRIG	N=RE_StepOut	G=VAR
+++D=TON	N=TON_SP_Change1	G=VAR
+++D=TON	N=TON_SP_Change2	G=VAR
+++D=TON	N=TON_SP_Change3	G=VAR
+++D=R_TRIG	N=RE_SPChange1	G=VAR
+++D=R_TRIG	N=RE_SPChange2	G=VAR
+++D=R_TRIG	N=RE_SPChange3	G=VAR
+++D=UDINT	N=Index_A	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y0	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y1	G=VAR
+++D=BOOL	N=Wrk_PVNotAvailable	G=VAR
+++D=BOOL	N=Wrk_ConfigFault	G=VAR
+++D=Control_ST\ST_AnalogValue	N=Wrk_PV_Actual	G=VAR
+++D=UINT	N=Wrk_ValueState	G=VAR
+++D=BOOL	N=Wrk_Interlock	G=VAR
+++D=STRING[30]	N=Wrk_AlarmSuffix	G=VAR
+++D=BOOL	N=Wrk_AlarmState	G=VAR
+++D=BOOL	N=Wrk_SwitchState_Init	R=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_MultiControl	N=Ext_MultiControl	Ord=2	G=VAR_IN_OUT	Com=Structure for multi control
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=ARRAY[0..15] OF BOOL	N=Actuator_AutoAvailable	Ord=4	G=VAR_INPUT	Com=Data array for actuator status
+++D=BOOL	N=Interlock	Ord=5	G=VAR_INPUT	Com=Interlock signal
+++D=BOOL	N=Interlock_InUse	Ord=6	G=VAR_INPUT	Com=Interlock avaiable/in use
+++D=Control_ST\ST_AnalogValue	N=ProcessValue_1	Ord=7	G=VAR_INPUT	Com=Structure with process value
+++D=Control_ST\ST_AnalogValue	N=ProcessValue_2	Ord=8	G=VAR_INPUT	Com=Structure with process value
+++D=Control_ST\ST_AnalogValue	N=ProcessValue_3	Ord=9	G=VAR_INPUT	Com=Structure with process value
+++D=UINT	N=SP_Change1_State	Ord=10	G=VAR_INPUT	Com=0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delay applies in all cases)
+++D=Control_ST\ST_AnalogValue	N=SP_Change1_AnalogValue	Ord=11	G=VAR_INPUT	Com=Comparison value for setpoint change threshold
+++D=Control_ST\ST_DigitalValue	N=SP_Change1_DigitalTrigger	Ord=12	G=VAR_INPUT	Com=FALSE = Not triggered, TRUE  = Trigger for changed setpoint
+++D=UINT	N=SP_Change2_State	Ord=13	G=VAR_INPUT	Com=0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delay applies in all cases)
+++D=Control_ST\ST_AnalogValue	N=SP_Change2_AnalogValue	Ord=14	G=VAR_INPUT	Com=Comparison value for setpoint change threshold
+++D=Control_ST\ST_DigitalValue	N=SP_Change2_DigitalTrigger	Ord=15	G=VAR_INPUT	Com=FALSE = Not triggered, TRUE  = Trigger for changed setpoint
+++D=UINT	N=SP_Change3_State	Ord=16	G=VAR_INPUT	Com=0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delay applies in all cases)
+++D=Control_ST\ST_AnalogValue	N=SP_Change3_AnalogValue	Ord=17	G=VAR_INPUT	Com=Comparison value for setpoint change threshold
+++D=Control_ST\ST_DigitalValue	N=SP_Change3_DigitalTrigger	Ord=18	G=VAR_INPUT	Com=FALSE = Not triggered, TRUE  = Trigger for changed setpoint
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=19	G=VAR_INPUT	Com=Controller TAG
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=20	G=VAR_INPUT	Com=Control cabinet name/TAG
+++D=BOOL	N=Cfg_AlmSuppress_IfOff	Ord=21	G=VAR_INPUT	Com=Auto suppress alarm if off mode
+++D=BOOL	N=Inp_AlmSuppress	Ord=22	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=23	G=VAR_INPUT	Com=Alarm suppressed description
+++D=ARRAY[0..15] OF BOOL	N=Actuator_Engage	Ord=24	G=VAR_OUTPUT	Com=Data array for actuator start
+++D=REAL	N=Output	Ord=25	G=VAR_OUTPUT	Com=Control Output
+++D=BOOL	N=Fault	Ord=26	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,21 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			Erstatt                                                                                                                                                                                                                                                                            &#xD;
+//	CREATOR:		Helgevold - Daniel Årvik                                                                                                                                                                                                                                                              &#xD;
+//                            &#xD;
+//	DESCRIPTION: Adds string. Static value and variable value&#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION		DATE				SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0.0				2025					William Veim			Initial release                                      &#xD;
+//	1.0.1				20-05-2025		Ruben Byman			Bug fix, writing to In/out&#xD;
+//===============================================================================================================================&#xD;
+&#xD;
+Wrk_Result := InOut;&#xD;
+&#xD;
+IF NOT Cfg_Order THEN&#xD;
+	Wrk_Result := CONCAT(In1:=Wrk_Result, In2:=In_Static, In3:=In_Variable);&#xD;
+ELSE&#xD;
+	Wrk_Result := CONCAT(In1:=Wrk_Result, In2:=In_Variable, In3:=In_Static);&#xD;
+END_IF;&#xD;
+&#xD;
+InOut := Wrk_Result;</Text></StructuredTextModel>

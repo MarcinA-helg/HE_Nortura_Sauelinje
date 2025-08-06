@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=CIPUCMMSend	N=Lecture_adresse_IP	G=VAR
+++D=STRING[20]	N=RoutePath	G=VAR	Com=Port#1 '02\127.0.0.1' Port #2 '01\#01\02\127.0.0.1'
+++D=UINT	N=TimeOut	IV=5	G=VAR
+++D=BYTE	N=ServiceCode	IV=16#0E	G=VAR
+++D=_sREQUEST_PATH	N=RqPath	IV=(ClassID := 16#F5, InstanceID := 01, isAttributeID := True, AttributeID := 05)	G=VAR
+++D=ARRAY[0..9] OF BYTE	N=ServiceDat	G=VAR
+++D=UINT	N=Size	IV=0	G=VAR
+++D=ARRAY[0..21] OF BYTE	N=RespServiceDat	G=VAR
+++D=BOOL	N=Read_done	G=VAR
+++D=WORD	N=ErrorID	G=VAR
+++D=DWORD	N=ErrorIDEx	G=VAR
+++D=UINT	N=RespSize	G=VAR
+++D=ARRAY[0..3] OF UINT	N=IPAddress_num	Ord=2	G=VAR
+++D=STRING[16]	N=IPAddress_string	Ord=2	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=1	G=VAR_OUTPUT
+++D=STRING[16]	N=IPAddress1_string	Ord=2	G=VAR_OUTPUT
+++D=ARRAY[0..3] OF UINT	N=IPAddress1_num	Ord=3	G=VAR_OUTPUT
+++D=STRING[16]	N=IPAddress2_string	Ord=4	G=VAR_OUTPUT
+++D=ARRAY[0..3] OF UINT	N=IPAddress2_num	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

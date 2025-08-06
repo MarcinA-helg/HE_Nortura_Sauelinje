@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=i	G=VAR
+++D=_sDT	N=Jan1st	G=VAR
+++D=DATE_AND_TIME	N=CurrentTimeD_T	G=VAR
+++D=STRING[3]	N=st_HOUR	G=VAR
+++D=STRING[3]	N=st_MIN	G=VAR
+++D=STRING[3]	N=st_Sec	G=VAR
+++D=STRING[5]	N=st_YEAR	G=VAR
+++D=STRING[3]	N=st_MONTH	G=VAR
+++D=STRING[3]	N=st_DAY	G=VAR
+++D=STRING[25]	N=st_TIME	G=VAR
+++D=STRING[25]	N=st_DATE	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=_sDT	N=CurrentTime	Ord=1	G=VAR_OUTPUT	Com=Current Time Structure
+++D=BOOL	N=LeapYear	Ord=2	G=VAR_OUTPUT	Com=TRUE if LeapYear
+++D=USINT	N=CurrentWeek	Ord=3	G=VAR_OUTPUT	Com=Current Week Number, 1-53
+++D=_eDAYOFWEEK	N=DayOfWeek	Ord=4	G=VAR_OUTPUT	Com=Current weekday as Enum 
+++D=UINT	N=CurrentDay	Ord=5	G=VAR_OUTPUT	Com=Current Day Number, 1-366
+++D=LINT	N=TotalSeconds	Ord=6	G=VAR_OUTPUT	Com=Seconds since 00:00:00 on January 1st, 1970
+++D=STRING[25]	N=DateTimeAsString	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=DATE_AND_TIME	N=_CurrentTime	Const=1	G=VAR_EXTERNAL
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=DateAndTime	G=RETURN

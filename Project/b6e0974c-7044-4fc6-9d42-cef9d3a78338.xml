@@ -1,0 +1,33 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_L_Alarm	G=VAR
+++D=TON	N=TON_LL_Alarm	G=VAR
+++D=TON	N=TON_H_Alarm	G=VAR
+++D=TON	N=TON_HH_Alarm	G=VAR
+++D=TON	N=TON_L_AlarmReturn	G=VAR
+++D=TON	N=TON_LL_AlarmReturn	G=VAR
+++D=TON	N=TON_H_AlarmReturn	G=VAR
+++D=TON	N=TON_HH_AlarmReturn	G=VAR
+++D=BOOL	N=Wrk_AlarmL	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmLL	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmH	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmHH	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmL_Sendt	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmLL_Sendt	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmH_Sendt	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmHH_Sendt	R=1	G=VAR
+++D=BOOL	N=Wrk_GeneralTrigger	G=VAR
+++D=STRING[20]	N=Wrk_Suffix	G=VAR
+++D=BOOL	N=Wrk_DigitalAlarm	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=2	G=VAR_IN_OUT
+++D=Control_ST\EXT_ALARM\EXT_AlarmAnalog	N=Ext_AlarmAnalog	Ord=3	G=VAR_IN_OUT
+++D=Control_ST\EXT_ALARM\EXT_AlarmGeneral	N=Ext_AlarmGeneral	Ord=4	G=VAR_IN_OUT
+++D=UINT	N=Inp_Quality	Ord=5	G=VAR_INPUT
+++D=INT	N=Inp_AlarmToken	Ord=6	G=VAR_INPUT
+++D=REAL	N=Inp_Process_Value	Ord=7	G=VAR_INPUT
+++D=STRING[25]	N=Inp_Process_Value_String	Ord=8	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..3] OF BYTE	N=TheValueAsByteArray	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=WordsAsByteArray	G=VAR
+++D=OEN\uDWORD	N=FloatUnswapped	G=VAR
+++D=BOOL	N=Zero	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=ARRAY[0..3] OF BYTE	N=FourBytes	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..1] OF WORD	N=TwoWords	Ord=2	G=VAR_INPUT
+++D=DINT	N=DoubleInt	Ord=3	G=VAR_INPUT
+++D=REAL	N=Float	Ord=4	G=VAR_INPUT
+++D=OEN\eSwap	N=SwapType	Ord=5	G=VAR_INPUT
+++D=ARRAY[0..3] OF BYTE	N=As4BYTEs	Ord=6	G=VAR_OUTPUT
+++D=ARRAY[0..1] OF WORD	N=As2WORDs	Ord=7	G=VAR_OUTPUT
+++D=DINT	N=AsDINT	Ord=8	G=VAR_OUTPUT
+++D=REAL	N=AsREAL	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=Swap4Bytes	G=RETURN

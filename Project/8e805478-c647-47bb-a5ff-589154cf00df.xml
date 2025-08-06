@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[1986]	N=Wrk_RecvMessage	G=VAR
+++D=STRING[1986]	N=Wrk_Scratch	G=VAR
+++D=UINT	N=Wrk_Pos	G=VAR
+++D=STRING[22]	N=Wrk_Status	G=VAR
+++D=DINT	N=Wrk_Index	G=VAR
+++D=STRING[22]	N=Wrk_FromAddress	G=VAR
+++D=STRING[22]	N=Wrk_DateTime	G=VAR
+++D=UINT	N=Wrk_MessageLen	G=VAR
+++D=STRING[161]	N=Wrk_Message	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[1986]	N=Inp_RecvMessage	Ord=1	G=VAR_INPUT
+++D=STRING[22]	N=Out_FromAddress	Ord=2	G=VAR_OUTPUT
+++D=STRING[22]	N=Out_DateTime	Ord=3	G=VAR_OUTPUT
+++D=STRING[256]	N=Out_Message	Ord=4	G=VAR_OUTPUT
+++D=DINT	N=Val_Index	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_RT100ParseSMS	G=RETURN	Com=True = New Message

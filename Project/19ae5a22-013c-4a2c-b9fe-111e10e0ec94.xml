@@ -1,0 +1,45 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_PID	N=PID	G=VAR
+++D=HE_AlarmGeneral	N=Wrk_AlarmGeneral	G=VAR
+++D=TON	N=TON_CycleTime	G=VAR
+++D=TON	N=TON_Emergency_Valve	G=VAR
+++D=TON	N=TON_EmergencyValve_TimeInterval	G=VAR
+++D=TOF	N=TOF_EmergencyValve_TimeInterval	G=VAR
+++D=TP	N=TP_OnTime	G=VAR
+++D=BOOL	N=Wrk_MainDosing_Valve	G=VAR
+++D=BOOL	N=Wrk_Emergency_Valve	G=VAR
+++D=BOOL	N=Wrk_PWM_Valve	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y0	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y1	G=VAR
+++D=BOOL	N=Wrk_PVNotAvailable	G=VAR
+++D=BOOL	N=Wrk_ConfigFault	G=VAR
+++D=Control_ST\ST_AnalogValue	N=Wrk_ActualPV	G=VAR
+++D=UINT	N=Wrk_ValueState	G=VAR
+++D=STRING[30]	N=Wrk_AlarmSuffix	G=VAR
+++D=BOOL	N=Wrk_AlarmState	G=VAR
+++D=BOOL	N=Wrk_SwitchState_Init	R=1	G=VAR
+++D=REAL	N=Wrk_AutoGain	G=VAR
+++D=REAL	N=Wrk_Gain	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_OxygenControl	N=Ext_OxygenControl	Ord=2	G=VAR_IN_OUT	Com=Oxygen Control Structure
+++D=ARRAY[*] OF Control_ST\INT_ST\INT_Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=Control_ST\ST_AnalogValue	N=Inp_OxygenValue_1	Ord=4	G=VAR_INPUT	Com=Oxygen value 1 structure
+++D=Control_ST\ST_AnalogValue	N=Inp_OxygenValue_2	Ord=5	G=VAR_INPUT	Com=Oxygen value 2 structure
+++D=Control_ST\ST_AnalogValue	N=Inp_OxygenValue_3	Ord=6	G=VAR_INPUT	Com=Oxygen value 3 structure
+++D=Control_ST\ST_AnalogValue	N=Inp_OxygenValue_4	Ord=7	G=VAR_INPUT	Com=Oxygen value 4 structure
+++D=BOOL	N=Cfg_PWM_InUse	Ord=8	G=VAR_INPUT	Com=Status if PWM valve in use (Hide settings in SCADA)
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=9	G=VAR_INPUT	Com=Controller TAG
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=10	G=VAR_INPUT	Com=Control cabinet name/TAG
+++D=BOOL	N=Cfg_AlmSuppress_IfOff	Ord=11	G=VAR_INPUT	Com=Auto suppress alarm if off mode
+++D=BOOL	N=Inp_AlmSuppress	Ord=12	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=13	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Out_MainDosing	Ord=14	G=VAR_OUTPUT	Com=Output main dosing valve (On/Off)
+++D=BOOL	N=Out_Emergency	Ord=15	G=VAR_OUTPUT	Com=Output emergency dosing valve (On/Off)
+++D=BOOL	N=Out_PWM	Ord=16	G=VAR_OUTPUT	Com=Output PWM dosing valve (On/Off)
+++D=REAL	N=Out_Control_Valve	Ord=17	G=VAR_OUTPUT	Com=Output control/regulating valve (Analog)
+++D=BOOL	N=Sts_Fault	Ord=18	G=VAR_OUTPUT	Com=Fault (Process value not available, invalid config)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

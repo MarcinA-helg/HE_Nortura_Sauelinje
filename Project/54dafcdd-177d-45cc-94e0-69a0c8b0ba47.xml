@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=wrk_risingTrig	G=VAR
+++D=F_TRIG	N=wrk_fallingTrig	G=VAR
+++D=BOOL	N=wrk_rising	G=VAR	Com=stigende flanke
+++D=BOOL	N=wrk_falling	G=VAR	Com=fallende flanke
+++D=TIME	N=wrk_timeSinceTrigger	G=VAR	Com=tid siden signal endring ble trigget
+++D=DATE_AND_TIME	N=wrk_lastTrigger	R=1	G=VAR	Com=tid signal endring ble trigget
+++D=BOOL	N=wrk_boolChange	G=VAR	Com=endring i bools input
+++D=BOOL	N=wrk_NumChange	G=VAR	Com=endring i numerisk input
+++D=ULINT	N=wrk_lastNumber	G=VAR
+++D=TIME	N=Wrk_lastSignalInterval	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENI	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Inp_Bool	Ord=1	G=VAR_INPUT	Com=Input for boolsk vedri (brukes når Cfg_UseNumber er False)
+++D=ULINT	N=Inp_Number	Ord=2	G=VAR_INPUT	Com=Input for numerisk verdi (brukes når Cfg_UseNumber er True)
+++D=TIME	N=Cfg_TimeOut	R=1	IV=T#10s	Ord=3	G=VAR_INPUT	Com=Maks tid for endring av signal
+++D=BOOL	N=Cfg_UseNumber	Ord=4	G=VAR_INPUT	Com=True = kontroller numerisk verdi, False = kontroller boolsk verdi
+++D=BOOL	N=Cfg_MonitorRising	R=1	IV=True	Ord=5	G=VAR_INPUT	Com=Se etter stigende flanke
+++D=BOOL	N=Cfg_MonitorFalling	R=1	IV=False	Ord=6	G=VAR_INPUT	Com=Se etter fallende flanke
+++D=BOOL	N=Sts_Timeout	Ord=7	G=VAR_OUTPUT	Com=Det har gått for lang tid siden signal endret verdi
+++D=TIME	N=Val_TimeSinceTrigger	Ord=8	G=VAR_OUTPUT	Com=Tid siden endring av signal ble trigget
+++D=TIME	N=Val_LastSignalInterval	Ord=9	G=VAR_OUTPUT	Com=Tid før forrige endring
+++D=DATE_AND_TIME	N=Val_LastTriggerTime	Ord=10	G=VAR_OUTPUT	Com=Tidspunktet signal endring sist ble trigget
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

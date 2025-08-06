@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TIME	N=CycleTime	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=TIME	N=TimerValue	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Q	Ord=3	G=VAR_OUTPUT
+++D=TIME	N=TimeLeft	R=1	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

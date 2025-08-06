@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=HE_AInModule	N=Inp_AInModule	Ord=1	G=VAR_INPUT
+++D=REAL	N=Out_SignalValue_Y0	Ord=2	G=VAR_OUTPUT
+++D=REAL	N=Out_SignalValue_Y1	Ord=3	G=VAR_OUTPUT
+++D=REAL	N=Out_SignalValue_Min	Ord=4	G=VAR_OUTPUT
+++D=REAL	N=Out_SignalValue_Max	Ord=5	G=VAR_OUTPUT
+++D=STRING[10]	N=Out_SignalValue_Unit	Ord=6	G=VAR_OUTPUT
+++D=INT	N=Out_RawValue_LoopBreak	Ord=7	G=VAR_OUTPUT
+++D=INT	N=Out_RawValue_X0	Ord=8	G=VAR_OUTPUT
+++D=INT	N=Out_RawValue_X1	Ord=9	G=VAR_OUTPUT
+++D=INT	N=Out_RawValue_Min	Ord=10	G=VAR_OUTPUT
+++D=INT	N=Out_RawValue_Max	Ord=11	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_AIn_Module	G=RETURN

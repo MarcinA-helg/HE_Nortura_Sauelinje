@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=PIDAT	N=PID	G=VAR
+++D=_sOPR_SET_PARAMS	N=OprSetParameters	Ord=9	G=VAR
+++D=_sINIT_SET_PARAMS	N=InitSetParameters	Ord=9	G=VAR
+++D=REAL	N=Dummy	G=VAR
+++D=TIME	N=Integration_Band_Time	G=VAR
+++D=TIME	N=Derivation_Band_Time	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Run	Ord=1	G=VAR_INPUT	Com=Control of regulator
+++D=REAL	N=Inp_Proportional_Band	Ord=2	G=VAR_IN_OUT	Com=Lower value → stronger proportional action, 0.01 to 1000.00 (% FS)
+++D=UINT	N=Inp_IntergrationTime	Ord=3	G=VAR_IN_OUT	Com=Higher value → stronger integral action, 0s = no integral term
+++D=UINT	N=Inp_DerivationTime	Ord=4	G=VAR_IN_OUT	Com=Higher value → stronger derivative action, 0 s = no derivative term
+++D=BOOL	N=Autotune_Start	R=1	Ord=5	G=VAR_INPUT	Com=TRUE = Start autotuning
+++D=REAL	N=ProcessValue	Ord=6	G=VAR_INPUT	Com=Process value
+++D=REAL	N=SetpointValue	Ord=7	G=VAR_INPUT	Com=Setpoint value
+++D=REAL	N=RngUpLmt	IV=100.0	Ord=8	G=VAR_INPUT	Com=Upper limit of process value
+++D=REAL	N=RngLowLmt	IV=0.0	Ord=9	G=VAR_INPUT	Com=Lower limit of process value
+++D=REAL	N=MVLowLmt	IV=0.0	Ord=10	G=VAR_INPUT	Com=Output value lower limit
+++D=REAL	N=MVUpLmt	IV=100.0	Ord=11	G=VAR_INPUT	Com=Output value upper limit
+++D=REAL	N=ManResetVal	IV=0.0	Ord=12	G=VAR_INPUT	Com=Output when value is at setpoint. Used for offset correction in P / PD control.
+++D=BOOL	N=Direction	IV=False	Ord=13	G=VAR_INPUT	Com=TRUE = Direct action, FALSE = Reverse action
+++D=REAL	N=ErrorMV	IV=0.0	Ord=14	G=VAR_INPUT	Com=Output when error
+++D=BOOL	N=Autotune_Done	Ord=15	G=VAR_OUTPUT	Com=Status autotuning done
+++D=BOOL	N=Autotune_Busy	Ord=16	G=VAR_OUTPUT	Com=Status autotuning busy
+++D=REAL	N=Output	Ord=17	G=VAR_OUTPUT	Com=Output from regulator
+++D=BOOL	N=Fault	Ord=18	G=VAR_OUTPUT	Com=MAX_INPUT < MIN_INPUT OR SP/PV outside of MAX/MIN_INPUT range
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

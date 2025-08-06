@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[199]	N=CheckString	G=VAR
+++D=STRING[3]	N=LocalCheckSum	G=VAR
+++D=STRING[3]	N=RemoteCheckSum	G=VAR
+++D=STRING[4]	N=Sentence	G=VAR
+++D=OEN\nSerial\nNMEA\sGGA	N=GGA	G=VAR
+++D=OEN\nSerial\nNMEA\sGLL	N=GLL	G=VAR
+++D=OEN\nSerial\nNMEA\sWPL	N=WPL	G=VAR
+++D=OEN\nSerial\nNMEA\sRMC	N=RMC	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[199]	N=NMEAString	Ord=1	G=VAR_INPUT
+++D=BOOL	N=CheckSumError	Ord=2	G=VAR_OUTPUT
+++D=OEN\nSerial\nNMEA\sNMEA	N=NMEAData	Ord=3	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=NMEA	G=RETURN

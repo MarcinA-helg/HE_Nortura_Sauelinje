@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types11" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="SP_Change" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="21" OffsetType="NJ">
+      <DataType Name="SP_Changed_Value" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="New setpoint value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SP_Changed_Type" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0=Not in use, 1= Triggered by digital value, 2= Triggered if value exceeds the threshold, 3= Triggered if value falls below the threshold. (Delay applies in all cases)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SP_Changed_Digital" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\DigitalValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Digital trigger (Type = 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SP_Changed_AnaLimit" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reduced setpoint  limit (Type = 2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SP_Changed_AnaValue" BaseType="Control_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reduced setpoint  limit reference value (Type = 2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SP_Changed_Delay" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reduced setpoint delay (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="Interlock" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="23" OffsetType="NJ">
+      <DataType Name="Cfg_Bypass" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Activate bypass of trigger (only active if overall bypass is enabled)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_FirstActive" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="1 = Trigger was the first to activate interlock" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_State" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Trigger state: 0=Normal, 1=Bypassed, 2=Interlocked" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="AnalogValue_Simplified" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Use in structure (PV, SP, thershold for change SP etc)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="17" OffsetType="NJ">
+      <DataType Name="ProcessValue" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Actual process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG for the process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Unit" BaseType="STRING[10]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit for the value (e.g barg, cm, m)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Value in use" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DigitalValue_Simplified" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Use in structure (PV, SP, thershold for change SP etc)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="16" OffsetType="NJ">
+      <DataType Name="ProcessValue" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Actual process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_TAG" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TAG for the process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Process_Desc" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Description for process value" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

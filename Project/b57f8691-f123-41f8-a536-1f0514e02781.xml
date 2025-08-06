@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=INT	N=Inn1_Hour	Ord=2	G=VAR_INPUT	Com=Time hour part
+++D=INT	N=Inn1_Minute	Ord=3	G=VAR_INPUT	Com=Time minute part
+++D=UINT	N=Inn2	Ord=4	G=VAR_INPUT	Com=Time in minutes to be added
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[5]	N=HE_INTAdd	G=RETURN

@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LINT	N=Nanoseconds	G=VAR
+++D=LINT	N=sec	Ord=9	G=VAR
+++D=LINT	N=ns	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=UINT	N=hours	Ord=2	G=VAR_INPUT
+++D=UINT	N=minutes	Ord=3	G=VAR_INPUT
+++D=REAL	N=seconds	Ord=4	G=VAR_INPUT
+++D=TIME	N=TIME_To_hms	Ord=5	G=VAR_INPUT
+++D=UINT	N=h	Ord=6	G=VAR_OUTPUT
+++D=UINT	N=m	Ord=7	G=VAR_OUTPUT
+++D=REAL	N=s	Ord=8	G=VAR_OUTPUT
+++D=REAL	N=h_total	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=TIME	N=TimeToTIME	G=RETURN

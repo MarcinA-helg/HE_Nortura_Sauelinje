@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BYTE	N=Sysmac_Error_Status	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..63] OF BOOL	N=NX_Unit_Registration_Status	Ord=2	G=VAR_INPUT
+++D=ARRAY[0..63] OF BOOL	N=NX_Unit_IOData_Active_Status	Ord=3	G=VAR_INPUT
+++D=OEN\nGeneral\sNX_Status	N=NX_Status	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Observation	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Major_Fault	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=Minor_Fault	Ord=7	G=VAR_OUTPUT
+++D=BOOL	N=Partial_Fault	Ord=8	G=VAR_OUTPUT
+++D=USINT	N=NX_Unit_Registrations	Ord=9	G=VAR_OUTPUT	Com=Number of Registrations
+++D=USINT	N=NX_Unit_IOData_Active	Ord=10	G=VAR_OUTPUT	Com=Number of Active Units
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=NX_ECC_Status	G=RETURN

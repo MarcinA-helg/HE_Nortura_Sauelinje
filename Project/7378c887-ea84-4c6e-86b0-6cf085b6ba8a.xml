@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=a	G=VAR
+++D=USINT	N=b	G=VAR
+++D=USINT	N=c	G=VAR
+++D=USINT	N=d	G=VAR
+++D=USINT	N=e	G=VAR
+++D=ARRAY[0..7] OF TON	N=TON_Trig	G=VAR
+++D=ARRAY[0..7] OF TOF	N=TOF_Trig	G=VAR
+++D=WORD	N=InterlockActive	G=VAR
+++D=WORD	N=FirstInterlock	G=VAR
+++D=WORD	N=BypassActive	G=VAR
+++D=F_TRIG	N=FE_Reset	G=VAR
+++D=R_TRIG	N=RE_Interlock	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=Control_ST\ST_Interlock	N=Interlock	Ord=2	G=VAR_IN_OUT
+++D=Control_ST\INT_ST\INT_Interlock_Triggers	N=Triggers	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Sts_Interlock	Ord=4	G=VAR_OUTPUT	Com=Interlock status (0 = OK, 1 = Interlocked)
+++D=BOOL	N=Sts_Bypassed	Ord=5	G=VAR_OUTPUT	Com=Bypass status (0 = Not bypassed, 1 = Bypassed)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
