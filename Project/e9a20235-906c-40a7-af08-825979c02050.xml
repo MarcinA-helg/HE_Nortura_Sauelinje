@@ -2,7 +2,7 @@
 <data>
   <Opcua.Section.ServerSetting>
     <Opcua.Field.AutoStartup>
-      <CurrentValue>EnumElement1</CurrentValue>
+      <CurrentValue>EnumElement2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
@@ -20,7 +20,7 @@
     </Opcua.Field.EndPoint>
     <Opcua.Field.Port>
       <CurrentValue>4840</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>4840</DefaultValue>
       <Options />
@@ -34,7 +34,7 @@
     </Opcua.Field.PortValue2>
     <Opcua.Field.ExecutionLogRecord>
       <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -72,7 +72,7 @@
     </Opcua.Field.ExecutionLogRecordNumberValue2>
     <Opcua.Field.ExpandStructureNodes>
       <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -82,7 +82,7 @@
     </Opcua.Field.ExpandStructureNodes>
     <OpcUa.Field.ExpandArrayNodes>
       <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -92,7 +92,7 @@
     </OpcUa.Field.ExpandArrayNodes>
     <OpcUa.Field.PublishSettings.PublishVariables>
       <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -102,7 +102,7 @@
     </OpcUa.Field.PublishSettings.PublishVariables>
     <OpcUa.Field.PublishSettings.Namespaces>
       <CurrentValue></CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue></DefaultValue>
       <Options />
@@ -116,7 +116,7 @@
     </OpcUa.Field.PublishSettings.Namespaces.Count>
     <OpcUa.Field.PublishSettings.Instances>
       <CurrentValue></CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue></DefaultValue>
       <Options />

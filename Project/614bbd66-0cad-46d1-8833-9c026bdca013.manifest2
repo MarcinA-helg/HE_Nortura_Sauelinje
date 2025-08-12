@@ -3,8 +3,10 @@
   <Application applicationName="sysmac" applicationVersion="Infinity" />
   <Solution solutionName="Nortura_sau_conveyor" id="614bbd66-0cad-46d1-8833-9c026bdca013" trackingId="ffc6c89f-49ba-4e61-8167-f0263851ee44" solutionSchemaVersion="2">
     <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-15W101☐-V1Version:1.17" />
       <ApplicationFeature name="V102Project" />
-      <ApplicationFeature name="SetUnit NX102-9000 Ver. 1.68" />
+      <ApplicationFeature name="SetUnit NX102-9000 Ver. 1.64" />
       <ApplicationFeature name="NexLibraryInternalUsed" />
       <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
     </ApplicationFeatures>

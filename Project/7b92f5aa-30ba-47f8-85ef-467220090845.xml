@@ -11,8 +11,10 @@
     <AssociatedProgramData ProgramName="Program0" InstanceName="Program0" IniFileTrackingId="e1591fb963db49498afd01f1e1747785" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="f9d80ac7-71e3-4f42-a732-71104580a830" />
     <RefreshUnitId RefreshUnitId="32943d8a-f33d-4f65-8424-f578c5b4c62f" />
     <RefreshUnitId RefreshUnitId="c640ce82-8ee9-4552-bae0-509477cddff7" />
+    <RefreshUnitId RefreshUnitId="c31a618b-590d-4d44-bd68-6de5c02febb4" />
   </RefreshUnitIds>
   <TaskInterfaceVariables version="1" />
 </data>

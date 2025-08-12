@@ -93,6 +93,16 @@
       <DefaultValue>NexCpuActionEmptyUnit</DefaultValue>
       <Options />
     </NexCpuActionSDCardRestorePasswordValue2>
+    <NexCpuActionProhibitFirmwareUpdate>
+      <CurrentValue>EnumElement1</CurrentValue>
+      <IsEnabled>true</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>EnumElement1</DefaultValue>
+      <Options>
+        <Option>EnumElement1</Option>
+        <Option>EnumElement2</Option>
+      </Options>
+    </NexCpuActionProhibitFirmwareUpdate>
     <NexCpuActionSetting.CommandErrorOutput>
       <CurrentValue>EnumElement1</CurrentValue>
       <IsEnabled>true</IsEnabled>
@@ -123,16 +133,6 @@
         <Option>EnumElement2</Option>
       </Options>
     </NexCpuActionProhibitSDBackup>
-    <NexCpuActionProhibitFirmwareUpdate>
-      <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue>EnumElement1</DefaultValue>
-      <Options>
-        <Option>EnumElement1</Option>
-        <Option>EnumElement2</Option>
-      </Options>
-    </NexCpuActionProhibitFirmwareUpdate>
   </NexCpuActionGeneral>
   <NexCpuEipFINSSetting>
     <NexCpuEipFINSRoutingTable>
@@ -178,7 +178,7 @@
       <Options />
     </NexCpuEipFINSRoutingTableRemoteTableItemMaximumCount>
     <NexCpuEipFINSRoutingTableRemoteTableItemCount>
-      <CurrentValue>0</CurrentValue>
+      <CurrentValue>1</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
