@@ -1,0 +1,1 @@
+<IagCollectionName xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.Iag.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Id>6a1ba9c5-5e5b-46be-81f5-c8b886b9876e</Id><Name>SetNATime</Name><Version>v1.0</Version></IagCollectionName>

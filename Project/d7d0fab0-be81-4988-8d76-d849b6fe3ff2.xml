@@ -1,0 +1,15 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class TimeDate&#xD;
+</HiddenHeader><SerialData i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[{"t":"Omron.Cxap.Modules.DeviceHmi.Variables.Core.Variable","a":"Omron.Cxap.Modules.DeviceHmi.Module, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f8cd6ce856ce25c","o":{"Address":"NX102_sauelinje.DateTimeFromHMI","Comment":"","RawComment":null,"DataTypeName":"Date","Edge":{"v":"NoEdge"},"ElementComments":null,"Group":{"v":"VAR_GLOBAL"},"IsAddedInOnlineEdit":false,"IsModifiedInitialValueInOnlineEdit":false,"Id":"da0b08d5-e522-4a3d-a91c-710b47057276","InitialValue":"","IsConstant":false,"IsControllerVariable":false,"IsReadOnly":false,"IsReadOnlyNetwork":false,"Length":null,"Name":"DateTimeFromHMI","NamespaceId":"00000000-0000-0000-0000-000000000000","NetworkPublication":{"v":"NoPublication"},"Order":null,"Retained":false,"UpdateRate":500,"MappedDeviceName":"NX102_sauelinje","InitialValueArrayLength":"","ScalingConfigurationId":null,"Scaling":"None"}},{"t":"Omron.Cxap.Modules.DeviceHmi.Variables.Core.Variable","a":"Omron.Cxap.Modules.DeviceHmi.Module, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f8cd6ce856ce25c","o":{"Address":"NX102_sauelinje._CurrentTime","Comment":null,"RawComment":null,"DataTypeName":"Date","Edge":{"v":"NoEdge"},"ElementComments":null,"Group":{"v":"VAR_GLOBAL"},"IsAddedInOnlineEdit":false,"IsModifiedInitialValueInOnlineEdit":false,"Id":"6e8a99fd-a6ba-4629-9c5f-dd3632e7eb7f","InitialValue":"","IsConstant":false,"IsControllerVariable":false,"IsReadOnly":false,"IsReadOnlyNetwork":false,"Length":null,"Name":"NX102_sauelinje__CurrentTime","NamespaceId":"00000000-0000-0000-0000-000000000000","NetworkPublication":{"v":"NoPublication"},"Order":null,"Retained":false,"UpdateRate":500,"MappedDeviceName":"NX102_sauelinje","InitialValueArrayLength":"","ScalingConfigurationId":null,"Scaling":"None"}}]</SerialData><SerialDeviceHmiId i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[{"t":"System.String","a":"mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","o":"df6724ab-5655-496f-8b82-140338207c16"},{"t":"System.String","a":"mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","o":"614bbd66-0cad-46d1-8833-9c026bdca013"}]</SerialDeviceHmiId><SerialScaleData i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[]</SerialScaleData><Text>'Code behind Page - Add local subroutines for the page.&#xD;
+&#xD;
+&#xD;
+Sub prepareDateTime&#xD;
+	EditVariable("DateTimeFromHMI")&#xD;
+End Sub&#xD;
+&#xD;
+Sub  ReadPLCDateTime&#xD;
+		DateTimeFromHMI = NX102_sauelinje__CurrentTime&#xD;
+End Sub&#xD;
+	&#xD;
+&#xD;
+ </Text></CodeEditorModel>

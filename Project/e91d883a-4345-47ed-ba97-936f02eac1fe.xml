@@ -25,20 +25,13 @@ _EN=Variables
 ++D=BOOL	N=O	Ord=0	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
 ++D=BOOL	N=Trig	Ord=2	G=VAR_INPUT
-++D=TIME	N=TimeDay	R=1	Ord=3	G=VAR_OUTPUT	Com=Work time today 
-++D=TIME	N=TimeWeek	R=1	Ord=4	G=VAR_OUTPUT	Com=Work time present week
-++D=TIME	N=TimeMonth	R=1	Ord=5	G=VAR_OUTPUT	Com=Work time present month
-++D=TIME	N=TimeYear	R=1	Ord=6	G=VAR_OUTPUT	Com=Work time present year
-++D=UINT	N=CntDay	R=1	Ord=7	G=VAR_OUTPUT	Com=Triger counter today
-++D=UINT	N=CntWeek	R=1	Ord=8	G=VAR_OUTPUT	Com=Triger counter present weeek
-++D=UINT	N=CntMonth	R=1	Ord=9	G=VAR_OUTPUT	Com=Triger counter present month
-++D=UINT	N=CntYear	R=1	Ord=10	G=VAR_OUTPUT
-++D=BOOL	N=DayShift	Ord=11	G=VAR_OUTPUT	Com=Pulse on day shift 0.00
-++D=BOOL	N=WeekShift	Ord=12	G=VAR_OUTPUT	Com=Pulse on week shift Sun-Mond 0.00
-++D=BOOL	N=MonthShift	Ord=13	G=VAR_OUTPUT	Com=Pulse on month shift 1. 0.00
-++D=BOOL	N=ResDayInp	Ord=14	G=VAR_INPUT	Com=External reset DAY values
-++D=BOOL	N=ResWeekInp	Ord=15	G=VAR_INPUT	Com=External reset WEEK values
-++D=BOOL	N=ResMonthInp	Ord=16	G=VAR_INPUT	Com=External reset MONTH values
-++D=BOOL	N=ResYearInp	Ord=17	G=VAR_INPUT	Com=External reset Year values
+++D=BOOL	N=DayShift	Ord=3	G=VAR_OUTPUT	Com=Pulse on day shift 0.00
+++D=BOOL	N=WeekShift	Ord=4	G=VAR_OUTPUT	Com=Pulse on week shift Sun-Mond 0.00
+++D=BOOL	N=MonthShift	Ord=5	G=VAR_OUTPUT	Com=Pulse on month shift 1. 0.00
+++D=BOOL	N=ResDayInp	Ord=6	G=VAR_INPUT	Com=External reset DAY values
+++D=BOOL	N=ResWeekInp	Ord=7	G=VAR_INPUT	Com=External reset WEEK values
+++D=BOOL	N=ResMonthInp	Ord=8	G=VAR_INPUT	Com=External reset MONTH values
+++D=BOOL	N=ResYearInp	Ord=9	G=VAR_INPUT	Com=External reset Year values
+++D=SwitchDT	N=SwitchValues	Ord=10	G=VAR_IN_OUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=ResetDay	G=VAR_EXTERNAL

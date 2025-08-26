@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="SwitchDT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ" Id="e1f684ab-28ce-4608-b103-90972c91c5cf">
+      <DataType Name="Name" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="2254eb7e-11e5-4e0f-97e7-8f9bf50cfb64" />
+      <DataType Name="TimeDay" BaseType="TimeSpan" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3c98d73c-eae0-42ee-be5b-c4cfd5752621" />
+      <DataType Name="TimeWeek" BaseType="TimeSpan" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="491ce320-5468-49d0-b839-d36f186adcc6" />
+      <DataType Name="TimeMonth" BaseType="TimeSpan" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="da33cc8d-badb-4b68-adbc-e8b05fe3e9aa" />
+      <DataType Name="TimeYear" BaseType="TimeSpan" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="fa8b6c4b-dd59-49e5-a5b7-c23a6af3f266" />
+      <DataType Name="CounterDay" BaseType="UShort" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3b39f66c-a669-43aa-bdb0-9f750251a7f8" />
+      <DataType Name="CounterWeek" BaseType="UShort" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="20d63c54-4e36-491f-98d9-28ed9ef7bdbe" />
+      <DataType Name="CounterMonth" BaseType="UShort" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="7826e9d3-95cb-4ca5-8f1e-2fa38d7370a8" />
+      <DataType Name="CounterYear" BaseType="UShort" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="371af41e-a4fc-4180-8230-edc1d0ce8817" />
+    </DataType>
+  </DataType>
+</data>

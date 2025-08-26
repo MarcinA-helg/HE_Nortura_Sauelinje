@@ -1,1 +1,2 @@
-﻿{"CLs":[{"__type":"IST","EID":"17945a7f-d4f3-4064-ba52-162dcc4a796e","H":60,"TXT":"DateTimePLC := GetTime();\u000d\u000a","W":565}],"LRI":1,"RRI":2,"VLs":[]}
+﻿{"CLs":[{"__type":"LD","Id":"7ce09e0e-998b-4911-a87e-492a028b191d","Up":true,"Var":"SyncTimeHMI"},{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In","Ix":1,"Type":"DATE_AND_TIME","Var":"DateTimeFromHMI"}],"Ix":3,"Name":"SetTime","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"","Ix":2,"Type":"BOOL","Var":""}],"X":1}],"LRI":4,"RRI":5,"VLs":[]}
+{"CLs":[{"__type":"IST","EID":"66fd23bb-c5e6-44b3-97d3-2fe54fae527e","H":82.999999999999943,"TXT":"DateTimePLC := GetTime();","W":662}],"LRI":1,"RRI":2,"VLs":[]}

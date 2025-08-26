@@ -11,76 +11,21 @@ _EN=Variables
 ++D=BOOL	N=D12_DI	AT=IOBus://unit#2/Input Bit 8 bits/Input Bit 07	G=VAR_GLOBAL	Com=Stop relay D12 active$t$t$t$tDI
 ++D=BOOL	N=D13_DI	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL	Com=Stop relay D13 active$t$t$t$tDI
 ++D=BOOL	N=U1_Run	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL	Com=Drive U1 running signal$t$t$t$tDI
-++D=TIME	N=U1TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Conveyor runtime day$t$t$t$tU1
-++D=TIME	N=U1TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Conveyor runtime week$t$t$t$tU1
-++D=TIME	N=U1TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Conveyor runtime month$t$t$t$tU1
-++D=TIME	N=U1TimeYear	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Conveyor runtime year
-++D=TIME	N=D1TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=TIME	N=D1TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=TIME	N=D1TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=DINT	N=D1CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=UINT	N=D1CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=UINT	N=D1CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=STRING[256]	N=D1Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD1
-++D=TIME	N=D2TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=TIME	N=D2TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=TIME	N=D2TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=UINT	N=D2CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=UINT	N=D2CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=UINT	N=D2CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=STRING[256]	N=D2Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD2
-++D=TIME	N=D3TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=TIME	N=D3TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=TIME	N=D3TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=UINT	N=D3CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=UINT	N=D3CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=UINT	N=D3CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=STRING[256]	N=D3Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD3
-++D=TIME	N=D4TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=TIME	N=D4TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=TIME	N=D4TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=UINT	N=D4CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=UINT	N=D4CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=UINT	N=D4CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=STRING[256]	N=D4Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD4
-++D=TIME	N=D9TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=TIME	N=D9TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=TIME	N=D9TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=UINT	N=D9CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=UINT	N=D9CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=UINT	N=D9CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=STRING[256]	N=D9Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD9
-++D=TIME	N=D10TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=TIME	N=D10TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=TIME	N=D10TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=UINT	N=D10CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=UINT	N=D10CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=UINT	N=D10CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=STRING[256]	N=D10Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD10
-++D=TIME	N=D11TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=TIME	N=D11TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=TIME	N=D11TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=UINT	N=D11CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=UINT	N=D11CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=UINT	N=D11CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=STRING[256]	N=D11Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD11
-++D=TIME	N=D12TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=TIME	N=D12TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=TIME	N=D12TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=UINT	N=D12CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=UINT	N=D12CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=UINT	N=D12CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=STRING[256]	N=D12Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD12
-++D=TIME	N=D13TimeDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=TIME	N=D13TimeWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=TIME	N=D13TimeMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=UINT	N=D13CounterDay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=UINT	N=D13CounterWeek	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=UINT	N=D13CounterMonth	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
-++D=STRING[256]	N=D13Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tD13
+++D=SwitchDT	N=U1Conveyor	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D1Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D2Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D3Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D4Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D9Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D10Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D11Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D12Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=SwitchDT	N=D13Switch	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=ResetDay	G=VAR_GLOBAL	Com=Reset day values - from HMI
 ++D=BOOL	N=ResetWeek	G=VAR_GLOBAL	Com=Reset week values - from HMI
 ++D=BOOL	N=ResetMonth	G=VAR_GLOBAL	Com=Reset month values - from HMI
 ++D=BOOL	N=ResetYear	G=VAR_GLOBAL	Com=Reset year values - from HMI
 ++D=DATE_AND_TIME	N=DateTimePLC	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=CtrOn	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL	Com=System ON signal
+++D=DATE_AND_TIME	N=DateTimeFromHMI	G=VAR_GLOBAL
+++D=BOOL	N=SyncTimeHMI	G=VAR_GLOBAL

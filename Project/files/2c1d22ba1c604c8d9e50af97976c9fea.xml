@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String0" ID="329643e0-65f0-45da-bf5e-5668a18cfb18">
+      <Localisation Language="en-US" Translation="NA Set Date &amp; Time" Default="True" />
+    </Resource>
+    <Resource Name="String1" ID="c05e2e5b-46dd-4def-b004-32df22d06257">
+      <Localisation Language="en-US" Translation="Not visible at runtime..." Default="True" />
+    </Resource>
+  </Resources>
+</IagResources>
