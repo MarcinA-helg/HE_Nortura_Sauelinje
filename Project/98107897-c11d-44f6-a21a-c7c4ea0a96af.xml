@@ -41,3 +41,4 @@ _EN=Variables
 ++D=SwitchDT	N=U1Conveyor	G=VAR_EXTERNAL
 ++D=DATE_AND_TIME	N=DateTimeFromHMI	G=VAR_EXTERNAL
 ++D=BOOL	N=SyncTimeHMI	G=VAR_EXTERNAL
+++N=TimeStruct	G=VAR_EXTERNAL

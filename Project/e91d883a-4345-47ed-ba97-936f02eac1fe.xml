@@ -21,6 +21,7 @@ _EN=Variables
 ++D=BOOL	N=TrigAct	G=VAR
 ++D=DATE_AND_TIME	N=TimeTemp	G=VAR
 ++D=TIME	N=CycleTimeTemp	G=VAR
+++D=BOOL	N=DayResetNow	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=O	Ord=0	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
@@ -35,3 +36,5 @@ _EN=Variables
 ++D=SwitchDT	N=SwitchValues	Ord=10	G=VAR_IN_OUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=ResetDay	G=VAR_EXTERNAL
+++D=BOOL	N=DayResetAutActive	G=VAR_EXTERNAL
+++D=USINT	N=DayResetAutHour	G=VAR_EXTERNAL

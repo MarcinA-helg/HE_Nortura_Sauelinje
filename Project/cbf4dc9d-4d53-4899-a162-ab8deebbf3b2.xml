@@ -29,3 +29,5 @@ _EN=Variables
 ++D=BOOL	N=CtrOn	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL	Com=System ON signal
 ++D=DATE_AND_TIME	N=DateTimeFromHMI	G=VAR_GLOBAL
 ++D=BOOL	N=SyncTimeHMI	G=VAR_GLOBAL
+++D=BOOL	N=DayResetAutActive	R=1	G=VAR_GLOBAL
+++D=USINT	N=DayResetAutHour	R=1	G=VAR_GLOBAL
