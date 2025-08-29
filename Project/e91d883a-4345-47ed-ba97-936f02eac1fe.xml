@@ -18,22 +18,16 @@ _EN=Variables
 ++D=DATE_AND_TIME	N=EnOffTime	G=VAR
 ++D=TIME	N=EnCycleTime	G=VAR
 ++D=TIME	N=CycleTime	G=VAR
-++D=BOOL	N=TrigAct	G=VAR
-++D=DATE_AND_TIME	N=TimeTemp	G=VAR
-++D=TIME	N=CycleTimeTemp	G=VAR
-++D=BOOL	N=DayResetNow	G=VAR
+++D=BOOL	N=DayResetNow	G=VAR	Com=Time depend reset signal of DAY values
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=O	Ord=0	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
 ++D=BOOL	N=Trig	Ord=2	G=VAR_INPUT
-++D=BOOL	N=DayShift	Ord=3	G=VAR_OUTPUT	Com=Pulse on day shift 0.00
-++D=BOOL	N=WeekShift	Ord=4	G=VAR_OUTPUT	Com=Pulse on week shift Sun-Mond 0.00
-++D=BOOL	N=MonthShift	Ord=5	G=VAR_OUTPUT	Com=Pulse on month shift 1. 0.00
-++D=BOOL	N=ResDayInp	Ord=6	G=VAR_INPUT	Com=External reset DAY values
-++D=BOOL	N=ResWeekInp	Ord=7	G=VAR_INPUT	Com=External reset WEEK values
-++D=BOOL	N=ResMonthInp	Ord=8	G=VAR_INPUT	Com=External reset MONTH values
-++D=BOOL	N=ResYearInp	Ord=9	G=VAR_INPUT	Com=External reset Year values
-++D=SwitchDT	N=SwitchValues	Ord=10	G=VAR_IN_OUT
+++D=BOOL	N=ResDayInp	Ord=3	G=VAR_INPUT	Com=External reset DAY values
+++D=BOOL	N=ResWeekInp	Ord=4	G=VAR_INPUT	Com=External reset WEEK values
+++D=BOOL	N=ResMonthInp	Ord=5	G=VAR_INPUT	Com=External reset MONTH values
+++D=BOOL	N=ResYearInp	Ord=6	G=VAR_INPUT	Com=External reset Year values
+++D=SwitchDT	N=SwitchValues	Ord=7	G=VAR_IN_OUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=ResetDay	G=VAR_EXTERNAL
 ++D=BOOL	N=DayResetAutActive	G=VAR_EXTERNAL
